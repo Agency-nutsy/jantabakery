@@ -17,6 +17,8 @@ interface GalleryItem {
   keywords: string[];
   categories: string[];
   imagePath: string | null;
+  width?: number;
+  height?: number;
 }
 
 const TABS = [
@@ -276,13 +278,16 @@ export default function GalleryPageClient() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.25 }}
-                className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3"
+                className="columns-2 md:columns-3 lg:columns-4 gap-3 [column-fill:_balance]"
               >
                 {filteredItems.map((item, index) => {
                   // First 8: eager load + staggered entrance on page load
                   // Rest: lazy load + whileInView scroll reveal
                   const isEager = index < 8;
                   const staggerDelay = isEager ? index * 0.07 : 0;
+                  
+                  // Use precise dimensions to reserve space (zero layout shift)
+                  const aspectRatio = (item.width && item.height) ? `${item.width} / ${item.height}` : '3 / 4';
 
                   return (
                     <motion.div
@@ -294,17 +299,18 @@ export default function GalleryPageClient() {
                       )}
                       transition={{ delay: staggerDelay, duration: 0.45, ease: 'easeOut' }}
                       onClick={() => openLightbox(index)}
-                      className="group relative cursor-pointer overflow-hidden rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300"
+                      className="group relative mb-3 cursor-pointer overflow-hidden rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 break-inside-avoid"
+                      style={{ aspectRatio }}
                     >
-                      {/* Fixed aspect-ratio container — reserves space before image loads, zero layout shift */}
-                      <div className="aspect-[3/4] w-full bg-soft-white/60">
-                        <img
-                          src={item.imagePath!}
-                          alt={item.name}
-                          className="h-full w-full object-cover rounded-xl transition-transform duration-500 group-hover:scale-[1.05]"
-                          loading={isEager ? 'eager' : 'lazy'}
-                        />
-                      </div>
+                      {/* Natural uncropped image, space pre-reserved by container */}
+                      <img
+                        src={item.imagePath!}
+                        alt={item.name}
+                        width={item.width}
+                        height={item.height}
+                        className="h-full w-full bg-soft-white/60 object-cover rounded-xl transition-transform duration-500 group-hover:scale-[1.05]"
+                        loading={isEager ? 'eager' : 'lazy'}
+                      />
 
                       {/* Elegant hover overlay */}
                       <div className="absolute inset-0 flex flex-col items-center justify-end bg-gradient-to-t from-charcoal/85 via-charcoal/30 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-4 text-center rounded-xl">
