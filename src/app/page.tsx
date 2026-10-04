@@ -192,7 +192,7 @@ export default function HomePage() {
   const statsInView = useInView(statsRef, { once: true, margin: '-100px' });
 
   // Only delay hero animation if the loading screen is actively showing
-  const [initialDelay] = useState(() => shouldShowLoadingScreen() ? 1.5 : 0);
+  const [initialDelay] = useState(() => shouldShowLoadingScreen() ? 2.5 : 0);
 
   const containerVariants = useMemo(() => ({
     hidden: {},

@@ -302,10 +302,26 @@ export default function MenuPageClient() {
   const [activeCategory, setActiveCategory] = useState<'all' | MenuCategory>('all');
   const [highlightedCategory, setHighlightedCategory] = useState<'all' | MenuCategory>('all');
   const [searchQuery, setSearchQuery] = useState('');
-  const [cart, setCart] = useState<CartItem[]>([]);
+  const [cart, setCart] = useState<CartItem[]>(() => {
+    // Restore cart from localStorage on mount so it persists across navigation
+    if (typeof window !== 'undefined') {
+      try {
+        const saved = localStorage.getItem('janta-cart');
+        return saved ? JSON.parse(saved) : [];
+      } catch { return []; }
+    }
+    return [];
+  });
   const [isCartOpen, setIsCartOpen] = useState(false);
-    const filterBarRef = useRef<HTMLDivElement>(null);
+  const filterBarRef = useRef<HTMLDivElement>(null);
   const isManualScrollingRef = useRef(false);
+
+  // Save cart to localStorage whenever it changes
+  useEffect(() => {
+    try {
+      localStorage.setItem('janta-cart', JSON.stringify(cart));
+    } catch { /* storage full or disabled */ }
+  }, [cart]);
 
   // Always start at the very top on initial mount
   useEffect(() => {
