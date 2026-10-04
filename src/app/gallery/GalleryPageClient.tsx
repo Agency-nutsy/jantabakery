@@ -278,35 +278,44 @@ export default function GalleryPageClient() {
                 transition={{ duration: 0.3 }}
                 className="columns-2 md:columns-3 lg:columns-4 gap-3 [column-fill:_balance]"
               >
-                {filteredItems.map((item, index) => (
-                  <motion.div
-                    key={`${item.file}-${index}`}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: '-40px' }}
-                    transition={{ delay: Math.min((index % 8) * 0.04, 0.3), duration: 0.35 }}
-                    onClick={() => openLightbox(index)}
-                    className="group relative mb-3 cursor-pointer overflow-hidden rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 break-inside-avoid"
-                  >
-                    {/* Natural aspect ratio image: NO CROP, FULL POSTER VISIBLE */}
-                    <img
-                      src={item.imagePath!}
-                      alt={item.name}
-                      className="w-full h-auto block rounded-xl transition-transform duration-500 group-hover:scale-[1.03]"
-                      loading="lazy"
-                    />
+                {filteredItems.map((item, index) => {
+                  // First 16 images: staggered entrance animation on page load
+                  // Images 17+: scroll-triggered whileInView animation
+                  const isAboveFold = index < 16;
+                  const staggerDelay = isAboveFold ? index * 0.06 : 0;
 
-                    {/* Elegant hover overlay */}
-                    <div className="absolute inset-0 flex flex-col items-center justify-end bg-gradient-to-t from-charcoal/85 via-charcoal/30 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-4 text-center rounded-xl">
-                      <div className="mb-2 flex h-9 w-9 items-center justify-center rounded-full bg-white/20 backdrop-blur-md text-white">
-                        <ZoomIn className="h-5 w-5" />
+                  return (
+                    <motion.div
+                      key={`${item.file}-${index}`}
+                      initial={{ opacity: 0, y: 20 }}
+                      {...(isAboveFold
+                        ? { animate: { opacity: 1, y: 0 } }
+                        : { whileInView: { opacity: 1, y: 0 }, viewport: { once: true, margin: '-40px' } }
+                      )}
+                      transition={{ delay: staggerDelay, duration: 0.4 }}
+                      onClick={() => openLightbox(index)}
+                      className="group relative mb-3 cursor-pointer overflow-hidden rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 break-inside-avoid"
+                    >
+                      {/* Natural aspect ratio image: NO CROP, FULL POSTER VISIBLE */}
+                      <img
+                        src={item.imagePath!}
+                        alt={item.name}
+                        className="w-full h-auto block rounded-xl transition-transform duration-500 group-hover:scale-[1.03]"
+                        loading={isAboveFold ? 'eager' : 'lazy'}
+                      />
+
+                      {/* Elegant hover overlay */}
+                      <div className="absolute inset-0 flex flex-col items-center justify-end bg-gradient-to-t from-charcoal/85 via-charcoal/30 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-4 text-center rounded-xl">
+                        <div className="mb-2 flex h-9 w-9 items-center justify-center rounded-full bg-white/20 backdrop-blur-md text-white">
+                          <ZoomIn className="h-5 w-5" />
+                        </div>
+                        <span className="rounded-full bg-white/95 px-3.5 py-1 text-xs sm:text-sm font-bold tracking-wide text-charcoal shadow-lg backdrop-blur-sm">
+                          {item.name}
+                        </span>
                       </div>
-                      <span className="rounded-full bg-white/95 px-3.5 py-1 text-xs sm:text-sm font-bold tracking-wide text-charcoal shadow-lg backdrop-blur-sm">
-                        {item.name}
-                      </span>
-                    </div>
-                  </motion.div>
-                ))}
+                    </motion.div>
+                  );
+                })}
               </motion.div>
             </AnimatePresence>
           )}
