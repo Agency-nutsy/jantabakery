@@ -31,12 +31,11 @@ export default function LoadingScreen() {
         }
       `}</style>
       <div className={`loading-screen ${loaded ? 'loaded' : ''}`}>
-      {/* Blurred Hero Background with Dark Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url('/whatsapp-hero.jpg')` }}
-      />
-      <div className="absolute inset-0 bg-charcoal/60 backdrop-blur-[40px]" />
+      {/* Elegant CSS-only Dark Background (Loads instantly, zero flash) */}
+      <div className="absolute inset-0 bg-charcoal" />
+      
+      {/* Decorative gradient overlay */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-baby-pink/10 via-charcoal to-charcoal" />
 
       {/* Brand Logo with sophisticated slow pulse */}
       <div className="z-10 flex flex-col items-center animate-pulse">
