@@ -275,34 +275,36 @@ export default function GalleryPageClient() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: 0.3 }}
-                className="columns-2 md:columns-3 lg:columns-4 gap-3 [column-fill:_balance]"
+                transition={{ duration: 0.25 }}
+                className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3"
               >
                 {filteredItems.map((item, index) => {
-                  // First 16 images: staggered entrance animation on page load
-                  // Images 17+: scroll-triggered whileInView animation
-                  const isAboveFold = index < 16;
-                  const staggerDelay = isAboveFold ? index * 0.06 : 0;
+                  // First 8: eager load + staggered entrance on page load
+                  // Rest: lazy load + whileInView scroll reveal
+                  const isEager = index < 8;
+                  const staggerDelay = isEager ? index * 0.07 : 0;
 
                   return (
                     <motion.div
                       key={`${item.file}-${index}`}
-                      initial={{ opacity: 0, y: 20 }}
-                      {...(isAboveFold
-                        ? { animate: { opacity: 1, y: 0 } }
-                        : { whileInView: { opacity: 1, y: 0 }, viewport: { once: true, margin: '-40px' } }
+                      initial={{ opacity: 0, scale: 0.96 }}
+                      {...(isEager
+                        ? { animate: { opacity: 1, scale: 1 } }
+                        : { whileInView: { opacity: 1, scale: 1 }, viewport: { once: true, margin: '-60px' } }
                       )}
-                      transition={{ delay: staggerDelay, duration: 0.4 }}
+                      transition={{ delay: staggerDelay, duration: 0.45, ease: 'easeOut' }}
                       onClick={() => openLightbox(index)}
-                      className="group relative mb-3 cursor-pointer overflow-hidden rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 break-inside-avoid"
+                      className="group relative cursor-pointer overflow-hidden rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300"
                     >
-                      {/* Natural aspect ratio image: NO CROP, FULL POSTER VISIBLE */}
-                      <img
-                        src={item.imagePath!}
-                        alt={item.name}
-                        className="w-full h-auto block rounded-xl transition-transform duration-500 group-hover:scale-[1.03]"
-                        loading={isAboveFold ? 'eager' : 'lazy'}
-                      />
+                      {/* Fixed aspect-ratio container — reserves space before image loads, zero layout shift */}
+                      <div className="aspect-[3/4] w-full bg-soft-white/60">
+                        <img
+                          src={item.imagePath!}
+                          alt={item.name}
+                          className="h-full w-full object-cover rounded-xl transition-transform duration-500 group-hover:scale-[1.05]"
+                          loading={isEager ? 'eager' : 'lazy'}
+                        />
+                      </div>
 
                       {/* Elegant hover overlay */}
                       <div className="absolute inset-0 flex flex-col items-center justify-end bg-gradient-to-t from-charcoal/85 via-charcoal/30 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-4 text-center rounded-xl">
