@@ -32,7 +32,7 @@ export default function FloatingCart() {
             exit={{ scale: 0, opacity: 0 }}
             transition={{ type: 'spring', stiffness: 400, damping: 25 }}
             onClick={() => setIsOpen(true)}
-            className="fixed bottom-[7.5rem] right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full shadow-lg shadow-deep-pink/40 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-deep-pink/50"
+            className="fixed bottom-44 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full shadow-lg shadow-deep-pink/40 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-deep-pink/50"
             style={{
               background: 'linear-gradient(135deg, #eb5e55 0%, #c8717a 100%)',
             }}
