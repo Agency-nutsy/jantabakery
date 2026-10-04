@@ -1,0 +1,1178 @@
+[
+  {
+    "filename": "about-cake.jpg",
+    "originalRelativePath": "about-cake.jpg",
+    "fullOriginalPath": "public\\about-cake.jpg",
+    "sizeBytes": 278623
+  },
+  {
+    "filename": "choco-crunch-poster.jpg",
+    "originalRelativePath": "choco-crunch-poster.jpg",
+    "fullOriginalPath": "public\\choco-crunch-poster.jpg",
+    "sizeBytes": 661861
+  },
+  {
+    "filename": "file.svg",
+    "originalRelativePath": "file.svg",
+    "fullOriginalPath": "public\\file.svg",
+    "sizeBytes": 391
+  },
+  {
+    "filename": "almond-biscotti-banner.jpg",
+    "originalRelativePath": "gallery\\biscuits\\almond-biscotti-banner.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\almond-biscotti-banner.jpg",
+    "sizeBytes": 723604
+  },
+  {
+    "filename": "atta-cookies-poster.jpg",
+    "originalRelativePath": "gallery\\biscuits\\atta-cookies-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\atta-cookies-poster.jpg",
+    "sizeBytes": 659529
+  },
+  {
+    "filename": "atta-sugar-free-landscape.jpg",
+    "originalRelativePath": "gallery\\biscuits\\atta-sugar-free-landscape.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\atta-sugar-free-landscape.jpg",
+    "sizeBytes": 711215
+  },
+  {
+    "filename": "badam-khatai-square.jpg",
+    "originalRelativePath": "gallery\\biscuits\\badam-khatai-square.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\badam-khatai-square.jpg",
+    "sizeBytes": 611212
+  },
+  {
+    "filename": "besan-khatai-banner.jpg",
+    "originalRelativePath": "gallery\\biscuits\\besan-khatai-banner.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\besan-khatai-banner.jpg",
+    "sizeBytes": 570380
+  },
+  {
+    "filename": "butter-jam-pista-portrait.jpg",
+    "originalRelativePath": "gallery\\biscuits\\butter-jam-pista-portrait.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\butter-jam-pista-portrait.jpg",
+    "sizeBytes": 666732
+  },
+  {
+    "filename": "butter-kaju-banner.jpg",
+    "originalRelativePath": "gallery\\biscuits\\butter-kaju-banner.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\butter-kaju-banner.jpg",
+    "sizeBytes": 573850
+  },
+  {
+    "filename": "cashew-khatai-square.jpg",
+    "originalRelativePath": "gallery\\biscuits\\cashew-khatai-square.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\cashew-khatai-square.jpg",
+    "sizeBytes": 665999
+  },
+  {
+    "filename": "choco-chips-poster.jpg",
+    "originalRelativePath": "gallery\\biscuits\\choco-chips-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\choco-chips-poster.jpg",
+    "sizeBytes": 630978
+  },
+  {
+    "filename": "choco-crunch-poster.jpg",
+    "originalRelativePath": "gallery\\biscuits\\choco-crunch-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\choco-crunch-poster.jpg",
+    "sizeBytes": 661861
+  },
+  {
+    "filename": "chocolate-marble-poster.jpg",
+    "originalRelativePath": "gallery\\biscuits\\chocolate-marble-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\chocolate-marble-poster.jpg",
+    "sizeBytes": 644888
+  },
+  {
+    "filename": "chocos-cookies-poster.jpg",
+    "originalRelativePath": "gallery\\biscuits\\chocos-cookies-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\chocos-cookies-poster.jpg",
+    "sizeBytes": 627839
+  },
+  {
+    "filename": "choker-namkeen-poster.jpg",
+    "originalRelativePath": "gallery\\biscuits\\choker-namkeen-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\choker-namkeen-poster.jpg",
+    "sizeBytes": 633751
+  },
+  {
+    "filename": "coconut-drops-square.jpg",
+    "originalRelativePath": "gallery\\biscuits\\coconut-drops-square.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\coconut-drops-square.jpg",
+    "sizeBytes": 630500
+  },
+  {
+    "filename": "dry-fruits-poster.jpg",
+    "originalRelativePath": "gallery\\biscuits\\dry-fruits-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\dry-fruits-poster.jpg",
+    "sizeBytes": 664862
+  },
+  {
+    "filename": "elaichi-khatai-poster.jpg",
+    "originalRelativePath": "gallery\\biscuits\\elaichi-khatai-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\elaichi-khatai-poster.jpg",
+    "sizeBytes": 630431
+  },
+  {
+    "filename": "gol-jeera-portrait.jpg",
+    "originalRelativePath": "gallery\\biscuits\\gol-jeera-portrait.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\gol-jeera-portrait.jpg",
+    "sizeBytes": 627686
+  },
+  {
+    "filename": "hyderabadi-fruit-poster.jpg",
+    "originalRelativePath": "gallery\\biscuits\\hyderabadi-fruit-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\hyderabadi-fruit-poster.jpg",
+    "sizeBytes": 610748
+  },
+  {
+    "filename": "jaggery-multigrain-landscape.jpg",
+    "originalRelativePath": "gallery\\biscuits\\jaggery-multigrain-landscape.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\jaggery-multigrain-landscape.jpg",
+    "sizeBytes": 724451
+  },
+  {
+    "filename": "jam-pista-poster.jpg",
+    "originalRelativePath": "gallery\\biscuits\\jam-pista-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\jam-pista-poster.jpg",
+    "sizeBytes": 649876
+  },
+  {
+    "filename": "jeera-bite-square.jpg",
+    "originalRelativePath": "gallery\\biscuits\\jeera-bite-square.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\jeera-bite-square.jpg",
+    "sizeBytes": 657556
+  },
+  {
+    "filename": "kaju-pista-cookies.jpg",
+    "originalRelativePath": "gallery\\biscuits\\kaju-pista-cookies.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\kaju-pista-cookies.jpg",
+    "sizeBytes": 626114
+  },
+  {
+    "filename": "kaju-pista-poster.jpg",
+    "originalRelativePath": "gallery\\biscuits\\kaju-pista-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\kaju-pista-poster.jpg",
+    "sizeBytes": 652373
+  },
+  {
+    "filename": "milk-badam-poster.jpg",
+    "originalRelativePath": "gallery\\biscuits\\milk-badam-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\milk-badam-poster.jpg",
+    "sizeBytes": 606982
+  },
+  {
+    "filename": "milk-kaju-banner.jpg",
+    "originalRelativePath": "gallery\\biscuits\\milk-kaju-banner.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\milk-kaju-banner.jpg",
+    "sizeBytes": 554661
+  },
+  {
+    "filename": "milk-pista-square.jpg",
+    "originalRelativePath": "gallery\\biscuits\\milk-pista-square.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\milk-pista-square.jpg",
+    "sizeBytes": 656595
+  },
+  {
+    "filename": "multi-grain-landscape.jpg",
+    "originalRelativePath": "gallery\\biscuits\\multi-grain-landscape.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\multi-grain-landscape.jpg",
+    "sizeBytes": 678882
+  },
+  {
+    "filename": "namkeen-jalebi-landscape.jpg",
+    "originalRelativePath": "gallery\\biscuits\\namkeen-jalebi-landscape.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\namkeen-jalebi-landscape.jpg",
+    "sizeBytes": 627689
+  },
+  {
+    "filename": "namkeen-paneer-landscape.jpg",
+    "originalRelativePath": "gallery\\biscuits\\namkeen-paneer-landscape.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\namkeen-paneer-landscape.jpg",
+    "sizeBytes": 644104
+  },
+  {
+    "filename": "oats-cookies-portrait.jpg",
+    "originalRelativePath": "gallery\\biscuits\\oats-cookies-portrait.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\oats-cookies-portrait.jpg",
+    "sizeBytes": 644807
+  },
+  {
+    "filename": "paper-almond-banner.jpg",
+    "originalRelativePath": "gallery\\biscuits\\paper-almond-banner.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\paper-almond-banner.jpg",
+    "sizeBytes": 668468
+  },
+  {
+    "filename": "plain-besan-portrait.jpg",
+    "originalRelativePath": "gallery\\biscuits\\plain-besan-portrait.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\plain-besan-portrait.jpg",
+    "sizeBytes": 660184
+  },
+  {
+    "filename": "sada-butter-square.jpg",
+    "originalRelativePath": "gallery\\biscuits\\sada-butter-square.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\sada-butter-square.jpg",
+    "sizeBytes": 619508
+  },
+  {
+    "filename": "shahi-badam-square.jpg",
+    "originalRelativePath": "gallery\\biscuits\\shahi-badam-square.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\shahi-badam-square.jpg",
+    "sizeBytes": 682420
+  },
+  {
+    "filename": "special-besan-square.jpg",
+    "originalRelativePath": "gallery\\biscuits\\special-besan-square.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\special-besan-square.jpg",
+    "sizeBytes": 699873
+  },
+  {
+    "filename": "special-kaju-square.jpg",
+    "originalRelativePath": "gallery\\biscuits\\special-kaju-square.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\special-kaju-square.jpg",
+    "sizeBytes": 687805
+  },
+  {
+    "filename": "sweet-jalebi-landscape.jpg",
+    "originalRelativePath": "gallery\\biscuits\\sweet-jalebi-landscape.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\sweet-jalebi-landscape.jpg",
+    "sizeBytes": 570051
+  },
+  {
+    "filename": "toasted-coconut-square.jpg",
+    "originalRelativePath": "gallery\\biscuits\\toasted-coconut-square.jpg",
+    "fullOriginalPath": "public\\gallery\\biscuits\\toasted-coconut-square.jpg",
+    "sizeBytes": 645772
+  },
+  {
+    "filename": "premium-cake-10.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-10.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-10.jpg",
+    "sizeBytes": 172862
+  },
+  {
+    "filename": "premium-cake-11.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-11.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-11.jpg",
+    "sizeBytes": 186160
+  },
+  {
+    "filename": "premium-cake-12.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-12.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-12.jpg",
+    "sizeBytes": 169193
+  },
+  {
+    "filename": "premium-cake-13.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-13.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-13.jpg",
+    "sizeBytes": 215561
+  },
+  {
+    "filename": "premium-cake-14.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-14.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-14.jpg",
+    "sizeBytes": 174727
+  },
+  {
+    "filename": "premium-cake-16.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-16.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-16.jpg",
+    "sizeBytes": 189820
+  },
+  {
+    "filename": "premium-cake-17.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-17.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-17.jpg",
+    "sizeBytes": 176270
+  },
+  {
+    "filename": "premium-cake-19.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-19.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-19.jpg",
+    "sizeBytes": 152674
+  },
+  {
+    "filename": "premium-cake-2.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-2.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-2.jpg",
+    "sizeBytes": 212377
+  },
+  {
+    "filename": "premium-cake-21.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-21.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-21.jpg",
+    "sizeBytes": 168124
+  },
+  {
+    "filename": "premium-cake-25.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-25.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-25.jpg",
+    "sizeBytes": 169602
+  },
+  {
+    "filename": "premium-cake-28.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-28.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-28.jpg",
+    "sizeBytes": 160613
+  },
+  {
+    "filename": "premium-cake-3.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-3.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-3.jpg",
+    "sizeBytes": 180433
+  },
+  {
+    "filename": "premium-cake-34.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-34.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-34.jpg",
+    "sizeBytes": 162415
+  },
+  {
+    "filename": "premium-cake-35.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-35.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-35.jpg",
+    "sizeBytes": 182569
+  },
+  {
+    "filename": "premium-cake-36.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-36.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-36.jpg",
+    "sizeBytes": 188068
+  },
+  {
+    "filename": "premium-cake-37.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-37.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-37.jpg",
+    "sizeBytes": 154196
+  },
+  {
+    "filename": "premium-cake-38.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-38.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-38.jpg",
+    "sizeBytes": 183382
+  },
+  {
+    "filename": "premium-cake-39.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-39.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-39.jpg",
+    "sizeBytes": 181256
+  },
+  {
+    "filename": "premium-cake-4.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-4.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-4.jpg",
+    "sizeBytes": 190045
+  },
+  {
+    "filename": "premium-cake-40.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-40.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-40.jpg",
+    "sizeBytes": 181358
+  },
+  {
+    "filename": "premium-cake-5.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-5.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-5.jpg",
+    "sizeBytes": 187699
+  },
+  {
+    "filename": "premium-cake-6.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-6.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-6.jpg",
+    "sizeBytes": 184174
+  },
+  {
+    "filename": "premium-cake-7.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-7.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-7.jpg",
+    "sizeBytes": 213997
+  },
+  {
+    "filename": "premium-cake-8.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-8.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-8.jpg",
+    "sizeBytes": 176680
+  },
+  {
+    "filename": "premium-cake-9.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cake-9.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cake-9.jpg",
+    "sizeBytes": 190899
+  },
+  {
+    "filename": "premium-cheesecake-1.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cheesecake-1.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cheesecake-1.jpg",
+    "sizeBytes": 191395
+  },
+  {
+    "filename": "premium-cheesecake-30.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cheesecake-30.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cheesecake-30.jpg",
+    "sizeBytes": 199088
+  },
+  {
+    "filename": "premium-cheesecake-32.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-cheesecake-32.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-cheesecake-32.jpg",
+    "sizeBytes": 170984
+  },
+  {
+    "filename": "premium-pastry-15.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-pastry-15.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-pastry-15.jpg",
+    "sizeBytes": 195904
+  },
+  {
+    "filename": "premium-pastry-18.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-pastry-18.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-pastry-18.jpg",
+    "sizeBytes": 162522
+  },
+  {
+    "filename": "premium-pastry-20.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-pastry-20.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-pastry-20.jpg",
+    "sizeBytes": 172715
+  },
+  {
+    "filename": "premium-pastry-22.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-pastry-22.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-pastry-22.jpg",
+    "sizeBytes": 153635
+  },
+  {
+    "filename": "premium-pastry-23.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-pastry-23.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-pastry-23.jpg",
+    "sizeBytes": 159799
+  },
+  {
+    "filename": "premium-pastry-24.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-pastry-24.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-pastry-24.jpg",
+    "sizeBytes": 189012
+  },
+  {
+    "filename": "premium-pastry-26.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-pastry-26.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-pastry-26.jpg",
+    "sizeBytes": 183398
+  },
+  {
+    "filename": "premium-pastry-27.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-pastry-27.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-pastry-27.jpg",
+    "sizeBytes": 168151
+  },
+  {
+    "filename": "premium-pastry-29.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-pastry-29.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-pastry-29.jpg",
+    "sizeBytes": 183426
+  },
+  {
+    "filename": "premium-pastry-31.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-pastry-31.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-pastry-31.jpg",
+    "sizeBytes": 190355
+  },
+  {
+    "filename": "premium-pastry-33.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-pastry-33.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-pastry-33.jpg",
+    "sizeBytes": 187166
+  },
+  {
+    "filename": "premium-pastry-41.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-pastry-41.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-pastry-41.jpg",
+    "sizeBytes": 166958
+  },
+  {
+    "filename": "premium-pastry-42.jpg",
+    "originalRelativePath": "gallery\\cakes\\premium-pastry-42.jpg",
+    "fullOriginalPath": "public\\gallery\\cakes\\premium-pastry-42.jpg",
+    "sizeBytes": 189220
+  },
+  {
+    "filename": "custom-cake-1.jpg",
+    "originalRelativePath": "gallery\\custom-cakes\\custom-cake-1.jpg",
+    "fullOriginalPath": "public\\gallery\\custom-cakes\\custom-cake-1.jpg",
+    "sizeBytes": 174508
+  },
+  {
+    "filename": "custom-cake-10.jpg",
+    "originalRelativePath": "gallery\\custom-cakes\\custom-cake-10.jpg",
+    "fullOriginalPath": "public\\gallery\\custom-cakes\\custom-cake-10.jpg",
+    "sizeBytes": 192566
+  },
+  {
+    "filename": "custom-cake-11.jpg",
+    "originalRelativePath": "gallery\\custom-cakes\\custom-cake-11.jpg",
+    "fullOriginalPath": "public\\gallery\\custom-cakes\\custom-cake-11.jpg",
+    "sizeBytes": 172237
+  },
+  {
+    "filename": "custom-cake-12.jpg",
+    "originalRelativePath": "gallery\\custom-cakes\\custom-cake-12.jpg",
+    "fullOriginalPath": "public\\gallery\\custom-cakes\\custom-cake-12.jpg",
+    "sizeBytes": 197357
+  },
+  {
+    "filename": "custom-cake-13.jpg",
+    "originalRelativePath": "gallery\\custom-cakes\\custom-cake-13.jpg",
+    "fullOriginalPath": "public\\gallery\\custom-cakes\\custom-cake-13.jpg",
+    "sizeBytes": 150760
+  },
+  {
+    "filename": "custom-cake-14.jpg",
+    "originalRelativePath": "gallery\\custom-cakes\\custom-cake-14.jpg",
+    "fullOriginalPath": "public\\gallery\\custom-cakes\\custom-cake-14.jpg",
+    "sizeBytes": 206014
+  },
+  {
+    "filename": "custom-cake-15.jpg",
+    "originalRelativePath": "gallery\\custom-cakes\\custom-cake-15.jpg",
+    "fullOriginalPath": "public\\gallery\\custom-cakes\\custom-cake-15.jpg",
+    "sizeBytes": 169440
+  },
+  {
+    "filename": "custom-cake-16.jpg",
+    "originalRelativePath": "gallery\\custom-cakes\\custom-cake-16.jpg",
+    "fullOriginalPath": "public\\gallery\\custom-cakes\\custom-cake-16.jpg",
+    "sizeBytes": 210816
+  },
+  {
+    "filename": "custom-cake-17.jpg",
+    "originalRelativePath": "gallery\\custom-cakes\\custom-cake-17.jpg",
+    "fullOriginalPath": "public\\gallery\\custom-cakes\\custom-cake-17.jpg",
+    "sizeBytes": 143690
+  },
+  {
+    "filename": "custom-cake-18.jpg",
+    "originalRelativePath": "gallery\\custom-cakes\\custom-cake-18.jpg",
+    "fullOriginalPath": "public\\gallery\\custom-cakes\\custom-cake-18.jpg",
+    "sizeBytes": 179934
+  },
+  {
+    "filename": "custom-cake-19.jpg",
+    "originalRelativePath": "gallery\\custom-cakes\\custom-cake-19.jpg",
+    "fullOriginalPath": "public\\gallery\\custom-cakes\\custom-cake-19.jpg",
+    "sizeBytes": 159227
+  },
+  {
+    "filename": "custom-cake-2.jpg",
+    "originalRelativePath": "gallery\\custom-cakes\\custom-cake-2.jpg",
+    "fullOriginalPath": "public\\gallery\\custom-cakes\\custom-cake-2.jpg",
+    "sizeBytes": 180604
+  },
+  {
+    "filename": "custom-cake-3.jpg",
+    "originalRelativePath": "gallery\\custom-cakes\\custom-cake-3.jpg",
+    "fullOriginalPath": "public\\gallery\\custom-cakes\\custom-cake-3.jpg",
+    "sizeBytes": 184656
+  },
+  {
+    "filename": "custom-cake-4.jpg",
+    "originalRelativePath": "gallery\\custom-cakes\\custom-cake-4.jpg",
+    "fullOriginalPath": "public\\gallery\\custom-cakes\\custom-cake-4.jpg",
+    "sizeBytes": 183352
+  },
+  {
+    "filename": "custom-cake-5.jpg",
+    "originalRelativePath": "gallery\\custom-cakes\\custom-cake-5.jpg",
+    "fullOriginalPath": "public\\gallery\\custom-cakes\\custom-cake-5.jpg",
+    "sizeBytes": 175039
+  },
+  {
+    "filename": "custom-cake-6.jpg",
+    "originalRelativePath": "gallery\\custom-cakes\\custom-cake-6.jpg",
+    "fullOriginalPath": "public\\gallery\\custom-cakes\\custom-cake-6.jpg",
+    "sizeBytes": 190686
+  },
+  {
+    "filename": "custom-cake-7.jpg",
+    "originalRelativePath": "gallery\\custom-cakes\\custom-cake-7.jpg",
+    "fullOriginalPath": "public\\gallery\\custom-cakes\\custom-cake-7.jpg",
+    "sizeBytes": 189210
+  },
+  {
+    "filename": "custom-cake-8.jpg",
+    "originalRelativePath": "gallery\\custom-cakes\\custom-cake-8.jpg",
+    "fullOriginalPath": "public\\gallery\\custom-cakes\\custom-cake-8.jpg",
+    "sizeBytes": 171040
+  },
+  {
+    "filename": "custom-cake-9.jpg",
+    "originalRelativePath": "gallery\\custom-cakes\\custom-cake-9.jpg",
+    "fullOriginalPath": "public\\gallery\\custom-cakes\\custom-cake-9.jpg",
+    "sizeBytes": 174359
+  },
+  {
+    "filename": "achari-mathi-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\achari-mathi-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\achari-mathi-poster.jpg",
+    "sizeBytes": 700134
+  },
+  {
+    "filename": "aloo-bhujia-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\aloo-bhujia-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\aloo-bhujia-poster.jpg",
+    "sizeBytes": 631573
+  },
+  {
+    "filename": "aloo-mathi-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\aloo-mathi-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\aloo-mathi-poster.jpg",
+    "sizeBytes": 681275
+  },
+  {
+    "filename": "badam-lacha-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\badam-lacha-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\badam-lacha-poster.jpg",
+    "sizeBytes": 659931
+  },
+  {
+    "filename": "banana-chips-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\banana-chips-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\banana-chips-poster.jpg",
+    "sizeBytes": 554155
+  },
+  {
+    "filename": "beetroot-chips-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\beetroot-chips-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\beetroot-chips-poster.jpg",
+    "sizeBytes": 637686
+  },
+  {
+    "filename": "besan-masala-papdi-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\besan-masala-papdi-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\besan-masala-papdi-poster.jpg",
+    "sizeBytes": 623992
+  },
+  {
+    "filename": "besan-papdi-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\besan-papdi-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\besan-papdi-poster.jpg",
+    "sizeBytes": 593026
+  },
+  {
+    "filename": "bhaji-box-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\bhaji-box-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\bhaji-box-poster.jpg",
+    "sizeBytes": 606460
+  },
+  {
+    "filename": "bhakarwadi-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\bhakarwadi-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\bhakarwadi-poster.jpg",
+    "sizeBytes": 637899
+  },
+  {
+    "filename": "bikaneri-bhujiya-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\bikaneri-bhujiya-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\bikaneri-bhujiya-poster.jpg",
+    "sizeBytes": 609441
+  },
+  {
+    "filename": "black-pepper-makhana-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\black-pepper-makhana-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\black-pepper-makhana-poster.jpg",
+    "sizeBytes": 619799
+  },
+  {
+    "filename": "broccoli-chips-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\broccoli-chips-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\broccoli-chips-poster.jpg",
+    "sizeBytes": 621459
+  },
+  {
+    "filename": "chiwda-cornflakes-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\chiwda-cornflakes-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\chiwda-cornflakes-poster.jpg",
+    "sizeBytes": 629074
+  },
+  {
+    "filename": "classic-boondi-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\classic-boondi-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\classic-boondi-poster.jpg",
+    "sizeBytes": 540772
+  },
+  {
+    "filename": "cornflakes-mixture-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\cornflakes-mixture-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\cornflakes-mixture-poster.jpg",
+    "sizeBytes": 676519
+  },
+  {
+    "filename": "curry-leaf-murmura-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\curry-leaf-murmura-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\curry-leaf-murmura-poster.jpg",
+    "sizeBytes": 633156
+  },
+  {
+    "filename": "dabba-mathi-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\dabba-mathi-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\dabba-mathi-poster.jpg",
+    "sizeBytes": 597502
+  },
+  {
+    "filename": "dal-biji-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\dal-biji-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\dal-biji-poster.jpg",
+    "sizeBytes": 592216
+  },
+  {
+    "filename": "diet-jhalmuri-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\diet-jhalmuri-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\diet-jhalmuri-poster.jpg",
+    "sizeBytes": 588311
+  },
+  {
+    "filename": "diet-millet-mix-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\diet-millet-mix-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\diet-millet-mix-poster.jpg",
+    "sizeBytes": 620441
+  },
+  {
+    "filename": "fafda-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\fafda-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\fafda-poster.jpg",
+    "sizeBytes": 624142
+  },
+  {
+    "filename": "falahari-mix-meetha-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\falahari-mix-meetha-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\falahari-mix-meetha-poster.jpg",
+    "sizeBytes": 644182
+  },
+  {
+    "filename": "gathiya-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\gathiya-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\gathiya-poster.jpg",
+    "sizeBytes": 621212
+  },
+  {
+    "filename": "gol-mathi-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\gol-mathi-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\gol-mathi-poster.jpg",
+    "sizeBytes": 608053
+  },
+  {
+    "filename": "gud-para-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\gud-para-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\gud-para-poster.jpg",
+    "sizeBytes": 649667
+  },
+  {
+    "filename": "gujrati-sev-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\gujrati-sev-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\gujrati-sev-poster.jpg",
+    "sizeBytes": 597117
+  },
+  {
+    "filename": "hing-mirchi-sev-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\hing-mirchi-sev-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\hing-mirchi-sev-poster.jpg",
+    "sizeBytes": 636837
+  },
+  {
+    "filename": "kadi-patta-boondi-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\kadi-patta-boondi-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\kadi-patta-boondi-poster.jpg",
+    "sizeBytes": 617902
+  },
+  {
+    "filename": "kanpuri-mixture-dryfruit-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\kanpuri-mixture-dryfruit-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\kanpuri-mixture-dryfruit-poster.jpg",
+    "sizeBytes": 661856
+  },
+  {
+    "filename": "khajuri-mathi-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\khajuri-mathi-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\khajuri-mathi-poster.jpg",
+    "sizeBytes": 671183
+  },
+  {
+    "filename": "khatta-meetha-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\khatta-meetha-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\khatta-meetha-poster.jpg",
+    "sizeBytes": 626170
+  },
+  {
+    "filename": "madrasi-mixture-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\madrasi-mixture-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\madrasi-mixture-poster.jpg",
+    "sizeBytes": 620073
+  },
+  {
+    "filename": "masala-banana-chips-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\masala-banana-chips-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\masala-banana-chips-poster.jpg",
+    "sizeBytes": 692776
+  },
+  {
+    "filename": "masala-chandni-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\masala-chandni-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\masala-chandni-poster.jpg",
+    "sizeBytes": 652099
+  },
+  {
+    "filename": "masala-kaju-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\masala-kaju-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\masala-kaju-poster.jpg",
+    "sizeBytes": 624709
+  },
+  {
+    "filename": "masala-karela-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\masala-karela-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\masala-karela-poster.jpg",
+    "sizeBytes": 691280
+  },
+  {
+    "filename": "methi-mathi-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\methi-mathi-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\methi-mathi-poster.jpg",
+    "sizeBytes": 650162
+  },
+  {
+    "filename": "milk-mathi-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\milk-mathi-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\milk-mathi-poster.jpg",
+    "sizeBytes": 630966
+  },
+  {
+    "filename": "mini-kachori-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\mini-kachori-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\mini-kachori-poster.jpg",
+    "sizeBytes": 762934
+  },
+  {
+    "filename": "mini-samosa-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\mini-samosa-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\mini-samosa-poster.jpg",
+    "sizeBytes": 586205
+  },
+  {
+    "filename": "mint-pudina-makhana-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\mint-pudina-makhana-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\mint-pudina-makhana-poster.jpg",
+    "sizeBytes": 606560
+  },
+  {
+    "filename": "mirchi-sev-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\mirchi-sev-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\mirchi-sev-poster.jpg",
+    "sizeBytes": 644214
+  },
+  {
+    "filename": "mirchi-tangri-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\mirchi-tangri-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\mirchi-tangri-poster.jpg",
+    "sizeBytes": 696872
+  },
+  {
+    "filename": "mix-veg-chips-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\mix-veg-chips-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\mix-veg-chips-poster.jpg",
+    "sizeBytes": 615759
+  },
+  {
+    "filename": "moong-dal-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\moong-dal-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\moong-dal-poster.jpg",
+    "sizeBytes": 628137
+  },
+  {
+    "filename": "moongra-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\moongra-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\moongra-poster.jpg",
+    "sizeBytes": 633789
+  },
+  {
+    "filename": "mota-sev-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\mota-sev-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\mota-sev-poster.jpg",
+    "sizeBytes": 647553
+  },
+  {
+    "filename": "multigrain-flakes-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\multigrain-flakes-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\multigrain-flakes-poster.jpg",
+    "sizeBytes": 668021
+  },
+  {
+    "filename": "murmura-mixture-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\murmura-mixture-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\murmura-mixture-poster.jpg",
+    "sizeBytes": 640035
+  },
+  {
+    "filename": "namak-para-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\namak-para-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\namak-para-poster.jpg",
+    "sizeBytes": 601395
+  },
+  {
+    "filename": "namkeen-falahari-mix-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\namkeen-falahari-mix-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\namkeen-falahari-mix-poster.jpg",
+    "sizeBytes": 670239
+  },
+  {
+    "filename": "nut-cracker-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\nut-cracker-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\nut-cracker-poster.jpg",
+    "sizeBytes": 599717
+  },
+  {
+    "filename": "palak-marori-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\palak-marori-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\palak-marori-poster.jpg",
+    "sizeBytes": 627451
+  },
+  {
+    "filename": "panchratan-mix-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\panchratan-mix-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\panchratan-mix-poster.jpg",
+    "sizeBytes": 639820
+  },
+  {
+    "filename": "papdi-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\papdi-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\papdi-poster.jpg",
+    "sizeBytes": 603374
+  },
+  {
+    "filename": "peri-peri-makhana-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\peri-peri-makhana-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\peri-peri-makhana-poster.jpg",
+    "sizeBytes": 640191
+  },
+  {
+    "filename": "phool-mathi-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\phool-mathi-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\phool-mathi-poster.jpg",
+    "sizeBytes": 661797
+  },
+  {
+    "filename": "plain-chandni-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\plain-chandni-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\plain-chandni-poster.jpg",
+    "sizeBytes": 631236
+  },
+  {
+    "filename": "plain-cornflex-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\plain-cornflex-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\plain-cornflex-poster.jpg",
+    "sizeBytes": 657599
+  },
+  {
+    "filename": "plain-mixture-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\plain-mixture-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\plain-mixture-poster.jpg",
+    "sizeBytes": 668464
+  },
+  {
+    "filename": "plain-salted-makhana-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\plain-salted-makhana-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\plain-salted-makhana-poster.jpg",
+    "sizeBytes": 669170
+  },
+  {
+    "filename": "rajma-chips-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\rajma-chips-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\rajma-chips-poster.jpg",
+    "sizeBytes": 638255
+  },
+  {
+    "filename": "salsa-multigrain-sticks-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\salsa-multigrain-sticks-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\salsa-multigrain-sticks-poster.jpg",
+    "sizeBytes": 690857
+  },
+  {
+    "filename": "satrangi-mathi-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\satrangi-mathi-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\satrangi-mathi-poster.jpg",
+    "sizeBytes": 669785
+  },
+  {
+    "filename": "shakarpara-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\shakarpara-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\shakarpara-poster.jpg",
+    "sizeBytes": 625220
+  },
+  {
+    "filename": "soya-katori-masala-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\soya-katori-masala-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\soya-katori-masala-poster.jpg",
+    "sizeBytes": 651514
+  },
+  {
+    "filename": "soya-katori-plain-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\soya-katori-plain-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\soya-katori-plain-poster.jpg",
+    "sizeBytes": 593096
+  },
+  {
+    "filename": "special-corn-namkeen-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\special-corn-namkeen-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\special-corn-namkeen-poster.jpg",
+    "sizeBytes": 750904
+  },
+  {
+    "filename": "spicy-mixture-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\spicy-mixture-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\spicy-mixture-poster.jpg",
+    "sizeBytes": 648808
+  },
+  {
+    "filename": "suji-til-mathi-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\suji-til-mathi-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\suji-til-mathi-poster.jpg",
+    "sizeBytes": 701089
+  },
+  {
+    "filename": "swadishta-mix-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\swadishta-mix-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\swadishta-mix-poster.jpg",
+    "sizeBytes": 563012
+  },
+  {
+    "filename": "sweet-karela-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\sweet-karela-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\sweet-karela-poster.jpg",
+    "sizeBytes": 661275
+  },
+  {
+    "filename": "tandoori-multigrain-sticks-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\tandoori-multigrain-sticks-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\tandoori-multigrain-sticks-poster.jpg",
+    "sizeBytes": 671991
+  },
+  {
+    "filename": "tikoni-laung-mathi-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\tikoni-laung-mathi-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\tikoni-laung-mathi-poster.jpg",
+    "sizeBytes": 610543
+  },
+  {
+    "filename": "tikoni-mathi-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\tikoni-mathi-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\tikoni-mathi-poster.jpg",
+    "sizeBytes": 616999
+  },
+  {
+    "filename": "white-chidwa-mix-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\white-chidwa-mix-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\white-chidwa-mix-poster.jpg",
+    "sizeBytes": 642748
+  },
+  {
+    "filename": "yellow-chidwa-mix-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\yellow-chidwa-mix-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\yellow-chidwa-mix-poster.jpg",
+    "sizeBytes": 627911
+  },
+  {
+    "filename": "zero-sev-poster.jpg",
+    "originalRelativePath": "gallery\\namkeen\\zero-sev-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\namkeen\\zero-sev-poster.jpg",
+    "sizeBytes": 635591
+  },
+  {
+    "filename": "ajwain-fan-poster.jpg",
+    "originalRelativePath": "gallery\\rusks\\ajwain-fan-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\rusks\\ajwain-fan-poster.jpg",
+    "sizeBytes": 598113
+  },
+  {
+    "filename": "atta-rusk-poster.jpg",
+    "originalRelativePath": "gallery\\rusks\\atta-rusk-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\rusks\\atta-rusk-poster.jpg",
+    "sizeBytes": 650018
+  },
+  {
+    "filename": "chini-kam-rusk-poster.jpg",
+    "originalRelativePath": "gallery\\rusks\\chini-kam-rusk-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\rusks\\chini-kam-rusk-poster.jpg",
+    "sizeBytes": 629432
+  },
+  {
+    "filename": "milk-rusk-poster.jpg",
+    "originalRelativePath": "gallery\\rusks\\milk-rusk-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\rusks\\milk-rusk-poster.jpg",
+    "sizeBytes": 598538
+  },
+  {
+    "filename": "puff-square-poster.jpg",
+    "originalRelativePath": "gallery\\rusks\\puff-square-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\rusks\\puff-square-poster.jpg",
+    "sizeBytes": 661695
+  },
+  {
+    "filename": "special-shahi-rusk-poster.jpg",
+    "originalRelativePath": "gallery\\rusks\\special-shahi-rusk-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\rusks\\special-shahi-rusk-poster.jpg",
+    "sizeBytes": 669182
+  },
+  {
+    "filename": "suji-rusk-poster.jpg",
+    "originalRelativePath": "gallery\\rusks\\suji-rusk-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\rusks\\suji-rusk-poster.jpg",
+    "sizeBytes": 601870
+  },
+  {
+    "filename": "twisty-puff-poster.jpg",
+    "originalRelativePath": "gallery\\rusks\\twisty-puff-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\rusks\\twisty-puff-poster.jpg",
+    "sizeBytes": 612661
+  },
+  {
+    "filename": "dry-petha-poster.jpg",
+    "originalRelativePath": "gallery\\sweets\\dry-petha-poster.jpg",
+    "fullOriginalPath": "public\\gallery\\sweets\\dry-petha-poster.jpg",
+    "sizeBytes": 535267
+  },
+  {
+    "filename": "globe.svg",
+    "originalRelativePath": "globe.svg",
+    "fullOriginalPath": "public\\globe.svg",
+    "sizeBytes": 1035
+  },
+  {
+    "filename": "logo.png",
+    "originalRelativePath": "logo.png",
+    "fullOriginalPath": "public\\logo.png",
+    "sizeBytes": 96961
+  },
+  {
+    "filename": "next.svg",
+    "originalRelativePath": "next.svg",
+    "fullOriginalPath": "public\\next.svg",
+    "sizeBytes": 1375
+  },
+  {
+    "filename": "vercel.svg",
+    "originalRelativePath": "vercel.svg",
+    "fullOriginalPath": "public\\vercel.svg",
+    "sizeBytes": 128
+  },
+  {
+    "filename": "whatsapp-hero.jpg",
+    "originalRelativePath": "whatsapp-hero.jpg",
+    "fullOriginalPath": "public\\whatsapp-hero.jpg",
+    "sizeBytes": 295360
+  },
+  {
+    "filename": "window.svg",
+    "originalRelativePath": "window.svg",
+    "fullOriginalPath": "public\\window.svg",
+    "sizeBytes": 385
+  }
+]

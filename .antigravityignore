@@ -1,0 +1,14 @@
+﻿# Exclude build and vendor directories
+node_modules/
+.next/
+dist/
+build/
+
+# Exclude heavy media files from background indexing to conserve AI quota
+public/gallery/
+photos/
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.mp4
