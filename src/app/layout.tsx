@@ -4,8 +4,10 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingWidgets from "@/components/FloatingWidgets";
+import FloatingCart from "@/components/FloatingCart";
 import ScrollProgress from "@/components/ScrollProgress";
 import ScrollToTop from "@/components/ScrollToTop";
+import { CartProvider } from "@/lib/cartContext";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -72,12 +74,15 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://maps.googleapis.com" />
       </head>
       <body className="min-h-full flex flex-col font-[family-name:var(--font-dm-sans)]">
-        <ScrollProgress />
-        <ScrollToTop />
-        <Navbar />
-        <main className="flex-1 min-h-screen">{children}</main>
-        <Footer />
-        <FloatingWidgets />
+        <CartProvider>
+          <ScrollProgress />
+          <ScrollToTop />
+          <Navbar />
+          <main className="flex-1 min-h-screen">{children}</main>
+          <Footer />
+          <FloatingCart />
+          <FloatingWidgets />
+        </CartProvider>
       </body>
     </html>
   );

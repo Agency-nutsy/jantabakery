@@ -6,6 +6,7 @@ import { Search, ShoppingCart, X, Plus, Minus, Send, ExternalLink, Trash2, Camer
 import Image from 'next/image';
 import Link from 'next/link';
 import { menuItems, CATEGORY_LABELS, CATEGORY_ICONS, type MenuCategory, type MenuItem } from './menuData';
+import { useCart } from '@/lib/cartContext';
 
 /* Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
    TYPES
@@ -302,26 +303,14 @@ export default function MenuPageClient() {
   const [activeCategory, setActiveCategory] = useState<'all' | MenuCategory>('all');
   const [highlightedCategory, setHighlightedCategory] = useState<'all' | MenuCategory>('all');
   const [searchQuery, setSearchQuery] = useState('');
-  const [cart, setCart] = useState<CartItem[]>(() => {
-    // Restore cart from localStorage on mount so it persists across navigation
-    if (typeof window !== 'undefined') {
-      try {
-        const saved = localStorage.getItem('janta-cart');
-        return saved ? JSON.parse(saved) : [];
-      } catch { return []; }
-    }
-    return [];
-  });
+  // Use global cart context — persists across all pages
+  const { cart, cartCount, addToCart: ctxAdd, incrementItem, decrementItem, removeItem, clearCart } = useCart();
   const [isCartOpen, setIsCartOpen] = useState(false);
   const filterBarRef = useRef<HTMLDivElement>(null);
   const isManualScrollingRef = useRef(false);
 
-  // Save cart to localStorage whenever it changes
-  useEffect(() => {
-    try {
-      localStorage.setItem('janta-cart', JSON.stringify(cart));
-    } catch { /* storage full or disabled */ }
-  }, [cart]);
+  // Adapter: addToCart accepts a full MenuItem
+  const addToCart = useCallback((item: MenuItem) => ctxAdd({ id: item.id, name: item.name }), [ctxAdd]);
 
   // Always start at the very top on initial mount
   useEffect(() => {
@@ -371,39 +360,6 @@ export default function MenuPageClient() {
     onScroll();
     return () => window.removeEventListener('scroll', onScroll);
   }, [activeCategory, isSearching]);
-
-  const cartCount = cart.reduce((s, i) => s + i.qty, 0);
-
-  const addToCart = useCallback((item: MenuItem) => {
-    setCart((prev) => {
-      const existing = prev.find((c) => c.id === item.id);
-      if (existing) {
-        return prev.map((c) => c.id === item.id ? { ...c, qty: c.qty + 1 } : c);
-      }
-      return [...prev, { id: item.id, name: item.name, qty: 1 }];
-    });
-  }, []);
-
-  const incrementItem = useCallback((id: string) => {
-    setCart((prev) => prev.map((c) => c.id === id ? { ...c, qty: c.qty + 1 } : c));
-  }, []);
-
-  const decrementItem = useCallback((id: string) => {
-    setCart((prev) => {
-      const item = prev.find((c) => c.id === id);
-      if (!item) return prev;
-      if (item.qty <= 1) return prev.filter((c) => c.id !== id);
-      return prev.map((c) => c.id === id ? { ...c, qty: c.qty - 1 } : c);
-    });
-  }, []);
-
-  const removeItem = useCallback((id: string) => {
-    setCart((prev) => prev.filter((c) => c.id !== id));
-  }, []);
-
-  const clearCart = useCallback(() => {
-    setCart([]);
-  }, []);
 
   const handleTabClick = (tab: 'all' | MenuCategory) => {
     isManualScrollingRef.current = true;
