@@ -1,14 +1,18 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ShoppingCart, X, Plus, Minus, Trash2, Send } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 import { useCart } from '@/lib/cartContext';
 
 const WA_NUMBER = '919717179565';
 
 function buildWhatsAppUrl(cart: { name: string; qty: number }[]): string {
-  const lines = cart.map((item) => `• ${item.qty}x ${item.name}`).join('\n');
+  const lines = cart.map((item) => {
+    const cleanName = item.name.replace(/\s*\([^)]*\d+\s*(?:g|kg|gm|ml|l|pc|pcs)[^)]*\)/gi, '').trim();
+    return `${item.qty}x ${cleanName}`;
+  }).join('\n');
   const text = `Hello Janta Bakery! I would like to place an order:\n\n${lines}\n\nPlease confirm availability and pricing. Thank you!`;
   return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
 }
@@ -16,6 +20,18 @@ function buildWhatsAppUrl(cart: { name: string; qty: number }[]): string {
 export default function FloatingCart() {
   const { cart, cartCount, incrementItem, decrementItem, removeItem, clearCart } = useCart();
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Avoid rendering during SSR/hydration to prevent mismatches
+  if (!mounted) return null;
+
+  // The menu page has its own dedicated floating cart bar and modal
+  if (pathname === '/menu') return null;
 
   // Don't render the button at all if cart is empty
   if (cartCount === 0 && !isOpen) return null;
@@ -32,7 +48,7 @@ export default function FloatingCart() {
             exit={{ scale: 0, opacity: 0 }}
             transition={{ type: 'spring', stiffness: 400, damping: 25 }}
             onClick={() => setIsOpen(true)}
-            className="fixed bottom-44 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full shadow-lg shadow-deep-pink/40 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-deep-pink/50"
+            className="fixed bottom-[160px] right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full shadow-lg shadow-deep-pink/40 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-deep-pink/50"
             style={{
               background: 'linear-gradient(135deg, #eb5e55 0%, #c8717a 100%)',
             }}

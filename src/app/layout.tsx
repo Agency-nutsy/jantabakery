@@ -72,8 +72,8 @@ export default function RootLayout({
         <link rel="preconnect" href="https://maps.google.com" />
         <link rel="preconnect" href="https://maps.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://maps.googleapis.com" />
-        <link rel="preload" href="/whatsapp-hero.jpg" as="image" />
-        <link rel="preload" href="/logo.png" as="image" />
+        <link rel="preload" href="/whatsapp-hero.webp" as="image" />
+        <link rel="preload" href="/logo.webp" as="image" />
       </head>
       <body className="min-h-full flex flex-col font-[family-name:var(--font-dm-sans)]">
         <CartProvider>

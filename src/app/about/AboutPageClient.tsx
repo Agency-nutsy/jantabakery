@@ -16,7 +16,7 @@ const values = [
    TIMELINE DATA
    ═══════════════════════════════════════════ */
 const timeline = [
-  { year: '1967', text: 'Founded by Saawan Kumar in Bhogal Market, Jangpura' },
+  { year: '1967', text: 'Founded by Shri Saawan Kumar in Bhogal Market, Jangpura' },
   { year: '1975', text: 'Expanded the shop, added custom cake orders' },
   { year: '1990', text: 'Expanded our menu to include premium custom cakes' },
   { year: '2005', text: 'Launched savouries menu: grilled sandwiches, puffs, burgers' },
@@ -89,7 +89,7 @@ export default function AboutPageClient() {
               className="space-y-6 text-base leading-relaxed text-charcoal/80"
             >
               <p className="text-lg">
-                It was 1967. In a small, unassuming shop on Central Road in Bhogal Market, Jangpura — <strong className="text-charcoal">Saawan Kumar</strong> had a simple dream: to bake the finest cookies, cakes, and pastries and offer them to the everyday people of Delhi. He called it <strong className="text-water-rapids">Janta Bakery</strong> — a bakery for the Aam Janta.
+                It was 1967. In a small, unassuming shop on Central Road in Bhogal Market, Jangpura — <strong className="text-charcoal">Shri Saawan Kumar</strong> had a simple dream: to bake the finest cookies, cakes, and pastries and offer them to the everyday people of Delhi. He called it <strong className="text-water-rapids">Janta Bakery</strong> — a bakery for the Aam Janta.
               </p>
               <p>
                 What began with handmade &lsquo;atta patti biscuits&rsquo; crafted from customers&apos; own flour and ghee has grown over five and a half decades into one of Delhi&apos;s most beloved culinary landmarks. Generation after generation has walked through these doors — children who grew up to bring their own children, families who celebrate every birthday and anniversary here, and regulars who simply can&apos;t imagine a week without a visit.

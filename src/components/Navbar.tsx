@@ -86,7 +86,7 @@ export default function Navbar() {
               }}
             >
               <img
-                src="/logo.png"
+                src="/logo.webp"
                 alt="Janta Bakery"
                 className="h-7 w-auto object-contain drop-shadow-[0_1px_6px_rgba(0,0,0,0.3)]"
               />

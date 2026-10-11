@@ -34,14 +34,14 @@ export default function LoadingScreen() {
       {/* Blurred Hero Background with Dark Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url('/whatsapp-hero.jpg')` }}
+        style={{ backgroundImage: `url('/whatsapp-hero.webp')` }}
       />
       <div className="absolute inset-0 bg-charcoal/60 backdrop-blur-[40px]" />
 
       {/* Brand Logo with sophisticated slow pulse */}
       <div className="z-10 flex flex-col items-center animate-pulse">
         <img 
-          src="/logo.png" 
+          src="/logo.webp" 
           alt="Janta Bakery" 
           className="h-16 w-auto object-contain opacity-90 drop-shadow-[0_0_20px_rgba(255,255,255,0.15)]" 
         />

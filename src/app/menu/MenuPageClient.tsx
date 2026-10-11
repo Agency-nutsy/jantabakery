@@ -8,9 +8,9 @@ import Link from 'next/link';
 import { menuItems, CATEGORY_LABELS, CATEGORY_ICONS, type MenuCategory, type MenuItem } from './menuData';
 import { useCart } from '@/lib/cartContext';
 
-/* Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
+/* ═══════════════════════════════════════════
    TYPES
-   Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â */
+   ═══════════════════════════════════════════ */
 
 interface CartItem {
   id: string;
@@ -18,9 +18,9 @@ interface CartItem {
   qty: number;
 }
 
-/* Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
+/* ═══════════════════════════════════════════
    CONSTANTS
-   Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â */
+   ═══════════════════════════════════════════ */
 
 const ALL_CATEGORIES: MenuCategory[] = ['cakes', 'pastries', 'rusks', 'biscuits', 'namkeens', 'snacks'];
 const MENU_TABS: ('all' | MenuCategory)[] = ['all', 'cakes', 'pastries', 'rusks', 'biscuits', 'namkeens', 'snacks'];
@@ -36,30 +36,33 @@ const TAB_LABELS: Record<'all' | MenuCategory, string> = {
 };
 
 const TAB_ICONS: Record<'all' | MenuCategory, string> = {
-  all:      'âœ¨',
-  cakes:    'ðŸŽ‚',
-  pastries: 'ðŸ§',
-  rusks:    'ðŸž',
-  biscuits: 'ðŸª',
-  namkeens: 'ðŸ«˜',
-  snacks:   'ðŸ¥—',
+  all:      '✨',
+  cakes:    '🎂',
+  pastries: '🧁',
+  rusks:    '🍞',
+  biscuits: '🍪',
+  namkeens: '🥨',
+  snacks:   '🥪',
 };
 
 const WA_NUMBER = '919717179565';
 
-/* Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
+/* ═══════════════════════════════════════════
    WHATSAPP MESSAGE BUILDER
-   Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â */
+   ═══════════════════════════════════════════ */
 
 function buildWhatsAppUrl(cart: CartItem[]): string {
-  const lines = cart.map((item) => `Ã¢â‚¬Â¢ ${item.qty}x ${item.name}`).join('\n');
+  const lines = cart.map((item) => {
+    const cleanName = item.name.replace(/\s*\([^)]*\d+\s*(?:g|kg|gm|ml|l|pc|pcs)[^)]*\)/gi, '').trim();
+    return `${item.qty}x ${cleanName}`;
+  }).join('\n');
   const text = `Hello Janta Bakery! I would like to place an order:\n\n${lines}\n\nPlease confirm availability and pricing. Thank you!`;
   return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
 }
 
-/* Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
+/* ═══════════════════════════════════════════
    CATEGORY Ã¢â€ â€™ GALLERY TAB MAPPING
-   Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â */
+   ═══════════════════════════════════════════ */
 const CATEGORY_TO_GALLERY_TAB: Record<MenuCategory, string> = {
   cakes:     'Cakes',
   pastries:  'Pastries',
@@ -69,76 +72,169 @@ const CATEGORY_TO_GALLERY_TAB: Record<MenuCategory, string> = {
   snacks:    'Snacks',
 };
 
-/* Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
+/* ═══════════════════════════════════════════
    TEXT ROW Ã¢â‚¬â€ for items without photos
-   Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â */
+   ═══════════════════════════════════════════ */
 
-function TextRow({
+function MenuItemRow({
   item,
+  cart,
   onAdd,
-  cartQty,
   onIncrement,
   onDecrement,
-  }: {
+  onImageClick
+}: {
   item: MenuItem;
+  cart: { id: string; name: string; qty: number }[];
   onAdd: (item: MenuItem) => void;
-  cartQty: number;
   onIncrement: (id: string) => void;
   onDecrement: (id: string) => void;
-  }) {
+  onImageClick: (img: string) => void;
+}) {
+  const currentCartItem = cart.find((c) => c.id === item.id || c.id.startsWith(`${item.id}-`));
+  const cartQty = currentCartItem?.qty ?? 0;
+  const currentCartId = currentCartItem?.id ?? item.id;
+
+  const nameParts = item.name.split(' (');
+  const mainName = nameParts[0];
+  const subName = nameParts.length > 1 ? `(${nameParts.slice(1).join(' (')}` : null;
+
+  const handleAdd = () => {
+    onAdd(item);
+  };
+
   return (
-    <div className="flex items-center justify-between gap-3 rounded-xl bg-white px-4 py-4 sm:px-5 sm:py-5 shadow-sm transition-all duration-200 hover:shadow-md hover:bg-soft-white border border-transparent hover:border-baby-pink/20">
-      <div className="flex items-center gap-2 min-w-0 flex-1">
-        <span className="text-base sm:text-lg font-medium text-charcoal truncate">
-          {item.name.split(' (')[0]}
-          {item.name.includes(' (') && (
-            <span className="text-[10px] sm:text-[11px] text-muted-gray ml-1.5 font-normal">
-              ({item.name.split(' (')[1]}
-            </span>
+    <div className="group relative flex flex-row items-start justify-between gap-3.5 p-4 bg-white transition-colors hover:bg-baby-pink/5 md:flex-col md:p-3.5 md:rounded-2xl md:border md:border-baby-pink/20 md:shadow-xs md:hover:shadow-xl md:hover:border-baby-pink/60 md:hover:-translate-y-1 md:transition-all md:duration-300">
+      
+      {/* ── CONTENT CONTAINER ── */}
+      {/* Mobile: on the left (flex-1). Desktop & Tablet: beneath the square image (md:order-2) */}
+      <div className="flex flex-1 flex-col justify-between min-w-0 pr-1 md:pr-0 md:w-full md:mt-3 md:order-2">
+        <div>
+          {/* Main Item Name & Pack Size Display */}
+          <div className="flex flex-wrap items-baseline gap-1.5">
+            <h3 className="text-base sm:text-lg font-bold text-charcoal leading-snug break-words md:text-sm md:font-bold md:group-hover:text-deep-pink md:transition-colors">
+              {mainName}
+            </h3>
+            {item.quantityDisplay && (
+              <span className="inline-flex items-center rounded-md bg-warm-cream/90 px-1.5 py-0.5 text-[11px] font-bold text-deep-pink border border-baby-pink/30 shadow-2xs whitespace-nowrap">
+                {item.quantityDisplay}
+              </span>
+            )}
+          </div>
+
+          {/* Subtitle / Note (e.g. eggless, flavors, size) */}
+          {subName ? (
+            <p className="text-xs text-muted-gray mt-1 leading-snug md:mt-0.5 md:line-clamp-1">
+              {subName}
+            </p>
+          ) : (
+            /* Desktop spacer for consistent grid height across all cards */
+            <div className="hidden md:block h-4" />
           )}
-        </span>
-        {item.isSeasonal && (
-          <span className="shrink-0 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700">
-            Seasonal
-          </span>
-        )}
-        
-      </div>
-      {cartQty > 0 ? (
-        <div className="flex items-center gap-1 shrink-0">
-          <button
-            onClick={() => onDecrement(item.id)}
-            className="flex h-7 w-7 items-center justify-center rounded-full bg-baby-pink/20 text-rose transition-all duration-200 hover:bg-deep-pink hover:text-white active:scale-95"
-            aria-label="Decrease quantity"
-          >
-            <Minus className="h-3 w-3" />
-          </button>
-          <span className="w-5 text-center text-sm font-bold text-charcoal">{cartQty}</span>
-          <button
-            onClick={() => onIncrement(item.id)}
-            className="flex h-7 w-7 items-center justify-center rounded-full bg-baby-pink/20 text-rose transition-all duration-200 hover:bg-deep-pink hover:text-white active:scale-95"
-            aria-label="Increase quantity"
-          >
-            <Plus className="h-3 w-3" />
-          </button>
+
+          {/* Mobile Seasonal Badge */}
+          {item.isSeasonal && (
+            <div className="mt-2 md:hidden">
+              <span className="inline-flex items-center rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-amber-700">
+                Seasonal
+              </span>
+            </div>
+          )}
+
+          {/* Price Label */}
+          <p className="mt-2 text-xs font-medium text-muted-gray/70 md:mt-1.5 md:text-[11px]">
+            Ask for price
+          </p>
         </div>
-      ) : (
-        <button
-          onClick={() => onAdd(item)}
-          id={`add-${item.id}`}
-          className="shrink-0 flex h-7 w-7 items-center justify-center rounded-full bg-baby-pink/20 text-rose transition-all duration-200 hover:bg-deep-pink hover:text-white active:scale-95"
-          aria-label={`Add ${item.name} to cart`}
+
+        {/* ── ADD / QUANTITY CONTROLS ── */}
+        {/* Mobile: w-[110px] left aligned. Desktop: w-full anchored at the bottom of the square box */}
+        <div className="mt-3.5 w-[110px] md:w-full md:mt-3 md:pt-1">
+          {cartQty > 0 ? (
+            <div className="flex h-9 w-full items-center justify-between rounded-xl border border-baby-pink/30 bg-white shadow-xs overflow-hidden">
+              <button
+                onClick={() => onDecrement(currentCartId)}
+                className="flex h-full flex-1 items-center justify-center text-rose transition-colors hover:bg-baby-pink/20"
+                aria-label="Decrease quantity"
+              >
+                <Minus className="h-3.5 w-3.5" />
+              </button>
+              <span className="w-8 text-center text-sm font-bold text-deep-pink">{cartQty}</span>
+              <button
+                onClick={() => onIncrement(currentCartId)}
+                className="flex h-full flex-1 items-center justify-center text-rose transition-colors hover:bg-baby-pink/20"
+                aria-label="Increase quantity"
+              >
+                <Plus className="h-3.5 w-3.5" />
+              </button>
+            </div>
+          ) : (
+            <button
+              onClick={handleAdd}
+              id={`add-${item.id}`}
+              className="flex h-9 w-full items-center justify-center rounded-xl border border-baby-pink/35 bg-white text-xs font-extrabold text-rose tracking-wider shadow-xs transition-all hover:bg-baby-pink/15 hover:border-baby-pink/60 hover:-translate-y-0.5 active:translate-y-0"
+              aria-label={`Add ${item.name} to cart`}
+            >
+              ADD
+            </button>
+          )}
+        </div>
+      </div>
+
+      {/* ── IMAGE CONTAINER ── */}
+      {/* Mobile: on the right (110x110). Desktop & Tablet: on the top (md:order-1, full-width square)! */}
+      <div className="relative shrink-0 flex flex-col items-center justify-start md:w-full md:order-1">
+        <div 
+          className={`relative h-[110px] w-[110px] overflow-hidden rounded-2xl bg-warm-cream shadow-xs md:h-auto md:w-full md:aspect-square md:rounded-xl ${
+            item.hasPhoto && item.image ? 'cursor-pointer hover:shadow-md transition-shadow' : ''
+          }`}
+          onClick={() => {
+            if (item.hasPhoto && item.image) onImageClick(item.image);
+          }}
         >
-          <Plus className="h-3.5 w-3.5" />
-        </button>
-      )}
+          {/* Floating Seasonal Badge on Desktop */}
+          {item.isSeasonal && (
+            <div className="hidden md:block absolute top-2.5 left-2.5 z-10 pointer-events-none">
+              <span className="inline-flex items-center rounded-full bg-amber-500/90 backdrop-blur-xs px-2.5 py-0.5 text-[10px] font-bold text-white shadow-xs tracking-wider uppercase">
+                Seasonal
+              </span>
+            </div>
+          )}
+
+          {/* Desktop Hover View Overlay */}
+          {item.hasPhoto && item.image && (
+            <div className="hidden md:flex absolute inset-0 bg-charcoal/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300 items-center justify-center z-10">
+              <span className="bg-white/95 backdrop-blur-xs text-charcoal text-[11px] font-bold px-3 py-1.5 rounded-full shadow-md flex items-center gap-1.5 transform translate-y-1 group-hover:translate-y-0 transition-transform duration-300">
+                <Camera className="w-3.5 h-3.5 text-deep-pink" /> View
+              </span>
+            </div>
+          )}
+
+          {item.hasPhoto && item.image ? (
+            <Image
+              src={item.image}
+              alt={item.name}
+              fill
+              className={`object-cover transition-transform duration-500 ${item.imageScale ? `${item.imageScale} group-hover:scale-125` : 'group-hover:scale-105'}`}
+              style={item.imagePosition ? { objectPosition: item.imagePosition } : undefined}
+              sizes="(max-width: 768px) 110px, (max-width: 1024px) 33vw, 25vw"
+            />
+          ) : (
+            <div className="flex h-full w-full flex-col items-center justify-center bg-gradient-to-br from-warm-cream via-white to-baby-pink/15 text-baby-pink/50 select-none">
+              <Camera className="h-7 w-7 mb-1 opacity-50 md:h-9 md:w-9" />
+              <span className="text-[10px] font-semibold uppercase tracking-wider opacity-60">No Image</span>
+            </div>
+          )}
+        </div>
+      </div>
+
     </div>
   );
 }
 
-/* Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
+/* ═══════════════════════════════════════════
    CART DRAWER
-   Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â */
+   ═══════════════════════════════════════════ */
 
 
 
@@ -295,14 +391,16 @@ function CartModal({
   );
 }
 
-/* Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â
+/* ═══════════════════════════════════════════
    MAIN COMPONENT
-   Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â */
+   ═══════════════════════════════════════════ */
 
 export default function MenuPageClient() {
   const [activeCategory, setActiveCategory] = useState<'all' | MenuCategory>('all');
   const [highlightedCategory, setHighlightedCategory] = useState<'all' | MenuCategory>('all');
   const [searchQuery, setSearchQuery] = useState('');
+  const [lightboxImage, setLightboxImage] = useState<string | null>(null);
+
   // Use global cart context — persists across all pages
   const { cart, cartCount, addToCart: ctxAdd, incrementItem, decrementItem, removeItem, clearCart } = useCart();
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -310,7 +408,10 @@ export default function MenuPageClient() {
   const isManualScrollingRef = useRef(false);
 
   // Adapter: addToCart accepts a full MenuItem
-  const addToCart = useCallback((item: MenuItem) => ctxAdd({ id: item.id, name: item.name }), [ctxAdd]);
+  const addToCart = useCallback((item: MenuItem) => {
+    const cleanName = item.name.replace(/\s*\([^)]*\d+\s*(?:g|kg|gm|ml|l|pc|pcs)[^)]*\)/gi, '').trim();
+    ctxAdd({ id: item.id, name: cleanName });
+  }, [ctxAdd]);
 
   // Always start at the very top on initial mount
   useEffect(() => {
@@ -403,7 +504,7 @@ export default function MenuPageClient() {
 
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-warm-cream via-white to-soft-white">
-      {/* Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â PAGE HERO Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â */}
+      {/* ═══════ PAGE HERO ═══════ */}
       <section className="relative overflow-hidden pt-28 pb-14">
 
         <div className="absolute -top-28 left-1/2 -translate-x-1/2 h-72 w-[850px] rounded-full bg-baby-pink/25 blur-3xl pointer-events-none" />
@@ -427,7 +528,7 @@ export default function MenuPageClient() {
         </div>
       </section>
 
-      {/* Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â STICKY FILTER BAR (SEARCH + CATEGORIES) Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â */}
+      {/* ═══════ STICKY FILTER BAR (SEARCH + CATEGORIES) ═══════ */}
       {/* Sticky Category Tabs & Search Bar Ã¢â‚¬â€ Styled as a Floating Dark Glass Pill matching the Navbar */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -511,7 +612,7 @@ export default function MenuPageClient() {
         </div>
       </motion.div>
 
-      {/* Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â MENU CONTENT Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â */}
+      {/* ═══════ MENU CONTENT ═══════ */}
       <section className="flex-1 py-10 px-4">
         <div className="mx-auto max-w-7xl">
           {isSearching ? (
@@ -546,22 +647,23 @@ export default function MenuPageClient() {
                   </button>
                 </div>
               ) : (
-                <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="flex flex-col bg-white rounded-3xl overflow-hidden shadow-xs border border-baby-pink/20 divide-y divide-baby-pink/15 md:divide-y-0 md:bg-transparent md:rounded-none md:shadow-none md:border-none md:grid md:grid-cols-3 lg:grid-cols-4 md:gap-4 lg:gap-5 pb-2 md:pb-0">
                   {searchResults.map((item) => (
-                    <TextRow
+                    <MenuItemRow
                       key={item.id}
                       item={item}
                       onAdd={addToCart}
-                      cartQty={cart.find((c) => c.id === item.id)?.qty ?? 0}
+                      cart={cart}
                       onIncrement={incrementItem}
                       onDecrement={decrementItem}
-                                          />
+                      onImageClick={setLightboxImage}
+                    />
                   ))}
                 </div>
               )}
             </div>
           ) : activeCategory === 'all' ? (
-            /* â”€â”€ ALL CATEGORIES VIEW (One after another with scroll-spy) â”€â”€ */
+            /* ── ALL CATEGORIES VIEW (One after another with scroll-spy) ── */
             <div className="space-y-16">
               {ALL_CATEGORIES.map((cat) => {
                 const catItems = menuItems.filter((i) => i.category === cat);
@@ -573,23 +675,30 @@ export default function MenuPageClient() {
                     className="scroll-mt-36"
                   >
                     {/* Category heading */}
-                    <div className="mb-6 flex items-center gap-3 border-b border-baby-pink/20 pb-3">
-                      <h2 className="font-[family-name:var(--font-display)] text-3xl font-bold text-charcoal">
-                        {TAB_LABELS[cat]}
-                      </h2>
+                    <div className="mb-6 flex items-center justify-between border-b border-baby-pink/20 pb-3">
+                      <div className="flex items-center gap-2.5">
+                        <span className="text-2xl">{TAB_ICONS[cat]}</span>
+                        <h2 className="font-[family-name:var(--font-display)] text-2xl sm:text-3xl font-bold text-charcoal">
+                          {TAB_LABELS[cat]}
+                        </h2>
+
+
+
+                      </div>
                     </div>
 
                     {/* All items in category */}
-                    <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+                    <div className="flex flex-col bg-white rounded-3xl overflow-hidden shadow-xs border border-baby-pink/20 divide-y divide-baby-pink/15 md:divide-y-0 md:bg-transparent md:rounded-none md:shadow-none md:border-none md:grid md:grid-cols-3 lg:grid-cols-4 md:gap-4 lg:gap-5 pb-2 md:pb-0">
                       {catItems.map((item) => (
-                        <TextRow
+                        <MenuItemRow
                           key={item.id}
                           item={item}
                           onAdd={addToCart}
-                          cartQty={cart.find((c) => c.id === item.id)?.qty ?? 0}
+                          cart={cart}
                           onIncrement={incrementItem}
                           onDecrement={decrementItem}
-                                                  />
+                          onImageClick={setLightboxImage}
+                        />
                       ))}
                     </div>
                   </div>
@@ -597,7 +706,7 @@ export default function MenuPageClient() {
               })}
             </div>
           ) : (
-            /* â”€â”€ SINGLE CATEGORY VIEW â”€â”€ */
+            /* ── SINGLE CATEGORY VIEW ── */
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeCategory}
@@ -608,32 +717,37 @@ export default function MenuPageClient() {
               >
                 {/* Category heading */}
                 <div className="mb-6 flex items-center justify-between border-b border-baby-pink/20 pb-3">
-                  <div className="flex items-center gap-3">
-                    <h2 className="font-[family-name:var(--font-display)] text-3xl font-bold text-charcoal">
+                  <div className="flex items-center gap-2.5">
+                    <span className="text-2xl">{TAB_ICONS[activeCategory]}</span>
+                    <h2 className="font-[family-name:var(--font-display)] text-2xl sm:text-3xl font-bold text-charcoal">
                       {TAB_LABELS[activeCategory]}
                     </h2>
+
+
+
                   </div>
                   <button
                     onClick={() => handleTabClick('all')}
                     className="text-xs font-semibold text-deep-pink hover:underline"
                   >
-                    View All Categories â†’
+                    View All Categories →
                   </button>
                 </div>
 
                 {/* Items in active category */}
-                <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="flex flex-col bg-white rounded-3xl overflow-hidden shadow-xs border border-baby-pink/20 divide-y divide-baby-pink/15 md:divide-y-0 md:bg-transparent md:rounded-none md:shadow-none md:border-none md:grid md:grid-cols-3 lg:grid-cols-4 md:gap-4 lg:gap-5 pb-2 md:pb-0">
                   {menuItems
                     .filter((i) => i.category === activeCategory)
                     .map((item) => (
-                      <TextRow
+                      <MenuItemRow
                         key={item.id}
                         item={item}
                         onAdd={addToCart}
-                        cartQty={cart.find((c) => c.id === item.id)?.qty ?? 0}
+                        cart={cart}
                         onIncrement={incrementItem}
                         onDecrement={decrementItem}
-                                              />
+                        onImageClick={setLightboxImage}
+                      />
                     ))}
                 </div>
               </motion.div>
@@ -643,7 +757,7 @@ export default function MenuPageClient() {
       </section>
 
 
-{/* Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â CUSTOM ORDER CTA Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â */}
+{/* ═══════ CUSTOM ORDER CTA ═══════ */}
       <section className="py-16 px-4 bg-gradient-to-br from-warm-cream to-baby-pink/20">
         <div className="mx-auto max-w-2xl text-center">
           <motion.div
@@ -655,14 +769,14 @@ export default function MenuPageClient() {
               Looking for a Custom Cake?
             </p>
             <p className="mt-3 text-muted-gray">
-              Weddings Â· Birthdays Â· Anniversaries Â· Corporate Events
+              Weddings &middot; Birthdays &middot; Anniversaries &middot; Corporate Events
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <a
                 href="tel:+919717179565"
                 className="flex items-center gap-2 rounded-full border-2 border-deep-pink bg-white px-8 py-4 text-base font-semibold text-deep-pink shadow-md transition-all duration-300 hover:bg-deep-pink hover:text-white hover:shadow-xl hover:scale-105"
               >
-                ðŸ“ž Call Us
+                📞 Call Us
               </a>
               <a
                 href={`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent('Hello Janta Bakery! I would like to enquire about a custom cake.')}`}
@@ -670,14 +784,14 @@ export default function MenuPageClient() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 rounded-full bg-whatsapp-green px-8 py-4 text-base font-semibold text-white shadow-xl shadow-whatsapp-green/30 transition-all duration-300 hover:shadow-2xl hover:scale-105"
               >
-                ðŸ’¬ WhatsApp Us
+                💬 WhatsApp Us
               </a>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â FLOATING CART BUTTON Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â */}
+      {/* ═══════ FLOATING CART BUTTON ═══════ */}
       {/* FLOATING CART BAR */}
       <AnimatePresence>
         {cartCount > 0 && (
@@ -686,10 +800,10 @@ export default function MenuPageClient() {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 100, opacity: 0 }}
             transition={{ type: 'spring', stiffness: 400, damping: 35 }}
-            className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 w-full max-w-md px-4 pointer-events-none"
+            className="fixed z-40 bottom-4 left-4 right-[5.5rem] md:bottom-6 md:left-1/2 md:-translate-x-1/2 md:right-auto md:w-full md:max-w-md pointer-events-none md:px-4"
           >
             <div
-              className="pointer-events-auto w-full flex items-center justify-between gap-3 rounded-full border px-4 py-2.5 transition-all duration-300 shadow-2xl"
+              className="pointer-events-auto w-full flex items-center justify-between gap-2 md:gap-3 rounded-full border px-3 py-2 md:px-4 md:py-2.5 transition-all duration-300 shadow-2xl"
               style={{
                 backgroundColor: 'rgba(26, 17, 20, 0.94)',
                 backdropFilter: 'blur(20px) saturate(180%)',
@@ -712,7 +826,7 @@ export default function MenuPageClient() {
                   </span>
                 </div>
                 <span className="text-sm font-semibold text-white/90 truncate">
-                  {cartCount} {cartCount === 1 ? 'item' : 'items'} in cart
+                  {cartCount} {cartCount === 1 ? 'item' : 'items'}
                 </span>
               </button>
 
@@ -730,7 +844,7 @@ export default function MenuPageClient() {
                 <button
                   type="button"
                   onClick={() => setIsCartOpen(true)}
-                  className="shrink-0 rounded-full bg-gradient-to-r from-deep-pink to-rose px-4 py-2 text-xs font-bold text-white shadow-md hover:brightness-110 active:scale-95 transition-all duration-200"
+                  className="shrink-0 rounded-full bg-gradient-to-r from-deep-pink to-rose px-3 py-1.5 md:px-4 md:py-2 text-xs font-bold text-white shadow-md hover:brightness-110 active:scale-95 transition-all duration-200"
                 >
                   View Order &rarr;
                 </button>
@@ -740,7 +854,7 @@ export default function MenuPageClient() {
         )}
       </AnimatePresence>
 
-      {/* Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â CART DRAWER Ã¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢ÂÃ¢â€¢Â */}
+      {/* ═══════ CART DRAWER ═══════ */}
       <CartModal
         cart={cart}
         isOpen={isCartOpen}
@@ -751,6 +865,41 @@ export default function MenuPageClient() {
         onClearCart={clearCart}
       />
 
+      {/* ═ ═ ═ ═ ═ ═ ═  IMAGE LIGHTBOX ═ ═ ═ ═ ═ ═ ═  */}
+      <AnimatePresence>
+        {lightboxImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+            onClick={() => setLightboxImage(null)}
+          >
+            <button 
+              className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors"
+              onClick={() => setLightboxImage(null)}
+              aria-label="Close image"
+            >
+              <X className="h-8 w-8" />
+            </button>
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              transition={{ type: 'spring', damping: 25, stiffness: 300 }}
+              className="relative w-full max-w-2xl aspect-square bg-transparent rounded-2xl overflow-hidden shadow-2xl pointer-events-none"
+            >
+              <Image
+                src={lightboxImage}
+                alt="Enlarged view"
+                fill
+                className="object-contain"
+                sizes="(max-width: 1024px) 100vw, 800px"
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
     </div>
   );

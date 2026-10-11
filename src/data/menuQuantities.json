@@ -1,0 +1,1677 @@
+{
+  "_readme": "Keys are the same 'id' values used in menuItems (menu data file). Each item lists every available pack size in 'quantities'. 'display' is a ready-made label. If an item has more than one quantity, show them as selectable size options. 'needsVerification' true means the match was a guess and the owner should confirm.",
+  "items": {
+    "madrasi-mixture": {
+      "name": "Madrasi Mixture",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 200,
+          "unit": "g",
+          "label": "200g"
+        }
+      ],
+      "display": "200g",
+      "needsVerification": false
+    },
+    "satrangi-mathi": {
+      "name": "Satrangi Mathi",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "400g",
+      "needsVerification": false
+    },
+    "shakkarpara": {
+      "name": "Shakkarpara",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "400g",
+      "needsVerification": false
+    },
+    "gudpara": {
+      "name": "Gudpara",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "400g",
+      "needsVerification": false
+    },
+    "kulcha": {
+      "name": "Kulcha",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 250,
+          "unit": "g",
+          "label": "250g"
+        },
+        {
+          "value": 4,
+          "unit": "pcs",
+          "label": "4 pcs"
+        },
+        {
+          "value": 6,
+          "unit": "pcs",
+          "label": "6 pcs"
+        }
+      ],
+      "display": "250g / 4 pcs / 6 pcs",
+      "needsVerification": true
+    },
+    "cornflakes-mixture": {
+      "name": "Cornflakes Mixture",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        }
+      ],
+      "display": "300g",
+      "needsVerification": false
+    },
+    "besan-papdi": {
+      "name": "Besan Papdi",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 150,
+          "unit": "g",
+          "label": "150g"
+        }
+      ],
+      "display": "150g",
+      "needsVerification": false
+    },
+    "bada-fan": {
+      "name": "Bada Fan",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 200,
+          "unit": "g",
+          "label": "200g"
+        }
+      ],
+      "display": "200g",
+      "needsVerification": false
+    },
+    "fan": {
+      "name": "Fan",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 200,
+          "unit": "g",
+          "label": "200g"
+        }
+      ],
+      "display": "200g",
+      "needsVerification": true
+    },
+    "butter-kaju-biscuit": {
+      "name": "Butter Kaju Biscuit",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 250,
+          "unit": "g",
+          "label": "250g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        },
+        {
+          "value": 800,
+          "unit": "g",
+          "label": "800g"
+        }
+      ],
+      "display": "250g / 500g / 800g",
+      "needsVerification": false
+    },
+    "cake-rusk-eggless": {
+      "name": "Cake Rusk Eggless",
+      "category": "rusks",
+      "quantities": [
+        {
+          "value": 200,
+          "unit": "g",
+          "label": "200g"
+        },
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "200g / 400g",
+      "needsVerification": false
+    },
+    "cake-rusk-egg": {
+      "name": "Cake Rusk Egg",
+      "category": "rusks",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        }
+      ],
+      "display": "300g",
+      "needsVerification": false
+    },
+    "little-heart-biscuit": {
+      "name": "Little Heart Biscuit",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 60,
+          "unit": "g",
+          "label": "60g"
+        }
+      ],
+      "display": "60g",
+      "needsVerification": false
+    },
+    "jam-pista-cookies": {
+      "name": "Jam Pista Cookies",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        }
+      ],
+      "display": "300g / 500g",
+      "needsVerification": false
+    },
+    "milk-rusk": {
+      "name": "Milk Rusk",
+      "category": "rusks",
+      "quantities": [
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        }
+      ],
+      "display": "500g",
+      "needsVerification": false
+    },
+    "dry-fruit-cookies": {
+      "name": "Dry Fruit Cookies",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        },
+        {
+          "value": 450,
+          "unit": "g",
+          "label": "450g"
+        },
+        {
+          "value": 800,
+          "unit": "g",
+          "label": "800g"
+        }
+      ],
+      "display": "300g / 450g / 800g",
+      "needsVerification": false
+    },
+    "coconut-biscuits": {
+      "name": "Coconut Biscuits",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 100,
+          "unit": "g",
+          "label": "100g"
+        },
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        }
+      ],
+      "display": "100g / 300g / 500g",
+      "needsVerification": false
+    },
+    "shahi-badam-cookies": {
+      "name": "Shahi Badam Cookies",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        }
+      ],
+      "display": "300g / 500g",
+      "needsVerification": false
+    },
+    "chinese-samosa": {
+      "name": "Chinese Samosa",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 100,
+          "unit": "g",
+          "label": "100g"
+        }
+      ],
+      "display": "100g",
+      "needsVerification": false
+    },
+    "besan-khatai": {
+      "name": "Besan Khatai",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 250,
+          "unit": "g",
+          "label": "250g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        },
+        {
+          "value": 800,
+          "unit": "g",
+          "label": "800g"
+        }
+      ],
+      "display": "250g / 500g / 800g",
+      "needsVerification": false
+    },
+    "milk-badam-biscuits": {
+      "name": "Milk Badam Biscuits",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        },
+        {
+          "value": 600,
+          "unit": "g",
+          "label": "600g"
+        }
+      ],
+      "display": "300g / 500g / 600g",
+      "needsVerification": false
+    },
+    "peanut": {
+      "name": "Peanut",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 200,
+          "unit": "g",
+          "label": "200g"
+        }
+      ],
+      "display": "200g",
+      "needsVerification": false
+    },
+    "namkeen-paneer-biscuits": {
+      "name": "Namkeen Paneer Biscuits",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 250,
+          "unit": "g",
+          "label": "250g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        }
+      ],
+      "display": "250g / 500g",
+      "needsVerification": false
+    },
+    "sugar-free-rusk": {
+      "name": "Sugar-Free Rusk",
+      "category": "rusks",
+      "quantities": [
+        {
+          "value": 450,
+          "unit": "g",
+          "label": "450g"
+        }
+      ],
+      "display": "450g",
+      "needsVerification": false
+    },
+    "disco-papad": {
+      "name": "Disco Papad",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 100,
+          "unit": "g",
+          "label": "100g"
+        }
+      ],
+      "display": "100g",
+      "needsVerification": false
+    },
+    "kaju-pista-cookies": {
+      "name": "Kaju Pista Cookies",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 250,
+          "unit": "g",
+          "label": "250g"
+        },
+        {
+          "value": 450,
+          "unit": "g",
+          "label": "450g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        },
+        {
+          "value": 900,
+          "unit": "g",
+          "label": "900g"
+        }
+      ],
+      "display": "250g / 450g / 500g / 900g",
+      "needsVerification": false
+    },
+    "kaju-pista-sugar-free": {
+      "name": "Kaju Pista Sugar-Free",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        }
+      ],
+      "display": "300g",
+      "needsVerification": false
+    },
+    "namkeen-chameli": {
+      "name": "Namkeen Chameli",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 250,
+          "unit": "g",
+          "label": "250g"
+        },
+        {
+          "value": 450,
+          "unit": "g",
+          "label": "450g"
+        }
+      ],
+      "display": "250g / 450g",
+      "needsVerification": false
+    },
+    "phiki-mathi": {
+      "name": "Phiki Mathi",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 2,
+          "unit": "pcs",
+          "label": "2 pcs"
+        }
+      ],
+      "display": "2 pcs",
+      "needsVerification": false
+    },
+    "atta-rusk": {
+      "name": "Atta Rusk",
+      "category": "rusks",
+      "quantities": [
+        {
+          "value": 450,
+          "unit": "g",
+          "label": "450g"
+        }
+      ],
+      "display": "450g",
+      "needsVerification": false
+    },
+    "gol-mathi": {
+      "name": "Gol Mathi",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "400g",
+      "needsVerification": false
+    },
+    "gol-mathi-2": {
+      "name": "Gol Mathi",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "400g",
+      "needsVerification": false
+    },
+    "diet-snacks": {
+      "name": "Diet Snacks",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 100,
+          "unit": "g",
+          "label": "100g"
+        }
+      ],
+      "display": "100g",
+      "needsVerification": true
+    },
+    "spicy-mixture": {
+      "name": "Spicy Mixture",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 200,
+          "unit": "g",
+          "label": "200g"
+        }
+      ],
+      "display": "200g",
+      "needsVerification": false
+    },
+    "namakpara": {
+      "name": "Namakpara",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 250,
+          "unit": "g",
+          "label": "250g"
+        },
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        }
+      ],
+      "display": "250g / 400g / 500g",
+      "needsVerification": false
+    },
+    "masala-kaju": {
+      "name": "Masala Kaju",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "400g",
+      "needsVerification": false
+    },
+    "suji-rusk": {
+      "name": "Suji Rusk",
+      "category": "rusks",
+      "quantities": [
+        {
+          "value": 450,
+          "unit": "g",
+          "label": "450g"
+        }
+      ],
+      "display": "450g",
+      "needsVerification": false
+    },
+    "atta-cookies": {
+      "name": "Atta Cookies",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 200,
+          "unit": "g",
+          "label": "200g"
+        },
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "200g / 400g",
+      "needsVerification": false
+    },
+    "badam-khatai-biscuit": {
+      "name": "Badam Khatai Biscuit",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        },
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "300g / 400g",
+      "needsVerification": false
+    },
+    "sada-cookies": {
+      "name": "Sada Cookies",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        }
+      ],
+      "display": "300g / 500g",
+      "needsVerification": false
+    },
+    "tangri": {
+      "name": "Tangri",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 150,
+          "unit": "g",
+          "label": "150g"
+        }
+      ],
+      "display": "150g",
+      "needsVerification": false
+    },
+    "chivda-mixture": {
+      "name": "Chivda Mixture",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 250,
+          "unit": "g",
+          "label": "250g"
+        }
+      ],
+      "display": "250g",
+      "needsVerification": false
+    },
+    "chivda-mixture-lal-dana": {
+      "name": "Chivda Mixture Lal Dana",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 200,
+          "unit": "g",
+          "label": "200g"
+        },
+        {
+          "value": 250,
+          "unit": "g",
+          "label": "250g"
+        }
+      ],
+      "display": "200g / 250g",
+      "needsVerification": true
+    },
+    "banana-chips": {
+      "name": "Banana Chips",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 150,
+          "unit": "g",
+          "label": "150g"
+        },
+        {
+          "value": 180,
+          "unit": "g",
+          "label": "180g"
+        }
+      ],
+      "display": "150g / 180g",
+      "needsVerification": false
+    },
+    "tikoni-mathi": {
+      "name": "Tikoni Mathi",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "400g",
+      "needsVerification": false
+    },
+    "gathiya": {
+      "name": "Gathiya",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 150,
+          "unit": "g",
+          "label": "150g"
+        }
+      ],
+      "display": "150g",
+      "needsVerification": false
+    },
+    "plain-mixture": {
+      "name": "Plain Mixture",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        }
+      ],
+      "display": "300g",
+      "needsVerification": false
+    },
+    "moongra": {
+      "name": "Moongra",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 150,
+          "unit": "g",
+          "label": "150g"
+        }
+      ],
+      "display": "150g",
+      "needsVerification": false
+    },
+    "mirchi-sev": {
+      "name": "Mirchi Sev",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 150,
+          "unit": "g",
+          "label": "150g"
+        }
+      ],
+      "display": "150g",
+      "needsVerification": false
+    },
+    "papdi": {
+      "name": "Papdi",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 250,
+          "unit": "g",
+          "label": "250g"
+        }
+      ],
+      "display": "250g",
+      "needsVerification": false
+    },
+    "fafda": {
+      "name": "Fafda",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 200,
+          "unit": "g",
+          "label": "200g"
+        }
+      ],
+      "display": "200g",
+      "needsVerification": false
+    },
+    "chocolate-marble-biscuits": {
+      "name": "Chocolate Marble Biscuits",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        }
+      ],
+      "display": "300g / 500g",
+      "needsVerification": false
+    },
+    "plain-chandni": {
+      "name": "Plain Chandni",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "400g",
+      "needsVerification": false
+    },
+    "masala-chandni": {
+      "name": "Masala Chandni",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "400g",
+      "needsVerification": false
+    },
+    "choco-chips-cookies": {
+      "name": "Choco Chips Cookies",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        },
+        {
+          "value": 650,
+          "unit": "g",
+          "label": "650g"
+        }
+      ],
+      "display": "300g / 500g / 650g",
+      "needsVerification": false
+    },
+    "dabba-mathi": {
+      "name": "Dabba Mathi",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "400g",
+      "needsVerification": false
+    },
+    "sweet-jalebi": {
+      "name": "Sweet Jalebi",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 250,
+          "unit": "g",
+          "label": "250g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        }
+      ],
+      "display": "250g / 500g",
+      "needsVerification": false
+    },
+    "gujarati-sev": {
+      "name": "Gujarati Sev",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 150,
+          "unit": "g",
+          "label": "150g"
+        }
+      ],
+      "display": "150g",
+      "needsVerification": false
+    },
+    "murukku": {
+      "name": "Murukku",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 250,
+          "unit": "g",
+          "label": "250g"
+        }
+      ],
+      "display": "250g",
+      "needsVerification": false
+    },
+    "nut-cracker": {
+      "name": "Nut Cracker",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 250,
+          "unit": "g",
+          "label": "250g"
+        }
+      ],
+      "display": "250g",
+      "needsVerification": false
+    },
+    "soya-katori": {
+      "name": "Soya Katori",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 100,
+          "unit": "g",
+          "label": "100g"
+        }
+      ],
+      "display": "100g",
+      "needsVerification": false
+    },
+    "soya-chips": {
+      "name": "Soya Chips",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 150,
+          "unit": "g",
+          "label": "150g"
+        }
+      ],
+      "display": "150g",
+      "needsVerification": false
+    },
+    "soya-stick": {
+      "name": "Soya Stick",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 150,
+          "unit": "g",
+          "label": "150g"
+        },
+        {
+          "value": 200,
+          "unit": "g",
+          "label": "200g"
+        }
+      ],
+      "display": "150g / 200g",
+      "needsVerification": false
+    },
+    "petha": {
+      "name": "Petha",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "400g",
+      "needsVerification": false
+    },
+    "namkeen-jalebi": {
+      "name": "Namkeen Jalebi",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        }
+      ],
+      "display": "300g / 500g",
+      "needsVerification": false
+    },
+    "makhana": {
+      "name": "Makhana",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 50,
+          "unit": "g",
+          "label": "50g"
+        },
+        {
+          "value": 90,
+          "unit": "g",
+          "label": "90g"
+        }
+      ],
+      "display": "50g / 90g",
+      "needsVerification": false
+    },
+    "flavour-makhana": {
+      "name": "Flavour Makhana",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 80,
+          "unit": "g",
+          "label": "80g"
+        }
+      ],
+      "display": "80g",
+      "needsVerification": false
+    },
+    "potato-chips": {
+      "name": "Potato Chips",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 140,
+          "unit": "g",
+          "label": "140g"
+        }
+      ],
+      "display": "140g",
+      "needsVerification": false
+    },
+    "pista-khatai": {
+      "name": "Pista Khatai",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 250,
+          "unit": "g",
+          "label": "250g"
+        },
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        },
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        }
+      ],
+      "display": "250g / 300g / 400g / 500g",
+      "needsVerification": true
+    },
+    "special-kaju-cookies": {
+      "name": "Special Kaju Cookies",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        },
+        {
+          "value": 600,
+          "unit": "g",
+          "label": "600g"
+        }
+      ],
+      "display": "300g / 500g / 600g",
+      "needsVerification": false
+    },
+    "special-kaju-biscuits": {
+      "name": "Special Kaju Biscuits",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        },
+        {
+          "value": 600,
+          "unit": "g",
+          "label": "600g"
+        }
+      ],
+      "display": "300g / 500g / 600g",
+      "needsVerification": false
+    },
+    "plain-besan-biscuits": {
+      "name": "Plain Besan Biscuits",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        }
+      ],
+      "display": "300g / 500g",
+      "needsVerification": false
+    },
+    "special-besan-biscuits": {
+      "name": "Special Besan Biscuits",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 250,
+          "unit": "g",
+          "label": "250g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        },
+        {
+          "value": 700,
+          "unit": "g",
+          "label": "700g"
+        }
+      ],
+      "display": "250g / 500g / 700g",
+      "needsVerification": false
+    },
+    "khatta-meetha": {
+      "name": "Khatta Meetha",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        }
+      ],
+      "display": "300g",
+      "needsVerification": false
+    },
+    "oats-cookies": {
+      "name": "Oats Cookies",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 250,
+          "unit": "g",
+          "label": "250g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        }
+      ],
+      "display": "250g / 500g",
+      "needsVerification": false
+    },
+    "ragi-biscuits": {
+      "name": "Ragi Biscuits",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        }
+      ],
+      "display": "500g",
+      "needsVerification": true
+    },
+    "elaichi-khatai": {
+      "name": "Elaichi Khatai",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 250,
+          "unit": "g",
+          "label": "250g"
+        },
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "250g / 400g",
+      "needsVerification": false
+    },
+    "cornflakes": {
+      "name": "Cornflakes",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 200,
+          "unit": "g",
+          "label": "200g"
+        }
+      ],
+      "display": "200g",
+      "needsVerification": false
+    },
+    "gol-jeera-biscuits": {
+      "name": "Gol Jeera Biscuits",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        }
+      ],
+      "display": "300g / 500g",
+      "needsVerification": false
+    },
+    "milk-kaju-cookies": {
+      "name": "Milk Kaju Cookies",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        }
+      ],
+      "display": "300g / 500g",
+      "needsVerification": false
+    },
+    "kanpuri-mixture": {
+      "name": "Kanpuri Mixture",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        }
+      ],
+      "display": "300g",
+      "needsVerification": false
+    },
+    "hyderabadi-cookies": {
+      "name": "Hyderabadi Cookies",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        },
+        {
+          "value": 500,
+          "unit": "g",
+          "label": "500g"
+        },
+        {
+          "value": 800,
+          "unit": "g",
+          "label": "800g"
+        }
+      ],
+      "display": "300g / 500g / 800g",
+      "needsVerification": true
+    },
+    "marodi": {
+      "name": "Marodi",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 200,
+          "unit": "g",
+          "label": "200g"
+        }
+      ],
+      "display": "200g",
+      "needsVerification": false
+    },
+    "palak-marodi": {
+      "name": "Palak Marodi",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 200,
+          "unit": "g",
+          "label": "200g"
+        }
+      ],
+      "display": "200g",
+      "needsVerification": false
+    },
+    "zero-number-sev": {
+      "name": "Zero Number Sev",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 200,
+          "unit": "g",
+          "label": "200g"
+        }
+      ],
+      "display": "200g",
+      "needsVerification": false
+    },
+    "moong-dal": {
+      "name": "Moong Dal",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 200,
+          "unit": "g",
+          "label": "200g"
+        }
+      ],
+      "display": "200g",
+      "needsVerification": false
+    },
+    "aloo-bhujiya": {
+      "name": "Aloo Bhujiya",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 200,
+          "unit": "g",
+          "label": "200g"
+        }
+      ],
+      "display": "200g",
+      "needsVerification": false
+    },
+    "bikaneri-bhujiya": {
+      "name": "Bikaneri Bhujiya",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 200,
+          "unit": "g",
+          "label": "200g"
+        }
+      ],
+      "display": "200g",
+      "needsVerification": false
+    },
+    "bhalla": {
+      "name": "Bhalla",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 250,
+          "unit": "g",
+          "label": "250g"
+        }
+      ],
+      "display": "250g",
+      "needsVerification": true
+    },
+    "plain-chana": {
+      "name": "Plain Chana",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 150,
+          "unit": "g",
+          "label": "150g"
+        }
+      ],
+      "display": "150g",
+      "needsVerification": false
+    },
+    "chana-dal": {
+      "name": "Chana Dal",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 250,
+          "unit": "g",
+          "label": "250g"
+        }
+      ],
+      "display": "250g",
+      "needsVerification": false
+    },
+    "chana-with-kheel": {
+      "name": "Chana with Kheel",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 150,
+          "unit": "g",
+          "label": "150g"
+        }
+      ],
+      "display": "150g",
+      "needsVerification": false
+    },
+    "murmura-mixture": {
+      "name": "Murmura Mixture",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 200,
+          "unit": "g",
+          "label": "200g"
+        }
+      ],
+      "display": "200g",
+      "needsVerification": false
+    },
+    "badam-lacha": {
+      "name": "Badam Lacha",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        }
+      ],
+      "display": "300g",
+      "needsVerification": false
+    },
+    "panchratan-mixture": {
+      "name": "Panchratan Mixture",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 300,
+          "unit": "g",
+          "label": "300g"
+        }
+      ],
+      "display": "300g",
+      "needsVerification": false
+    },
+    "mango-khatai": {
+      "name": "Mango Khatai",
+      "category": "biscuits",
+      "quantities": [
+        {
+          "value": 250,
+          "unit": "g",
+          "label": "250g"
+        },
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "250g / 400g",
+      "needsVerification": false
+    },
+    "khajuri-mathi": {
+      "name": "Khajuri Mathi",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "400g",
+      "needsVerification": false
+    },
+    "bhakarwadi": {
+      "name": "Bhakarwadi",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "400g",
+      "needsVerification": false
+    },
+    "milk-mathi": {
+      "name": "Milk Mathi",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "400g",
+      "needsVerification": false
+    },
+    "mote-sev": {
+      "name": "Mote Sev",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 150,
+          "unit": "g",
+          "label": "150g"
+        }
+      ],
+      "display": "150g",
+      "needsVerification": false
+    },
+    "boondi": {
+      "name": "Boondi",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 100,
+          "unit": "g",
+          "label": "100g"
+        }
+      ],
+      "display": "100g",
+      "needsVerification": false
+    },
+    "diet-bajra": {
+      "name": "Diet Bajra",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 130,
+          "unit": "g",
+          "label": "130g"
+        }
+      ],
+      "display": "130g",
+      "needsVerification": true
+    },
+    "masala-karela": {
+      "name": "Masala Karela",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "400g",
+      "needsVerification": false
+    },
+    "sweet-karela": {
+      "name": "Sweet Karela",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "400g",
+      "needsVerification": false
+    },
+    "achari-mathi": {
+      "name": "Achari Mathi",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "400g",
+      "needsVerification": false
+    },
+    "pudina-mathi": {
+      "name": "Pudina Mathi",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "400g",
+      "needsVerification": false
+    },
+    "bhaji-box": {
+      "name": "Bhaji Box",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 400,
+          "unit": "g",
+          "label": "400g"
+        }
+      ],
+      "display": "400g",
+      "needsVerification": false
+    },
+    "khakhra": {
+      "name": "Khakhra",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 180,
+          "unit": "g",
+          "label": "180g"
+        }
+      ],
+      "display": "180g",
+      "needsVerification": false
+    },
+    "oregano-puff": {
+      "name": "Oregano Puff",
+      "category": "namkeens",
+      "quantities": [
+        {
+          "value": 225,
+          "unit": "g",
+          "label": "225g"
+        }
+      ],
+      "display": "225g",
+      "needsVerification": false
+    }
+  }
+}

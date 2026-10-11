@@ -44,7 +44,7 @@ export default function Footer() {
               }}
             >
               <img
-                src="/logo.png"
+                src="/logo.webp"
                 alt="Janta Bakery"
                 className="h-16 w-auto object-contain brightness-0 opacity-80 transition-opacity duration-300 group-hover:opacity-100"
               />

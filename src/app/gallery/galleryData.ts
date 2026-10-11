@@ -20,7 +20,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 1,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/paper-almond-banner.jpg',
+    image: '/gallery/biscuits/paper-almond-cookies.webp',
     label: 'Paper Almond Cookies',
     colSpan: 1,
     rowSpan: 1,
@@ -28,7 +28,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 2,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/choco-crunch-poster.jpg',
+    image: '/gallery/biscuits/choco-crunch-biscuits.webp',
     label: 'Choco Crunch Biscuits',
     colSpan: 1,
     rowSpan: 1,
@@ -36,7 +36,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 3,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/badam-khatai-square.jpg',
+    image: '/gallery/biscuits/badam-khatai-biscuits.webp',
     label: 'Badam Khatai Biscuits',
     colSpan: 1,
     rowSpan: 1,
@@ -44,7 +44,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 4,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/kaju-pista-cookies.jpg',
+    image: '/gallery/biscuits/kaju-pista-cookies-sugar-free.webp',
     label: 'Kaju Pista Cookies Sugar Free',
     colSpan: 1,
     rowSpan: 1,
@@ -52,7 +52,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 5,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/oats-cookies-portrait.jpg',
+    image: '/gallery/biscuits/golden-oats-cookies.webp',
     label: 'Golden Oats Cookies',
     colSpan: 1,
     rowSpan: 1,
@@ -60,7 +60,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 6,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/special-besan-square.jpg',
+    image: '/gallery/biscuits/special-besan-biscuits.webp',
     label: 'Special Desi Ghee Besan Biscuits',
     colSpan: 1,
     rowSpan: 1,
@@ -68,7 +68,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 7,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/almond-biscotti-banner.jpg',
+    image: '/gallery/biscuits/almond-biscotti.webp',
     label: 'Almond Cantucci Biscotti',
     colSpan: 1,
     rowSpan: 1,
@@ -76,7 +76,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 8,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/chocolate-marble-poster.jpg',
+    image: '/gallery/biscuits/chocolate-marble-cookies.webp',
     label: 'Chocolate Marble Swirl Cookies',
     colSpan: 1,
     rowSpan: 1,
@@ -84,7 +84,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 9,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/namkeen-paneer-landscape.jpg',
+    image: '/gallery/biscuits/namkeen-paneer-biscuits.webp',
     label: 'Namkeen Paneer Cumin Biscuits',
     colSpan: 1,
     rowSpan: 1,
@@ -92,7 +92,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 10,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/gol-jeera-portrait.jpg',
+    image: '/gallery/biscuits/gol-jeera-biscuits.webp',
     label: 'Gol Jeera Roasted Cumin Biscuits',
     colSpan: 1,
     rowSpan: 1,
@@ -100,7 +100,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 11,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/special-kaju-square.jpg',
+    image: '/gallery/biscuits/special-kaju-biscuits.webp',
     label: 'Special Kaju Cashew Biscuits',
     colSpan: 1,
     rowSpan: 1,
@@ -108,7 +108,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 12,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/elaichi-khatai-poster.jpg',
+    image: '/gallery/biscuits/elaichi-khatai-biscuits.webp',
     label: 'Elaichi Khatai Cardamom Biscuits',
     colSpan: 1,
     rowSpan: 1,
@@ -116,7 +116,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 13,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/atta-sugar-free-landscape.jpg',
+    image: '/gallery/biscuits/atta-cookies-sugar-free.webp',
     label: 'Atta Whole Wheat Sugar Free',
     colSpan: 1,
     rowSpan: 1,
@@ -124,7 +124,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 14,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/choker-namkeen-poster.jpg',
+    image: '/gallery/biscuits/choker-namkeen-biscuits.webp',
     label: 'Choker Namkeen Biscuits',
     colSpan: 1,
     rowSpan: 1,
@@ -132,7 +132,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 15,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/plain-besan-portrait.jpg',
+    image: '/gallery/biscuits/plain-besan-cookies.webp',
     label: 'Plain Besan Cookies',
     colSpan: 1,
     rowSpan: 1,
@@ -140,7 +140,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 16,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/besan-khatai-banner.jpg',
+    image: '/gallery/biscuits/royal-besan-khatai-cookies.webp',
     label: 'Royal Besan Khatai Cookies',
     colSpan: 1,
     rowSpan: 1,
@@ -148,7 +148,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 17,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/jam-pista-poster.jpg',
+    image: '/gallery/biscuits/jam-pista-cookies.webp',
     label: 'Jam Pista Cookies',
     colSpan: 1,
     rowSpan: 1,
@@ -156,7 +156,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 18,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/cashew-khatai-square.jpg',
+    image: '/gallery/biscuits/royal-cashew-khatai-biscuits.webp',
     label: 'Royal Cashew Khatai Biscuits',
     colSpan: 1,
     rowSpan: 1,
@@ -164,7 +164,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 19,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/namkeen-jalebi-landscape.jpg',
+    image: '/gallery/biscuits/namkeen-jalebi-swirls.webp',
     label: 'Namkeen Jalebi Swirls',
     colSpan: 1,
     rowSpan: 1,
@@ -172,7 +172,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 20,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/choco-chips-poster.jpg',
+    image: '/gallery/biscuits/choco-chips-biscuits.webp',
     label: 'Choco Chips Biscuits',
     colSpan: 1,
     rowSpan: 1,
@@ -180,7 +180,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 21,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/coconut-drops-square.jpg',
+    image: '/gallery/biscuits/toasted-coconut-drops.webp',
     label: 'Toasted Coconut Drops',
     colSpan: 1,
     rowSpan: 1,
@@ -188,7 +188,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 22,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/butter-kaju-banner.jpg',
+    image: '/gallery/biscuits/butter-kaju-biscotti.webp',
     label: 'Butter Kaju Biscotti',
     colSpan: 1,
     rowSpan: 1,
@@ -196,7 +196,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 23,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/dry-fruits-poster.jpg',
+    image: '/gallery/biscuits/loaded-dry-fruits-cookies.webp',
     label: 'Loaded Dry Fruits Cookies',
     colSpan: 1,
     rowSpan: 1,
@@ -204,7 +204,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 24,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/jaggery-multigrain-landscape.jpg',
+    image: '/gallery/biscuits/jaggery-multigrain-biscuits.webp',
     label: 'Jaggery Multigrain Cookies',
     colSpan: 1,
     rowSpan: 1,
@@ -212,7 +212,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 25,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/sada-butter-square.jpg',
+    image: '/gallery/biscuits/sada-butter-biscuits.webp',
     label: 'Sada Butter Biscuits',
     colSpan: 1,
     rowSpan: 1,
@@ -220,7 +220,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 26,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/atta-cookies-poster.jpg',
+    image: '/gallery/biscuits/crispy-atta-biscuits.webp',
     label: 'Crispy Atta Biscuits',
     colSpan: 1,
     rowSpan: 1,
@@ -228,7 +228,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 27,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/milk-badam-poster.jpg',
+    image: '/gallery/biscuits/milk-badam-biscuits.webp',
     label: 'Milk Badam Biscuits',
     colSpan: 1,
     rowSpan: 1,
@@ -236,7 +236,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 28,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/shahi-badam-square.jpg',
+    image: '/gallery/biscuits/shahi-badam-biscuits.webp',
     label: 'Shahi Badam Biscuits',
     colSpan: 1,
     rowSpan: 1,
@@ -244,7 +244,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 29,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/milk-kaju-banner.jpg',
+    image: '/gallery/biscuits/milk-kaju-biscuits.webp',
     label: 'Milk Kaju Biscuits',
     colSpan: 1,
     rowSpan: 1,
@@ -252,7 +252,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 30,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/kaju-pista-poster.jpg',
+    image: '/gallery/biscuits/kaju-pista-biscuits.webp',
     label: 'Kaju Pista Biscuits',
     colSpan: 1,
     rowSpan: 1,
@@ -260,7 +260,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 31,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/toasted-coconut-square.jpg',
+    image: '/gallery/biscuits/toasted-coconut-biscuits.webp',
     label: 'Toasted Coconut Biscuits',
     colSpan: 1,
     rowSpan: 1,
@@ -268,7 +268,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 32,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/butter-jam-pista-portrait.jpg',
+    image: '/gallery/biscuits/butter-jam-pista-biscuits.webp',
     label: 'Butter Jam Pista Biscuits',
     colSpan: 1,
     rowSpan: 1,
@@ -276,7 +276,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 33,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/multi-grain-landscape.jpg',
+    image: '/gallery/biscuits/multi-grain-biscuits.webp',
     label: 'Multi Grain Wholesome Biscuits',
     colSpan: 1,
     rowSpan: 1,
@@ -284,7 +284,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 34,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/jeera-bite-square.jpg',
+    image: '/gallery/biscuits/jeera-bite-biscuits.webp',
     label: 'Jeera Bite Savory Biscuits',
     colSpan: 1,
     rowSpan: 1,
@@ -292,7 +292,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 35,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/chocos-cookies-poster.jpg',
+    image: '/gallery/biscuits/chocos-cookies-biscuits.webp',
     label: 'Chocos Cookies',
     colSpan: 1,
     rowSpan: 1,
@@ -300,7 +300,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 36,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/sweet-jalebi-landscape.jpg',
+    image: '/gallery/biscuits/sweet-jalebi-biscuits.webp',
     label: 'Sweet Jalebi Butter Swirls',
     colSpan: 1,
     rowSpan: 1,
@@ -308,7 +308,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 37,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/milk-pista-square.jpg',
+    image: '/gallery/biscuits/milk-pista-biscuits.webp',
     label: 'Milk Pista Royal Biscuits',
     colSpan: 1,
     rowSpan: 1,
@@ -316,7 +316,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 38,
     category: 'Cookies & Biscuits',
-    image: '/gallery/biscuits/hyderabadi-fruit-poster.jpg',
+    image: '/gallery/biscuits/hyderabadi-biscuits.webp',
     label: 'Hyderabadi Tutti-Frutti Biscuits',
     colSpan: 1,
     rowSpan: 1,
@@ -324,7 +324,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 39,
     category: 'Namkeen & Savories',
-    image: '/gallery/sweets/dry-petha-poster.jpg',
+    image: '/gallery/sweets/agra-dry-petha.webp',
     label: 'Agra Dry Petha',
     colSpan: 1,
     rowSpan: 2,
@@ -332,7 +332,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 40,
     category: 'Rusks & Puffs',
-    image: '/gallery/rusks/special-shahi-rusk-poster.jpg',
+    image: '/gallery/rusks/special-shahi-rusk.webp',
     label: 'Special Shahi Rusk',
     colSpan: 1,
     rowSpan: 2,
@@ -340,7 +340,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 41,
     category: 'Rusks & Puffs',
-    image: '/gallery/rusks/atta-rusk-poster.jpg',
+    image: '/gallery/rusks/whole-wheat-atta-rusk.webp',
     label: 'Whole Wheat Atta Rusk',
     colSpan: 1,
     rowSpan: 2,
@@ -348,7 +348,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 42,
     category: 'Rusks & Puffs',
-    image: '/gallery/rusks/milk-rusk-poster.jpg',
+    image: '/gallery/rusks/classic-crispy-milk-rusk.webp',
     label: 'Classic Crispy Milk Rusk',
     colSpan: 1,
     rowSpan: 2,
@@ -356,7 +356,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 43,
     category: 'Rusks & Puffs',
-    image: '/gallery/rusks/ajwain-fan-poster.jpg',
+    image: '/gallery/rusks/buttery-flaky-ajwain-fan.webp',
     label: 'Buttery Flaky Ajwain Fan',
     colSpan: 1,
     rowSpan: 2,
@@ -364,7 +364,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 44,
     category: 'Rusks & Puffs',
-    image: '/gallery/rusks/chini-kam-rusk-poster.jpg',
+    image: '/gallery/rusks/less-sugar-chini-kam-rusk.webp',
     label: 'Less Sugar Chini Kam Rusk',
     colSpan: 1,
     rowSpan: 2,
@@ -372,7 +372,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 45,
     category: 'Rusks & Puffs',
-    image: '/gallery/rusks/suji-rusk-poster.jpg',
+    image: '/gallery/rusks/golden-semolina-suji-rusk.webp',
     label: 'Golden Semolina Suji Rusk',
     colSpan: 1,
     rowSpan: 2,
@@ -380,7 +380,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 46,
     category: 'Rusks & Puffs',
-    image: '/gallery/rusks/twisty-puff-poster.jpg',
+    image: '/gallery/rusks/golden-crispy-twisty-puff.webp',
     label: 'Twisty Puff',
     colSpan: 1,
     rowSpan: 2,
@@ -388,7 +388,7 @@ const brandedBiscuits: GalleryItem[] = [
   {
     id: 47,
     category: 'Rusks & Puffs',
-    image: '/gallery/rusks/puff-square-poster.jpg',
+    image: '/gallery/rusks/flaky-layered-puff-square.webp',
     label: 'Puff Square',
     colSpan: 1,
     rowSpan: 2,
@@ -399,7 +399,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 101,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/bhakarwadi-poster.jpg',
+    image: '/gallery/namkeen/bhakarwadi.webp',
     label: 'Traditional Bhakarwadi',
     colSpan: 1,
     rowSpan: 1,
@@ -407,7 +407,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 102,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/dabba-mathi-poster.jpg',
+    image: '/gallery/namkeen/dabba-mathi.webp',
     label: 'Crispy Dabba Mathi',
     colSpan: 1,
     rowSpan: 1,
@@ -415,7 +415,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 103,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/gol-mathi-poster.jpg',
+    image: '/gallery/namkeen/gol-mathi.webp',
     label: 'Traditional Gol Mathi',
     colSpan: 1,
     rowSpan: 1,
@@ -423,7 +423,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 104,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/achari-mathi-poster.jpg',
+    image: '/gallery/namkeen/achari-mathi.webp',
     label: 'Tangy Achari Mathi',
     colSpan: 1,
     rowSpan: 1,
@@ -431,7 +431,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 105,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/suji-til-mathi-poster.jpg',
+    image: '/gallery/namkeen/suji-til-mathi.webp',
     label: 'Suji Til Mathi Banner',
     colSpan: 2,
     rowSpan: 1,
@@ -439,7 +439,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 106,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/shakarpara-poster.jpg',
+    image: '/gallery/namkeen/shakarpara.webp',
     label: 'Shakarpara Sweet Delight',
     colSpan: 1,
     rowSpan: 1,
@@ -447,7 +447,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 107,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/gud-para-poster.jpg',
+    image: '/gallery/namkeen/gud-para.webp',
     label: 'Gud Para Winter Treat',
     colSpan: 1,
     rowSpan: 1,
@@ -455,7 +455,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 108,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/satrangi-mathi-poster.jpg',
+    image: '/gallery/namkeen/satrangi-mathi.webp',
     label: 'Satrangi 7-Spice Mathi',
     colSpan: 1,
     rowSpan: 1,
@@ -463,7 +463,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 109,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/mini-kachori-poster.jpg',
+    image: '/gallery/namkeen/mini-kachori.webp',
     label: 'Mini Khasta Kachori',
     colSpan: 1,
     rowSpan: 1,
@@ -471,7 +471,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 110,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/aloo-mathi-poster.jpg',
+    image: '/gallery/namkeen/aloo-mathi.webp',
     label: 'Aloo Mathi Savory Banner',
     colSpan: 2,
     rowSpan: 1,
@@ -479,7 +479,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 111,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/bhaji-box-poster.jpg',
+    image: '/gallery/namkeen/bhaji-box.webp',
     label: 'Festive Bhaji Box Assortment',
     colSpan: 2,
     rowSpan: 1,
@@ -487,7 +487,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 112,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/milk-mathi-poster.jpg',
+    image: '/gallery/namkeen/milk-mathi.webp',
     label: 'Traditional Milk Mathi',
     colSpan: 1,
     rowSpan: 1,
@@ -495,7 +495,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 113,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/khajuri-mathi-poster.jpg',
+    image: '/gallery/namkeen/khajuri-mathi.webp',
     label: 'Khajuri Mathi Classic',
     colSpan: 1,
     rowSpan: 1,
@@ -503,7 +503,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 114,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/methi-mathi-poster.jpg',
+    image: '/gallery/namkeen/methi-mathi.webp',
     label: 'Methi Mathi Kasuri Flavor',
     colSpan: 1,
     rowSpan: 1,
@@ -511,7 +511,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 115,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/tikoni-mathi-poster.jpg',
+    image: '/gallery/namkeen/tikoni-mathi.webp',
     label: 'Flaky Tikoni Mathi',
     colSpan: 1,
     rowSpan: 1,
@@ -519,7 +519,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 116,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/papdi-poster.jpg',
+    image: '/gallery/namkeen/papdi.webp',
     label: 'Crispy Wafer Papdi Banner',
     colSpan: 2,
     rowSpan: 1,
@@ -527,7 +527,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 117,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/masala-chandni-poster.jpg',
+    image: '/gallery/namkeen/masala-chandni.webp',
     label: 'Spiced Masala Chandni',
     colSpan: 1,
     rowSpan: 1,
@@ -535,7 +535,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 118,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/plain-chandni-poster.jpg',
+    image: '/gallery/namkeen/plain-chandni.webp',
     label: 'Plain Chandni Namkeen',
     colSpan: 1,
     rowSpan: 1,
@@ -543,7 +543,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 119,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/tikoni-laung-mathi-poster.jpg',
+    image: '/gallery/namkeen/tikoni-laung-mathi.webp',
     label: 'Aromatic Tikoni Laung Mathi',
     colSpan: 1,
     rowSpan: 1,
@@ -551,7 +551,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 120,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/masala-karela-poster.jpg',
+    image: '/gallery/namkeen/masala-karela.webp',
     label: 'Masala Karela Crispy Rolls',
     colSpan: 1,
     rowSpan: 1,
@@ -559,7 +559,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 121,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/sweet-karela-poster.jpg',
+    image: '/gallery/namkeen/sweet-karela.webp',
     label: 'Sweet Karela Glazed Rolls',
     colSpan: 1,
     rowSpan: 1,
@@ -567,7 +567,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 122,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/namak-para-poster.jpg',
+    image: '/gallery/namkeen/namak-para.webp',
     label: 'Namak Para Ajwain Banner',
     colSpan: 2,
     rowSpan: 1,
@@ -575,7 +575,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 123,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/gujrati-sev-poster.jpg',
+    image: '/gallery/namkeen/gujarati-sev.webp',
     label: 'Authentic Gujrati Sev',
     colSpan: 1,
     rowSpan: 1,
@@ -583,7 +583,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 124,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/bikaneri-bhujiya-poster.jpg',
+    image: '/gallery/namkeen/bikaneri-bhujiya.webp',
     label: 'Bikaneri Bhujiya Banner',
     colSpan: 2,
     rowSpan: 1,
@@ -591,7 +591,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 125,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/mirchi-sev-poster.jpg',
+    image: '/gallery/namkeen/mirchi-sev.webp',
     label: 'Spicy Mirchi Sev',
     colSpan: 1,
     rowSpan: 1,
@@ -599,7 +599,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 126,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/madrasi-mixture-poster.jpg',
+    image: '/gallery/namkeen/madrasi-mixture.webp',
     label: 'Traditional Madrasi Mixture',
     colSpan: 1,
     rowSpan: 1,
@@ -607,7 +607,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 127,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/moongra-poster.jpg',
+    image: '/gallery/namkeen/moongra.webp',
     label: 'Crispy Moongra',
     colSpan: 1,
     rowSpan: 1,
@@ -615,7 +615,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 128,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/moong-dal-poster.jpg',
+    image: '/gallery/namkeen/moong-dal-namkeen.webp',
     label: 'Crispy Moong Dal Namkeen',
     colSpan: 2,
     rowSpan: 1,
@@ -623,7 +623,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 129,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/zero-sev-poster.jpg',
+    image: '/gallery/namkeen/zero-sev.webp',
     label: 'Fine Zero Sev',
     colSpan: 1,
     rowSpan: 2,
@@ -631,7 +631,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 130,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/banana-chips-poster.jpg',
+    image: '/gallery/namkeen/banana-chips.webp',
     label: 'Crispy Banana Chips',
     colSpan: 1,
     rowSpan: 1,
@@ -639,7 +639,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 131,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/aloo-bhujia-poster.jpg',
+    image: '/gallery/namkeen/aloo-bhujiya.webp',
     label: 'Spicy Aloo Bhujia',
     colSpan: 1,
     rowSpan: 1,
@@ -647,7 +647,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 132,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/hing-mirchi-sev-poster.jpg',
+    image: '/gallery/namkeen/hing-mirchi-sev.webp',
     label: 'Spiced Hing Mirchi Sev',
     colSpan: 1,
     rowSpan: 2,
@@ -655,7 +655,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 133,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/plain-cornflex-poster.jpg',
+    image: '/gallery/namkeen/plain-cornflex.webp',
     label: 'Golden Plain Cornflex',
     colSpan: 2,
     rowSpan: 1,
@@ -663,7 +663,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 134,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/murmura-mixture-poster.jpg',
+    image: '/gallery/namkeen/murmura-mixture.webp',
     label: 'Light Murmura Mixture',
     colSpan: 1,
     rowSpan: 1,
@@ -671,7 +671,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 135,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/cornflakes-mixture-poster.jpg',
+    image: '/gallery/namkeen/cornflakes-mixture.webp',
     label: 'Royal Cornflakes Mixture',
     colSpan: 1,
     rowSpan: 1,
@@ -679,7 +679,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 136,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/curry-leaf-murmura-poster.jpg',
+    image: '/gallery/namkeen/curry-leaf-murmura.webp',
     label: 'Aromatic Curry Leaf Murmura',
     colSpan: 2,
     rowSpan: 1,
@@ -687,7 +687,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 137,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/chiwda-cornflakes-poster.jpg',
+    image: '/gallery/namkeen/chiwda-cornflakes.webp',
     label: 'Chiwda Cornflakes Mix',
     colSpan: 1,
     rowSpan: 2,
@@ -695,7 +695,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 138,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/besan-masala-papdi-poster.jpg',
+    image: '/gallery/namkeen/besan-masala-papdi.webp',
     label: 'Spiced Besan Masala Papdi',
     colSpan: 1,
     rowSpan: 1,
@@ -703,7 +703,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 139,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/besan-papdi-poster.jpg',
+    image: '/gallery/namkeen/besan-papdi.webp',
     label: 'Melt-in-Mouth Besan Papdi',
     colSpan: 1,
     rowSpan: 1,
@@ -711,7 +711,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 140,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/soya-katori-masala-poster.jpg',
+    image: '/gallery/namkeen/soya-katori-masala.webp',
     label: 'Chatpata Soya Katori Masala',
     colSpan: 1,
     rowSpan: 2,
@@ -719,7 +719,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 141,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/kadi-patta-boondi-poster.jpg',
+    image: '/gallery/namkeen/kadi-patta-boondi.webp',
     label: 'Curry Leaf Boondi Pearls',
     colSpan: 2,
     rowSpan: 1,
@@ -727,7 +727,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 142,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/gathiya-poster.jpg',
+    image: '/gallery/namkeen/gathiya.webp',
     label: 'Authentic Gujarati Gathiya',
     colSpan: 1,
     rowSpan: 1,
@@ -735,7 +735,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 143,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/soya-katori-plain-poster.jpg',
+    image: '/gallery/namkeen/soya-katori-plain.webp',
     label: 'Light Soya Katori Plain',
     colSpan: 1,
     rowSpan: 1,
@@ -743,7 +743,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 144,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/mirchi-tangri-poster.jpg',
+    image: '/gallery/namkeen/mirchi-tangri.webp',
     label: 'Spicy Mirchi Tangri',
     colSpan: 1,
     rowSpan: 2,
@@ -751,7 +751,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 145,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/classic-boondi-poster.jpg',
+    image: '/gallery/namkeen/classic-boondi.webp',
     label: 'Classic Besan Boondi',
     colSpan: 2,
     rowSpan: 1,
@@ -759,7 +759,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 146,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/mota-sev-poster.jpg',
+    image: '/gallery/namkeen/mota-sev.webp',
     label: 'Crispy Mota Sev',
     colSpan: 1,
     rowSpan: 1,
@@ -767,7 +767,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 147,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/white-chidwa-mix-poster.jpg',
+    image: '/gallery/namkeen/white-chidwa-mix.webp',
     label: 'Roasted White Chidwa Mix',
     colSpan: 1,
     rowSpan: 1,
@@ -775,7 +775,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 148,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/kanpuri-mixture-dryfruit-poster.jpg',
+    image: '/gallery/namkeen/kanpuri-mixture.webp',
     label: 'Royal Kanpuri Mixture with Dry Fruit',
     colSpan: 2,
     rowSpan: 1,
@@ -783,7 +783,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 149,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/badam-lacha-poster.jpg',
+    image: '/gallery/namkeen/badam-lacha.webp',
     label: 'Royal Badam Lachha',
     colSpan: 1,
     rowSpan: 2,
@@ -791,7 +791,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 150,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/khatta-meetha-poster.jpg',
+    image: '/gallery/namkeen/khatta-meetha.webp',
     label: 'Sweet & Tangy Khatta Meetha',
     colSpan: 1,
     rowSpan: 1,
@@ -799,7 +799,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 151,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/yellow-chidwa-mix-poster.jpg',
+    image: '/gallery/namkeen/yellow-chidwa-mix.webp',
     label: 'Golden Yellow Chidwa Mix',
     colSpan: 1,
     rowSpan: 2,
@@ -807,7 +807,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 152,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/dal-biji-poster.jpg',
+    image: '/gallery/namkeen/dal-beeji.webp',
     label: 'Royal Dal Biji Mixture',
     colSpan: 2,
     rowSpan: 1,
@@ -815,7 +815,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 153,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/swadishta-mix-poster.jpg',
+    image: '/gallery/namkeen/swadishtha-mix.webp',
     label: 'Signature Swadishta Mix',
     colSpan: 1,
     rowSpan: 1,
@@ -823,7 +823,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 154,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/plain-mixture-poster.jpg',
+    image: '/gallery/namkeen/plain-mixture.webp',
     label: 'Homestyle Plain Mixture',
     colSpan: 1,
     rowSpan: 1,
@@ -831,7 +831,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 155,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/falahari-mix-meetha-poster.jpg',
+    image: '/gallery/namkeen/falahari-mix-meetha.webp',
     label: 'Sweet Falahari Mix',
     colSpan: 1,
     rowSpan: 2,
@@ -839,7 +839,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 156,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/namkeen-falahari-mix-poster.jpg',
+    image: '/gallery/namkeen/namkeen-falahari.webp',
     label: 'Namkeen Falahari Mix',
     colSpan: 2,
     rowSpan: 1,
@@ -847,7 +847,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 157,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/nut-cracker-poster.jpg',
+    image: '/gallery/namkeen/nut-cracker.webp',
     label: 'Spicy Nut Cracker Peanuts',
     colSpan: 1,
     rowSpan: 1,
@@ -855,7 +855,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 158,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/special-corn-namkeen-poster.jpg',
+    image: '/gallery/namkeen/special-corn-namkeen.webp',
     label: 'Royal Special Corn Namkeen',
     colSpan: 2,
     rowSpan: 1,
@@ -863,7 +863,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 159,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/panchratan-mix-poster.jpg',
+    image: '/gallery/namkeen/panchratan-mixture.webp',
     label: 'Crunchy Panchratan Mix',
     colSpan: 1,
     rowSpan: 2,
@@ -871,7 +871,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 160,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/spicy-mixture-poster.jpg',
+    image: '/gallery/namkeen/spicy-mixture-hot-and-chatpata-chivda.webp',
     label: 'Authentic Spicy Mixture',
     colSpan: 1,
     rowSpan: 1,
@@ -879,7 +879,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 161,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/peri-peri-makhana-poster.jpg',
+    image: '/gallery/namkeen/peri-peri-makhana.webp',
     label: 'Roasted Peri Peri Makhana',
     colSpan: 1,
     rowSpan: 1,
@@ -887,7 +887,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 162,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/plain-salted-makhana-poster.jpg',
+    image: '/gallery/namkeen/plain-salted-makhana.webp',
     label: 'Plain Salted Makhana',
     colSpan: 1,
     rowSpan: 2,
@@ -895,7 +895,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 163,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/masala-banana-chips-poster.jpg',
+    image: '/gallery/namkeen/masala-banana-chips.webp',
     label: 'Crispy Masala Banana Chips',
     colSpan: 2,
     rowSpan: 1,
@@ -903,7 +903,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 164,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/broccoli-chips-poster.jpg',
+    image: '/gallery/namkeen/crispy-broccoli-chips.webp',
     label: 'Crispy Broccoli Chips',
     colSpan: 1,
     rowSpan: 1,
@@ -911,7 +911,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 165,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/mix-veg-chips-poster.jpg',
+    image: '/gallery/namkeen/crispy-mix-veg-chips.webp',
     label: 'Crispy Mix Veg Chips',
     colSpan: 1,
     rowSpan: 1,
@@ -919,7 +919,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 166,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/multigrain-flakes-poster.jpg',
+    image: '/gallery/namkeen/multigrain-and-flakes.webp',
     label: 'Multigrain & Flakes Mixture',
     colSpan: 1,
     rowSpan: 1,
@@ -927,7 +927,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 167,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/mint-pudina-makhana-poster.jpg',
+    image: '/gallery/namkeen/mint-pudina-makhana.webp',
     label: 'Mint Pudina Makhana',
     colSpan: 1,
     rowSpan: 2,
@@ -935,7 +935,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 168,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/diet-millet-mix-poster.jpg',
+    image: '/gallery/namkeen/diet-millet-mixture.webp',
     label: 'Diet Millet Mixture',
     colSpan: 1,
     rowSpan: 2,
@@ -943,7 +943,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 169,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/tandoori-multigrain-sticks-poster.jpg',
+    image: '/gallery/namkeen/tandoori-multigrain-sticks.webp',
     label: 'Tandoori Multigrain Sticks',
     colSpan: 1,
     rowSpan: 2,
@@ -951,7 +951,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 170,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/rajma-chips-poster.jpg',
+    image: '/gallery/namkeen/spiced-rajma-chips.webp',
     label: 'Spiced Rajma Chips',
     colSpan: 1,
     rowSpan: 2,
@@ -959,7 +959,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 171,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/diet-jhalmuri-poster.jpg',
+    image: '/gallery/namkeen/diet-jhal-muri.webp',
     label: 'Diet Jhal Muri',
     colSpan: 1,
     rowSpan: 2,
@@ -967,7 +967,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 172,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/beetroot-chips-poster.jpg',
+    image: '/gallery/namkeen/beetroot-chips.webp',
     label: 'Crispy Beetroot Chips',
     colSpan: 1,
     rowSpan: 2,
@@ -975,7 +975,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 173,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/black-pepper-makhana-poster.jpg',
+    image: '/gallery/namkeen/black-pepper-makhana.webp',
     label: 'Black Pepper Makhana',
     colSpan: 1,
     rowSpan: 2,
@@ -983,7 +983,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 174,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/salsa-multigrain-sticks-poster.jpg',
+    image: '/gallery/namkeen/salsa-multigrain-sticks.webp',
     label: 'Salsa Multigrain Sticks',
     colSpan: 1,
     rowSpan: 2,
@@ -991,7 +991,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 175,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/masala-kaju-poster.jpg',
+    image: '/gallery/namkeen/royal-masala-kaju.webp',
     label: 'Royal Masala Kaju',
     colSpan: 1,
     rowSpan: 2,
@@ -999,7 +999,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 176,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/mini-samosa-poster.jpg',
+    image: '/gallery/namkeen/crispy-mini-samosa.webp',
     label: 'Crispy Mini Samosa',
     colSpan: 1,
     rowSpan: 2,
@@ -1007,7 +1007,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 177,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/phool-mathi-poster.jpg',
+    image: '/gallery/namkeen/crispy-layered-phool-mathi.webp',
     label: 'Crispy Layered Phool Mathi',
     colSpan: 1,
     rowSpan: 2,
@@ -1015,7 +1015,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 178,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/fafda-poster.jpg',
+    image: '/gallery/namkeen/gujarati-fafda.webp',
     label: 'Gujarati Fafda',
     colSpan: 1,
     rowSpan: 2,
@@ -1023,7 +1023,7 @@ const brandedNamkeen: GalleryItem[] = [
   {
     id: 179,
     category: 'Namkeen & Savories',
-    image: '/gallery/namkeen/palak-marori-poster.jpg',
+    image: '/gallery/namkeen/crispy-layered-palak-marori.webp',
     label: 'Crispy Palak Marori',
     colSpan: 1,
     rowSpan: 2,
@@ -1034,7 +1034,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 1,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cheesecake-1.jpg',
+    image: '/gallery/cakes/premium-cheesecake-1.webp',
     label: 'Signature Cheesecake 1 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1043,7 +1043,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 2,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-2.jpg',
+    image: '/gallery/cakes/premium-cake-2.webp',
     label: 'Signature Cake 2 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1052,7 +1052,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 3,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-3.jpg',
+    image: '/gallery/cakes/premium-cake-3.webp',
     label: 'Signature Cake 3 (1:1 Square)',
     colSpan: 1,
     rowSpan: 1,
@@ -1061,7 +1061,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 4,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-4.jpg',
+    image: '/gallery/cakes/premium-cake-4.webp',
     label: 'Signature Cake 4 (4:3 Landscape)',
     colSpan: 2,
     rowSpan: 1,
@@ -1070,7 +1070,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 5,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-5.jpg',
+    image: '/gallery/cakes/premium-cake-5.webp',
     label: 'Signature Cake 5 (16:9 Banner)',
     colSpan: 2,
     rowSpan: 1,
@@ -1079,7 +1079,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 6,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-6.jpg',
+    image: '/gallery/cakes/premium-cake-6.webp',
     label: 'Signature Cake 6 (1:1 Square)',
     colSpan: 1,
     rowSpan: 1,
@@ -1088,7 +1088,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 7,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-7.jpg',
+    image: '/gallery/cakes/premium-cake-7.webp',
     label: 'Signature Cake 7 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1097,7 +1097,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 8,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-8.jpg',
+    image: '/gallery/cakes/premium-cake-8.webp',
     label: 'Signature Cake 8 (4:3 Landscape)',
     colSpan: 2,
     rowSpan: 1,
@@ -1106,7 +1106,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 9,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-9.jpg',
+    image: '/gallery/cakes/premium-cake-9.webp',
     label: 'Signature Cake 9 (1:1 Square)',
     colSpan: 1,
     rowSpan: 1,
@@ -1115,7 +1115,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 10,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-10.jpg',
+    image: '/gallery/cakes/premium-cake-10.webp',
     label: 'Signature Cake 10 (16:9 Banner)',
     colSpan: 2,
     rowSpan: 1,
@@ -1124,7 +1124,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 11,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-11.jpg',
+    image: '/gallery/cakes/premium-cake-11.webp',
     label: 'Signature Cake 11 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1133,7 +1133,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 12,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-12.jpg',
+    image: '/gallery/cakes/premium-cake-12.webp',
     label: 'Signature Cake 12 (1:1 Square)',
     colSpan: 1,
     rowSpan: 1,
@@ -1142,7 +1142,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 13,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-13.jpg',
+    image: '/gallery/cakes/premium-cake-13.webp',
     label: 'Signature Cake 13 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1151,7 +1151,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 14,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-14.jpg',
+    image: '/gallery/cakes/premium-cake-14.webp',
     label: 'Signature Cake 14 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1160,7 +1160,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 15,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-pastry-15.jpg',
+    image: '/gallery/cakes/premium-pastry-15.webp',
     label: 'Premium Pastry 15 (16:9 Banner)',
     colSpan: 2,
     rowSpan: 1,
@@ -1169,7 +1169,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 16,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-16.jpg',
+    image: '/gallery/cakes/premium-cake-16.webp',
     label: 'Signature Cake 16 (4:3 Landscape)',
     colSpan: 2,
     rowSpan: 1,
@@ -1178,7 +1178,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 17,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-17.jpg',
+    image: '/gallery/cakes/premium-cake-17.webp',
     label: 'Signature Cake 17 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1187,7 +1187,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 18,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-pastry-18.jpg',
+    image: '/gallery/cakes/premium-pastry-18.webp',
     label: 'Premium Pastry 18 (1:1 Square)',
     colSpan: 1,
     rowSpan: 1,
@@ -1196,7 +1196,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 19,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-19.jpg',
+    image: '/gallery/cakes/premium-cake-19.webp',
     label: 'Signature Cake 19 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1205,7 +1205,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 20,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-pastry-20.jpg',
+    image: '/gallery/cakes/premium-pastry-20.webp',
     label: 'Premium Pastry 20 (16:9 Banner)',
     colSpan: 2,
     rowSpan: 1,
@@ -1214,7 +1214,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 21,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-21.jpg',
+    image: '/gallery/cakes/premium-cake-21.webp',
     label: 'Signature Cake 21 (1:1 Square)',
     colSpan: 1,
     rowSpan: 1,
@@ -1223,7 +1223,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 22,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-pastry-22.jpg',
+    image: '/gallery/cakes/premium-pastry-22.webp',
     label: 'Premium Pastry 22 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1232,7 +1232,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 23,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-pastry-23.jpg',
+    image: '/gallery/cakes/premium-pastry-23.webp',
     label: 'Premium Pastry 23 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1241,7 +1241,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 24,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-pastry-24.jpg',
+    image: '/gallery/cakes/premium-pastry-24.webp',
     label: 'Premium Pastry 24 (1:1 Square)',
     colSpan: 1,
     rowSpan: 1,
@@ -1250,7 +1250,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 25,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-25.jpg',
+    image: '/gallery/cakes/premium-cake-25.webp',
     label: 'Signature Cake 25 (16:9 Banner)',
     colSpan: 2,
     rowSpan: 1,
@@ -1259,7 +1259,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 26,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-pastry-26.jpg',
+    image: '/gallery/cakes/premium-pastry-26.webp',
     label: 'Premium Pastry 26 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1268,7 +1268,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 27,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-pastry-27.jpg',
+    image: '/gallery/cakes/premium-pastry-27.webp',
     label: 'Premium Pastry 27 (1:1 Square)',
     colSpan: 1,
     rowSpan: 1,
@@ -1277,7 +1277,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 28,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-28.jpg',
+    image: '/gallery/cakes/premium-cake-28.webp',
     label: 'Signature Cake 28 (4:3 Landscape)',
     colSpan: 2,
     rowSpan: 1,
@@ -1286,7 +1286,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 29,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-pastry-29.jpg',
+    image: '/gallery/cakes/premium-pastry-29.webp',
     label: 'Premium Pastry 29 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1295,7 +1295,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 30,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cheesecake-30.jpg',
+    image: '/gallery/cakes/premium-cheesecake-30.webp',
     label: 'Signature Cheesecake 30 (16:9 Banner)',
     colSpan: 2,
     rowSpan: 1,
@@ -1304,7 +1304,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 31,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-pastry-31.jpg',
+    image: '/gallery/cakes/premium-pastry-31.webp',
     label: 'Premium Pastry 31 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1313,7 +1313,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 32,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cheesecake-32.jpg',
+    image: '/gallery/cakes/premium-cheesecake-32.webp',
     label: 'Signature Cheesecake 32 (4:3 Landscape)',
     colSpan: 2,
     rowSpan: 1,
@@ -1322,7 +1322,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 33,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-pastry-33.jpg',
+    image: '/gallery/cakes/premium-pastry-33.webp',
     label: 'Premium Pastry 33 (1:1 Square)',
     colSpan: 1,
     rowSpan: 1,
@@ -1331,7 +1331,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 34,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-34.jpg',
+    image: '/gallery/cakes/premium-cake-34.webp',
     label: 'Signature Cake 34 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1340,7 +1340,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 35,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-35.jpg',
+    image: '/gallery/cakes/premium-cake-35.webp',
     label: 'Signature Cake 35 (16:9 Banner)',
     colSpan: 2,
     rowSpan: 1,
@@ -1349,7 +1349,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 36,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-36.jpg',
+    image: '/gallery/cakes/premium-cake-36.webp',
     label: 'Signature Cake 36 (1:1 Square)',
     colSpan: 1,
     rowSpan: 1,
@@ -1358,7 +1358,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 37,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-37.jpg',
+    image: '/gallery/cakes/premium-cake-37.webp',
     label: 'Signature Cake 37 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1367,7 +1367,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 38,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-38.jpg',
+    image: '/gallery/cakes/premium-cake-38.webp',
     label: 'Signature Cake 38 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1376,7 +1376,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 39,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-39.jpg',
+    image: '/gallery/cakes/premium-cake-39.webp',
     label: 'Signature Cake 39 (1:1 Square)',
     colSpan: 1,
     rowSpan: 1,
@@ -1385,7 +1385,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 40,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-cake-40.jpg',
+    image: '/gallery/cakes/premium-cake-40.webp',
     label: 'Signature Cake 40 (16:9 Banner)',
     colSpan: 2,
     rowSpan: 1,
@@ -1394,7 +1394,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 41,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-pastry-41.jpg',
+    image: '/gallery/cakes/premium-pastry-41.webp',
     label: 'Premium Pastry 41 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1403,7 +1403,7 @@ const brandedCakes: GalleryItem[] = [
   {
     id: 1000 + 42,
     category: 'Cakes & Pastries',
-    image: '/gallery/cakes/premium-pastry-42.jpg',
+    image: '/gallery/cakes/premium-pastry-42.webp',
     label: 'Premium Pastry 42 (1:1 Square)',
     colSpan: 1,
     rowSpan: 1,
@@ -1414,9 +1414,18 @@ const brandedCakes: GalleryItem[] = [
 
 const brandedCustomCakes: GalleryItem[] = [
   {
+    id: 2000 + 4,
+    category: 'Custom Cakes',
+    image: '/gallery/custom-cakes/chocolate-theme-cake.webp',
+    label: 'Custom Cake 4 (4:3 Landscape)',
+    colSpan: 2,
+    rowSpan: 1,
+    aspectDesc: '4:3 Landscape',
+  },
+  {
     id: 2000 + 1,
     category: 'Custom Cakes',
-    image: '/gallery/custom-cakes/custom-cake-1.jpg',
+    image: '/gallery/custom-cakes/cartoon-theme-cake.webp',
     label: 'Custom Cake 1 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1425,7 +1434,7 @@ const brandedCustomCakes: GalleryItem[] = [
   {
     id: 2000 + 2,
     category: 'Custom Cakes',
-    image: '/gallery/custom-cakes/custom-cake-2.jpg',
+    image: '/gallery/custom-cakes/celebration-cake-perfect-for-special-moments.webp',
     label: 'Custom Cake 2 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1434,25 +1443,16 @@ const brandedCustomCakes: GalleryItem[] = [
   {
     id: 2000 + 3,
     category: 'Custom Cakes',
-    image: '/gallery/custom-cakes/custom-cake-3.jpg',
+    image: '/gallery/custom-cakes/celebration-cake-2.webp',
     label: 'Custom Cake 3 (1:1 Square)',
     colSpan: 1,
     rowSpan: 1,
     aspectDesc: '1:1 Square',
   },
   {
-    id: 2000 + 4,
-    category: 'Custom Cakes',
-    image: '/gallery/custom-cakes/custom-cake-4.jpg',
-    label: 'Custom Cake 4 (4:3 Landscape)',
-    colSpan: 2,
-    rowSpan: 1,
-    aspectDesc: '4:3 Landscape',
-  },
-  {
     id: 2000 + 5,
     category: 'Custom Cakes',
-    image: '/gallery/custom-cakes/custom-cake-5.jpg',
+    image: '/gallery/custom-cakes/jungle-theme-cake.webp',
     label: 'Custom Cake 5 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1461,7 +1461,7 @@ const brandedCustomCakes: GalleryItem[] = [
   {
     id: 2000 + 6,
     category: 'Custom Cakes',
-    image: '/gallery/custom-cakes/custom-cake-6.jpg',
+    image: '/gallery/custom-cakes/doll-cake.webp',
     label: 'Custom Cake 6 (1:1 Square)',
     colSpan: 1,
     rowSpan: 1,
@@ -1470,7 +1470,7 @@ const brandedCustomCakes: GalleryItem[] = [
   {
     id: 2000 + 7,
     category: 'Custom Cakes',
-    image: '/gallery/custom-cakes/custom-cake-7.jpg',
+    image: '/gallery/custom-cakes/celebration-cake-3.webp',
     label: 'Custom Cake 7 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1479,7 +1479,7 @@ const brandedCustomCakes: GalleryItem[] = [
   {
     id: 2000 + 8,
     category: 'Custom Cakes',
-    image: '/gallery/custom-cakes/custom-cake-8.jpg',
+    image: '/gallery/custom-cakes/princess-doll-cake.webp',
     label: 'Custom Cake 8 (4:3 Landscape)',
     colSpan: 2,
     rowSpan: 1,
@@ -1488,7 +1488,7 @@ const brandedCustomCakes: GalleryItem[] = [
   {
     id: 2000 + 9,
     category: 'Custom Cakes',
-    image: '/gallery/custom-cakes/custom-cake-9.jpg',
+    image: '/gallery/custom-cakes/doraemon-cake.webp',
     label: 'Custom Cake 9 (1:1 Square)',
     colSpan: 1,
     rowSpan: 1,
@@ -1497,7 +1497,7 @@ const brandedCustomCakes: GalleryItem[] = [
   {
     id: 2000 + 10,
     category: 'Custom Cakes',
-    image: '/gallery/custom-cakes/custom-cake-10.jpg',
+    image: '/gallery/custom-cakes/car-shape-cake.webp',
     label: 'Custom Cake 10 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1506,7 +1506,7 @@ const brandedCustomCakes: GalleryItem[] = [
   {
     id: 2000 + 11,
     category: 'Custom Cakes',
-    image: '/gallery/custom-cakes/custom-cake-11.jpg',
+    image: '/gallery/custom-cakes/unicorn-cake.webp',
     label: 'Custom Cake 11 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1515,7 +1515,7 @@ const brandedCustomCakes: GalleryItem[] = [
   {
     id: 2000 + 12,
     category: 'Custom Cakes',
-    image: '/gallery/custom-cakes/custom-cake-12.jpg',
+    image: '/gallery/custom-cakes/red-velvet-cake.webp',
     label: 'Custom Cake 12 (4:3 Landscape)',
     colSpan: 2,
     rowSpan: 1,
@@ -1524,7 +1524,7 @@ const brandedCustomCakes: GalleryItem[] = [
   {
     id: 2000 + 13,
     category: 'Custom Cakes',
-    image: '/gallery/custom-cakes/custom-cake-13.jpg',
+    image: '/gallery/custom-cakes/rasmalai-cake.webp',
     label: 'Custom Cake 13 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1533,7 +1533,7 @@ const brandedCustomCakes: GalleryItem[] = [
   {
     id: 2000 + 14,
     category: 'Custom Cakes',
-    image: '/gallery/custom-cakes/custom-cake-14.jpg',
+    image: '/gallery/custom-cakes/oreo-cake.webp',
     label: 'Custom Cake 14 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1542,7 +1542,7 @@ const brandedCustomCakes: GalleryItem[] = [
   {
     id: 2000 + 15,
     category: 'Custom Cakes',
-    image: '/gallery/custom-cakes/custom-cake-15.jpg',
+    image: '/gallery/custom-cakes/hazelnut-cheese-cake.webp',
     label: 'Custom Cake 15 (1:1 Square)',
     colSpan: 1,
     rowSpan: 1,
@@ -1551,7 +1551,7 @@ const brandedCustomCakes: GalleryItem[] = [
   {
     id: 2000 + 16,
     category: 'Custom Cakes',
-    image: '/gallery/custom-cakes/custom-cake-16.jpg',
+    image: '/gallery/custom-cakes/biscoff-cheese-cake.webp',
     label: 'Custom Cake 16 (4:3 Landscape)',
     colSpan: 2,
     rowSpan: 1,
@@ -1560,7 +1560,7 @@ const brandedCustomCakes: GalleryItem[] = [
   {
     id: 2000 + 17,
     category: 'Custom Cakes',
-    image: '/gallery/custom-cakes/custom-cake-17.jpg',
+    image: '/gallery/custom-cakes/pista-cake.webp',
     label: 'Custom Cake 17 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1569,7 +1569,7 @@ const brandedCustomCakes: GalleryItem[] = [
   {
     id: 2000 + 18,
     category: 'Custom Cakes',
-    image: '/gallery/custom-cakes/custom-cake-18.jpg',
+    image: '/gallery/custom-cakes/fairy-dream-cake.webp',
     label: 'Custom Cake 18 (1:1 Square)',
     colSpan: 1,
     rowSpan: 1,
@@ -1578,7 +1578,7 @@ const brandedCustomCakes: GalleryItem[] = [
   {
     id: 2000 + 19,
     category: 'Custom Cakes',
-    image: '/gallery/custom-cakes/custom-cake-19.jpg',
+    image: '/gallery/custom-cakes/fairy-princess-cake.webp',
     label: 'Custom Cake 19 (2:3 Portrait)',
     colSpan: 1,
     rowSpan: 2,
@@ -1594,7 +1594,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 1,
     category: 'Promotional Posters',
-    image: '/ads/soya-chips-savoury-snack-poster.webp',
+    image: '/gallery/namkeen/soya-chips.webp',
     label: 'Soya Chips Savoury Snack',
     colSpan: 1,
     rowSpan: 2,
@@ -1603,7 +1603,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 2,
     category: 'Promotional Posters',
-    image: '/ads/namak-para-mathi-snack-poster.webp',
+    image: '/gallery/cakes/muffin-egg.webp',
     label: 'Namak Para Savoury Mathi',
     colSpan: 1,
     rowSpan: 2,
@@ -1612,7 +1612,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 3,
     category: 'Promotional Posters',
-    image: '/ads/eggless-coconut-cookies-poster.webp',
+    image: '/gallery/biscuits/coconut-cookies-egg-2.webp',
     label: 'Eggless Coconut Cookies',
     colSpan: 1,
     rowSpan: 2,
@@ -1621,7 +1621,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 4,
     category: 'Promotional Posters',
-    image: '/ads/potato-puffs-chips-poster.webp',
+    image: '/gallery/namkeen/potato-chips-spicy.webp',
     label: 'Potato Puffs Savoury Chips',
     colSpan: 1,
     rowSpan: 2,
@@ -1630,7 +1630,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 5,
     category: 'Promotional Posters',
-    image: '/ads/chana-chips-masala-snack-poster.webp',
+    image: '/gallery/namkeen/murukku.webp',
     label: 'Chana Chips Masala Snack',
     colSpan: 1,
     rowSpan: 2,
@@ -1639,7 +1639,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 6,
     category: 'Promotional Posters',
-    image: '/ads/corn-wafers-crisp-snack-poster.webp',
+    image: '/gallery/namkeen/waffer-crisp-snack.webp',
     label: 'Corn Wafers Crisp Snack',
     colSpan: 1,
     rowSpan: 2,
@@ -1648,7 +1648,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 7,
     category: 'Promotional Posters',
-    image: '/ads/disco-papad-savoury-snack-poster.webp',
+    image: '/gallery/namkeen/disco-papad.webp',
     label: 'Disco Papad Savoury Snack',
     colSpan: 1,
     rowSpan: 2,
@@ -1657,7 +1657,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 8,
     category: 'Promotional Posters',
-    image: '/ads/plain-tea-cake-poster.webp',
+    image: '/gallery/cakes/plain-cake-egg.webp',
     label: 'Plain Bakery Tea Cake',
     colSpan: 1,
     rowSpan: 2,
@@ -1666,7 +1666,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 9,
     category: 'Promotional Posters',
-    image: '/ads/savoury-herb-loaf-poster.webp',
+    image: '/gallery/snacks/garlic-loaf.webp',
     label: 'Savoury Herb Loaf Bread',
     colSpan: 1,
     rowSpan: 2,
@@ -1675,7 +1675,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 10,
     category: 'Promotional Posters',
-    image: '/ads/crispy-mathi-bites-snack-poster.webp',
+    image: '/gallery/rusks/eggless-cake-rusk.webp',
     label: 'Crispy Mathi Savoury Bites',
     colSpan: 1,
     rowSpan: 2,
@@ -1684,7 +1684,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 11,
     category: 'Promotional Posters',
-    image: '/ads/karela-mathi-savoury-poster.webp',
+    image: '/gallery/namkeen/beetroot-mathi.webp',
     label: 'Karela Mathi Savoury',
     colSpan: 1,
     rowSpan: 2,
@@ -1693,7 +1693,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 12,
     category: 'Promotional Posters',
-    image: '/ads/palak-marori-savoury-pastry-poster.webp',
+    image: '/gallery/namkeen/palak-marodi.webp',
     label: 'Palak Marori Savoury Pastry',
     colSpan: 1,
     rowSpan: 2,
@@ -1702,7 +1702,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 13,
     category: 'Promotional Posters',
-    image: '/ads/patila-puri-crisp-snack-poster.webp',
+    image: '/gallery/namkeen/bhel-puri.webp',
     label: 'Patila Puri Crisp Snack',
     colSpan: 1,
     rowSpan: 2,
@@ -1711,7 +1711,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 14,
     category: 'Promotional Posters',
-    image: '/ads/motichoor-besan-laddu-poster.webp',
+    image: '/gallery/sweets/chulai-laddu.webp',
     label: 'Desi Ghee Motichoor Laddu',
     colSpan: 1,
     rowSpan: 2,
@@ -1720,7 +1720,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 15,
     category: 'Promotional Posters',
-    image: '/ads/onion-ring-masala-snack-poster.webp',
+    image: '/gallery/namkeen/onion-ring-masala.webp',
     label: 'Onion Ring Masala Snack',
     colSpan: 1,
     rowSpan: 2,
@@ -1729,7 +1729,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 16,
     category: 'Promotional Posters',
-    image: '/ads/eggless-chocolate-cake-poster.webp',
+    image: '/gallery/cakes/chocolate-cake-eggless.webp',
     label: 'Eggless Rich Chocolate Cake',
     colSpan: 1,
     rowSpan: 2,
@@ -1738,7 +1738,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 17,
     category: 'Promotional Posters',
-    image: '/ads/twisty-puff-straws-poster.webp',
+    image: '/gallery/rusks/twisty-puff.webp',
     label: 'Twisty Puff Savoury Straws',
     colSpan: 1,
     rowSpan: 2,
@@ -1747,7 +1747,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 18,
     category: 'Promotional Posters',
-    image: '/ads/masala-loaf-bread-poster.webp',
+    image: '/gallery/snacks/masala-loaf.webp',
     label: 'Masala Savoury Loaf Bread',
     colSpan: 1,
     rowSpan: 2,
@@ -1756,7 +1756,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 19,
     category: 'Promotional Posters',
-    image: '/ads/eggless-butterscotch-cake-poster.webp',
+    image: '/gallery/cakes/butterscotch-cake-eggless-cake.webp',
     label: 'Eggless Butterscotch Cake',
     colSpan: 1,
     rowSpan: 2,
@@ -1765,7 +1765,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 20,
     category: 'Promotional Posters',
-    image: '/ads/chocolate-muffin-delight-poster.webp',
+    image: '/gallery/cakes/chocolate-muffin-eggless.webp',
     label: 'Eggless Chocolate Muffin',
     colSpan: 1,
     rowSpan: 2,
@@ -1774,7 +1774,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 21,
     category: 'Promotional Posters',
-    image: '/ads/oregano-savoury-puff-poster.webp',
+    image: '/gallery/rusks/oregano-puff.webp',
     label: 'Oregano Savoury Puff',
     colSpan: 1,
     rowSpan: 2,
@@ -1783,7 +1783,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 22,
     category: 'Promotional Posters',
-    image: '/ads/chana-jor-garam-snack-poster.webp',
+    image: '/gallery/namkeen/corn-shell.webp',
     label: 'Chana Jor Garam Savoury Snack',
     colSpan: 1,
     rowSpan: 2,
@@ -1792,7 +1792,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 23,
     category: 'Promotional Posters',
-    image: '/ads/diet-snacks-chips-poster.webp',
+    image: '/gallery/namkeen/diet-snacks-chips.webp',
     label: 'Diet Snack Crispy Chips',
     colSpan: 1,
     rowSpan: 2,
@@ -1801,7 +1801,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 24,
     category: 'Promotional Posters',
-    image: '/ads/methi-thepla-flatbread-poster.webp',
+    image: '/gallery/snacks/thepla.webp',
     label: 'Methi Thepla Savoury Flatbread',
     colSpan: 1,
     rowSpan: 2,
@@ -1810,7 +1810,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 25,
     category: 'Promotional Posters',
-    image: '/ads/eggless-pineapple-pastry-poster.webp',
+    image: '/gallery/cakes/muffin-eggless.webp',
     label: 'Eggless Pineapple Pastry Cake',
     colSpan: 1,
     rowSpan: 2,
@@ -1819,7 +1819,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 26,
     category: 'Promotional Posters',
-    image: '/ads/chinese-samosa-savoury-snack-poster.webp',
+    image: '/gallery/namkeen/chinese-samosa.webp',
     label: 'Chinese Mini Samosa Snack',
     colSpan: 1,
     rowSpan: 2,
@@ -1828,7 +1828,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 27,
     category: 'Promotional Posters',
-    image: '/ads/garlic-cheese-bread-poster.webp',
+    image: '/gallery/snacks/garlic-cheese-bread.webp',
     label: 'Garlic Cheese Savoury Bread',
     colSpan: 1,
     rowSpan: 2,
@@ -1837,7 +1837,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 28,
     category: 'Promotional Posters',
-    image: '/ads/fluffy-puff-pastry-roll-poster.webp',
+    image: '/gallery/rusks/puffy-heart-puff-pastry.webp',
     label: 'Fluffy Cream Puff Pastry',
     colSpan: 1,
     rowSpan: 2,
@@ -1846,7 +1846,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 29,
     category: 'Promotional Posters',
-    image: '/ads/chocolate-croissant-poster.webp',
+    image: '/gallery/snacks/chocolate-croissant.webp',
     label: 'Artisan Chocolate Croissant',
     colSpan: 1,
     rowSpan: 2,
@@ -1855,7 +1855,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 30,
     category: 'Promotional Posters',
-    image: '/ads/eggless-fruit-cake-slice-poster.webp',
+    image: '/gallery/cakes/fruit-cake-egg.webp',
     label: 'Eggless Fruit Cake Slice',
     colSpan: 1,
     rowSpan: 2,
@@ -1864,7 +1864,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 31,
     category: 'Promotional Posters',
-    image: '/ads/kasuri-methi-mathi-snack-poster.webp',
+    image: '/gallery/namkeen/raj-gigi-mathi.webp',
     label: 'Kasuri Methi Mathi Snack',
     colSpan: 1,
     rowSpan: 2,
@@ -1873,7 +1873,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 32,
     category: 'Promotional Posters',
-    image: '/ads/crunchy-munchy-savoury-crackers-poster.webp',
+    image: '/gallery/namkeen/crunchy-munchy-savoury-crackers.webp',
     label: 'Crunchy Munchy Savoury Crackers',
     colSpan: 1,
     rowSpan: 2,
@@ -1882,7 +1882,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 33,
     category: 'Promotional Posters',
-    image: '/ads/gol-gappa-suji-snack-poster.webp',
+    image: '/gallery/namkeen/gol-gappa-suji.webp',
     label: 'Gol Gappa Suji Snack',
     colSpan: 1,
     rowSpan: 2,
@@ -1891,7 +1891,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 34,
     category: 'Promotional Posters',
-    image: '/ads/round-fruit-celebration-cake-poster.webp',
+    image: '/gallery/cakes/fruit-cake-round-eggless.webp',
     label: 'Round Fruit Celebration Cake',
     colSpan: 1,
     rowSpan: 2,
@@ -1900,7 +1900,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 35,
     category: 'Promotional Posters',
-    image: '/ads/khakhra-plain-savoury-poster.webp',
+    image: '/gallery/namkeen/lacha-plain.webp',
     label: 'Khakhra Plain Savoury Crisp',
     colSpan: 1,
     rowSpan: 2,
@@ -1909,7 +1909,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 36,
     category: 'Promotional Posters',
-    image: '/ads/puff-square-savoury-bite-poster.webp',
+    image: '/gallery/rusks/puff-square.webp',
     label: 'Puff Square Savoury Bite',
     colSpan: 1,
     rowSpan: 2,
@@ -1918,7 +1918,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 37,
     category: 'Promotional Posters',
-    image: '/ads/golden-sweet-bun-poster.webp',
+    image: '/gallery/snacks/sweet-bun.webp',
     label: 'Golden Sweet Bakery Bun',
     colSpan: 1,
     rowSpan: 2,
@@ -1927,7 +1927,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 38,
     category: 'Promotional Posters',
-    image: '/ads/chakli-masala-spiral-snack-poster.webp',
+    image: '/gallery/namkeen/chakli-masala.webp',
     label: 'Chakli Masala Spiral Snack',
     colSpan: 1,
     rowSpan: 2,
@@ -1936,7 +1936,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 39,
     category: 'Promotional Posters',
-    image: '/ads/kaju-chips-savoury-delight-poster.webp',
+    image: '/gallery/namkeen/ragi-chips-cream-onion.webp',
     label: 'Kaju Chips Savoury Delight',
     colSpan: 1,
     rowSpan: 2,
@@ -1945,7 +1945,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 40,
     category: 'Promotional Posters',
-    image: '/ads/cornflakes-dry-fruit-cookies-poster.webp',
+    image: '/gallery/biscuits/cornflakes-dry-fruit-cookie.webp',
     label: 'Cornflakes Dry Fruit Cookies',
     colSpan: 1,
     rowSpan: 2,
@@ -1954,7 +1954,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 41,
     category: 'Promotional Posters',
-    image: '/ads/soya-stick-masala-snack-poster.webp',
+    image: '/gallery/namkeen/soya-stick.webp',
     label: 'Soya Stick Masala Snack',
     colSpan: 1,
     rowSpan: 2,
@@ -1963,7 +1963,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 42,
     category: 'Promotional Posters',
-    image: '/ads/tikoni-mathi-flaky-snack-poster.webp',
+    image: '/gallery/namkeen/fikki-mathi.webp',
     label: 'Tikoni Mathi Flaky Snack',
     colSpan: 1,
     rowSpan: 2,
@@ -1972,7 +1972,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 43,
     category: 'Promotional Posters',
-    image: '/ads/crispy-coconut-cookies-classic-poster.webp',
+    image: '/gallery/biscuits/coconut-cookies-egg-1.webp',
     label: 'Crispy Coconut Cookies Classic',
     colSpan: 1,
     rowSpan: 2,
@@ -1981,7 +1981,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 44,
     category: 'Promotional Posters',
-    image: '/ads/soya-chips-peri-peri-snack-poster.webp',
+    image: '/gallery/namkeen/soya-chips-pudina.webp',
     label: 'Soya Chips Peri Peri Snack',
     colSpan: 1,
     rowSpan: 2,
@@ -1990,7 +1990,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 45,
     category: 'Promotional Posters',
-    image: '/ads/classic-fruit-cake-poster.webp',
+    image: '/gallery/cakes/fruit-cake-eggless-cake.webp',
     label: 'Classic Fruit Loaf Cake',
     colSpan: 1,
     rowSpan: 2,
@@ -1999,7 +1999,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 46,
     category: 'Promotional Posters',
-    image: '/ads/stuffed-kulcha-savoury-bread-poster.webp',
+    image: '/gallery/snacks/kulcha.webp',
     label: 'Stuffed Savoury Kulcha Bread',
     colSpan: 1,
     rowSpan: 2,
@@ -2008,7 +2008,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 47,
     category: 'Promotional Posters',
-    image: '/ads/beetroot-chips-savoury-poster.webp',
+    image: '/gallery/namkeen/beetroot-chips-savoury.webp',
     label: 'Beetroot Vegetable Savoury Chips',
     colSpan: 1,
     rowSpan: 2,
@@ -2017,7 +2017,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 48,
     category: 'Promotional Posters',
-    image: '/ads/corn-jor-masala-namkeen-poster.webp',
+    image: '/gallery/namkeen/corn-taranjal.webp',
     label: 'Corn Jor Masala Namkeen',
     colSpan: 1,
     rowSpan: 2,
@@ -2026,7 +2026,7 @@ const promotionalPosters: GalleryItem[] = [
   {
     id: 5000 + 49,
     category: 'Promotional Posters',
-    image: '/ads/masala-focaccia-savoury-bread-poster.webp',
+    image: '/gallery/snacks/masala-bread.webp',
     label: 'Masala Spiced Focaccia Bread',
     colSpan: 1,
     rowSpan: 2,

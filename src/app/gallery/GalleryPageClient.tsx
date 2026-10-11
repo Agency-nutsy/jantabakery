@@ -156,6 +156,8 @@ export default function GalleryPageClient() {
     setTouchStart(null);
   };
 
+  const isGridLayout = activeTab === 'custom-cakes' || activeTab === 'rusks';
+
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-baby-pink/15 via-white to-soft-white">
       {/* Page Hero */}
@@ -278,13 +280,17 @@ export default function GalleryPageClient() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.25 }}
-                className="columns-2 md:columns-3 lg:columns-4 gap-3 [column-fill:_balance]"
+                className={
+                  isGridLayout
+                    ? "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3"
+                    : "columns-2 md:columns-3 lg:columns-4 gap-3 [column-fill:_balance]"
+                }
               >
                 {filteredItems.map((item, index) => {
                   // First 8: eager load + staggered entrance on page load
                   // Rest: lazy load + whileInView scroll reveal
-                  const isEager = index < 8;
-                  const staggerDelay = isEager ? index * 0.07 : 0;
+                  const isEager = isGridLayout || index < 8;
+                  const staggerDelay = isEager ? Math.min(index * 0.05, 0.4) : 0;
                   
                   // Use precise dimensions to reserve space (zero layout shift)
                   const aspectRatio = (item.width && item.height) ? `${item.width} / ${item.height}` : '3 / 4';
@@ -299,7 +305,9 @@ export default function GalleryPageClient() {
                       )}
                       transition={{ delay: staggerDelay, duration: 0.45, ease: 'easeOut' }}
                       onClick={() => openLightbox(index)}
-                      className="group relative mb-3 cursor-pointer overflow-hidden rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 break-inside-avoid"
+                      className={`group relative cursor-pointer overflow-hidden rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 ${
+                        isGridLayout ? '' : 'mb-3 break-inside-avoid'
+                      }`}
                       style={{ aspectRatio }}
                     >
                       {/* Natural uncropped image, space pre-reserved by container */}

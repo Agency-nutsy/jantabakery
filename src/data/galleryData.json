@@ -110,7 +110,7 @@
     "categories": [
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/cakes/blueberry-cheesecake-slice.webp",
+    "imagePath": "/gallery/cakes/blueberry-cheesecake-slice-slice.webp",
     "width": 1087,
     "height": 1449
   },
@@ -130,7 +130,7 @@
     "categories": [
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/cakes/blueberry-cheesecake-whole.webp",
+    "imagePath": "/gallery/cakes/blueberry-cheesecake-whole-whole.webp",
     "width": 1025,
     "height": 1537
   },
@@ -396,7 +396,7 @@
     "categories": [
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/cakes/fresh-fruit-cake.webp",
+    "imagePath": "/gallery/cakes/fruit-cake-a-slice-of-happiness.webp",
     "width": 1087,
     "height": 1449
   },
@@ -509,7 +509,7 @@
     "categories": [
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/cakes/mango-fruit-cake.webp",
+    "imagePath": "/gallery/cakes/fruit-cake.webp",
     "width": 1025,
     "height": 1537
   },
@@ -802,7 +802,7 @@
     "categories": [
       "cakes-pastries"
     ],
-    "imagePath": "/ads/chocolate-croissant-poster.webp",
+    "imagePath": "/gallery/snacks/chocolate-croissant.webp",
     "width": 1025,
     "height": 1537
   },
@@ -820,7 +820,7 @@
       "cakes-pastries",
       "snacks"
     ],
-    "imagePath": "/ads/chocolate-muffin-delight-poster.webp",
+    "imagePath": "/gallery/cakes/chocolate-muffin-eggless.webp",
     "width": 1025,
     "height": 1537
   },
@@ -841,7 +841,7 @@
       "cakes-pastries",
       "snacks"
     ],
-    "imagePath": "/ads/classic-fruit-cake-poster.webp",
+    "imagePath": "/gallery/cakes/fruit-cake-eggless-cake.webp",
     "width": 1025,
     "height": 1537
   },
@@ -860,7 +860,7 @@
     "categories": [
       "cakes-pastries"
     ],
-    "imagePath": "/ads/eggless-butterscotch-cake-poster.webp",
+    "imagePath": "/gallery/cakes/butterscotch-cake-eggless-cake.webp",
     "width": 1025,
     "height": 1537
   },
@@ -880,7 +880,7 @@
       "cakes-pastries",
       "snacks"
     ],
-    "imagePath": "/ads/eggless-chocolate-cake-poster.webp",
+    "imagePath": "/gallery/cakes/chocolate-cake-eggless.webp",
     "width": 1025,
     "height": 1537
   },
@@ -902,7 +902,7 @@
       "cakes-pastries",
       "snacks"
     ],
-    "imagePath": "/ads/eggless-fruit-cake-slice-poster.webp",
+    "imagePath": "/gallery/cakes/fruit-cake-egg.webp",
     "width": 1025,
     "height": 1537
   },
@@ -919,7 +919,7 @@
       "cakes-pastries",
       "snacks"
     ],
-    "imagePath": "/ads/eggless-pineapple-pastry-poster.webp",
+    "imagePath": "/gallery/cakes/muffin-eggless.webp",
     "width": 1025,
     "height": 1537
   },
@@ -935,7 +935,7 @@
     "categories": [
       "cakes-pastries"
     ],
-    "imagePath": "/ads/golden-sweet-bun-poster.webp",
+    "imagePath": "/gallery/snacks/sweet-bun.webp",
     "width": 1025,
     "height": 1537
   },
@@ -952,7 +952,7 @@
       "cakes-pastries",
       "snacks"
     ],
-    "imagePath": "/ads/namak-para-mathi-snack-poster.webp",
+    "imagePath": "/gallery/cakes/muffin-egg.webp",
     "width": 1025,
     "height": 1537
   },
@@ -971,7 +971,7 @@
     "categories": [
       "cakes-pastries"
     ],
-    "imagePath": "/ads/plain-tea-cake-poster.webp",
+    "imagePath": "/gallery/cakes/plain-cake-egg.webp",
     "width": 1025,
     "height": 1537
   },
@@ -992,7 +992,7 @@
     "categories": [
       "cakes-pastries"
     ],
-    "imagePath": "/ads/round-fruit-celebration-cake-poster.webp",
+    "imagePath": "/gallery/cakes/fruit-cake-round-eggless.webp",
     "width": 1025,
     "height": 1537
   },
@@ -1012,7 +1012,7 @@
     "categories": [
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/custom-cakes/custom-cake-12.webp",
+    "imagePath": "/gallery/custom-cakes/red-velvet-cake.webp",
     "width": 1149,
     "height": 1601
   },
@@ -1031,7 +1031,7 @@
     "categories": [
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/custom-cakes/custom-cake-13.webp",
+    "imagePath": "/gallery/custom-cakes/rasmalai-cake.webp",
     "width": 1073,
     "height": 1601
   },
@@ -1049,7 +1049,7 @@
     "categories": [
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/custom-cakes/custom-cake-14.webp",
+    "imagePath": "/gallery/custom-cakes/oreo-cake.webp",
     "width": 1073,
     "height": 1600
   },
@@ -1069,7 +1069,7 @@
     "categories": [
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/custom-cakes/custom-cake-15.webp",
+    "imagePath": "/gallery/custom-cakes/hazelnut-cheese-cake.webp",
     "width": 1071,
     "height": 1601
   },
@@ -1089,7 +1089,7 @@
     "categories": [
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/custom-cakes/custom-cake-16.webp",
+    "imagePath": "/gallery/custom-cakes/biscoff-cheese-cake.webp",
     "width": 1201,
     "height": 1587
   },
@@ -1107,7 +1107,7 @@
     "categories": [
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/custom-cakes/custom-cake-17.webp",
+    "imagePath": "/gallery/custom-cakes/pista-cake.webp",
     "width": 1087,
     "height": 1601
   },
@@ -1131,7 +1131,7 @@
       "custom-cakes",
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/custom-cakes/custom-cake-1.webp",
+    "imagePath": "/gallery/custom-cakes/cartoon-theme-cake.webp",
     "width": 1025,
     "height": 1537
   },
@@ -1158,7 +1158,7 @@
       "custom-cakes",
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/custom-cakes/custom-cake-2.webp",
+    "imagePath": "/gallery/custom-cakes/celebration-cake-perfect-for-special-moments.webp",
     "width": 1025,
     "height": 1537
   },
@@ -1183,7 +1183,7 @@
       "custom-cakes",
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/custom-cakes/custom-cake-3.webp",
+    "imagePath": "/gallery/custom-cakes/celebration-cake-2.webp",
     "width": 1025,
     "height": 1537
   },
@@ -1207,7 +1207,7 @@
       "custom-cakes",
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/custom-cakes/custom-cake-4.webp",
+    "imagePath": "/gallery/custom-cakes/chocolate-theme-cake.webp",
     "width": 1025,
     "height": 1537
   },
@@ -1231,7 +1231,7 @@
       "custom-cakes",
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/custom-cakes/custom-cake-5.webp",
+    "imagePath": "/gallery/custom-cakes/jungle-theme-cake.webp",
     "width": 1025,
     "height": 1537
   },
@@ -1253,7 +1253,7 @@
       "custom-cakes",
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/custom-cakes/custom-cake-6.webp",
+    "imagePath": "/gallery/custom-cakes/doll-cake.webp",
     "width": 1025,
     "height": 1537
   },
@@ -1279,7 +1279,7 @@
       "custom-cakes",
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/custom-cakes/custom-cake-7.webp",
+    "imagePath": "/gallery/custom-cakes/celebration-cake-3.webp",
     "width": 1025,
     "height": 1537
   },
@@ -1301,7 +1301,7 @@
       "custom-cakes",
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/custom-cakes/custom-cake-8.webp",
+    "imagePath": "/gallery/custom-cakes/princess-doll-cake.webp",
     "width": 1025,
     "height": 1537
   },
@@ -1322,7 +1322,7 @@
       "custom-cakes",
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/custom-cakes/custom-cake-9.webp",
+    "imagePath": "/gallery/custom-cakes/doraemon-cake.webp",
     "width": 1025,
     "height": 1537
   },
@@ -1346,7 +1346,7 @@
       "custom-cakes",
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/custom-cakes/custom-cake-10.webp",
+    "imagePath": "/gallery/custom-cakes/car-shape-cake.webp",
     "width": 1025,
     "height": 1537
   },
@@ -1367,7 +1367,7 @@
       "custom-cakes",
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/custom-cakes/custom-cake-11.webp",
+    "imagePath": "/gallery/custom-cakes/unicorn-cake.webp",
     "width": 1025,
     "height": 1537
   },
@@ -1390,7 +1390,7 @@
       "custom-cakes",
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/custom-cakes/custom-cake-18.webp",
+    "imagePath": "/gallery/custom-cakes/fairy-dream-cake.webp",
     "width": 1075,
     "height": 1601
   },
@@ -1413,7 +1413,7 @@
       "custom-cakes",
       "cakes-pastries"
     ],
-    "imagePath": "/gallery/custom-cakes/custom-cake-19.webp",
+    "imagePath": "/gallery/custom-cakes/fairy-princess-cake.webp",
     "width": 1147,
     "height": 1600
   },
@@ -1432,7 +1432,7 @@
     "categories": [
       "rusks"
     ],
-    "imagePath": "/gallery/rusks/atta-rusk-poster.webp",
+    "imagePath": "/gallery/rusks/whole-wheat-atta-rusk.webp",
     "width": 849,
     "height": 1265
   },
@@ -1453,7 +1453,7 @@
     "categories": [
       "rusks"
     ],
-    "imagePath": "/gallery/rusks/chini-kam-rusk-poster.webp",
+    "imagePath": "/gallery/rusks/less-sugar-chini-kam-rusk.webp",
     "width": 849,
     "height": 1265
   },
@@ -1472,7 +1472,7 @@
     "categories": [
       "rusks"
     ],
-    "imagePath": "/gallery/rusks/milk-rusk-poster.webp",
+    "imagePath": "/gallery/rusks/classic-crispy-milk-rusk.webp",
     "width": 849,
     "height": 1265
   },
@@ -1490,7 +1490,7 @@
     "categories": [
       "rusks"
     ],
-    "imagePath": "/gallery/rusks/special-shahi-rusk-poster.webp",
+    "imagePath": "/gallery/rusks/special-shahi-rusk.webp",
     "width": 849,
     "height": 1265
   },
@@ -1510,7 +1510,7 @@
     "categories": [
       "rusks"
     ],
-    "imagePath": "/gallery/rusks/suji-rusk-poster.webp",
+    "imagePath": "/gallery/rusks/golden-semolina-suji-rusk.webp",
     "width": 849,
     "height": 1265
   },
@@ -1529,7 +1529,7 @@
     "categories": [
       "rusks"
     ],
-    "imagePath": "/ads/crispy-mathi-bites-snack-poster.webp",
+    "imagePath": "/gallery/rusks/eggless-cake-rusk.webp",
     "width": 1025,
     "height": 1537
   },
@@ -1552,7 +1552,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/ads/cornflakes-dry-fruit-cookies-poster.webp",
+    "imagePath": "/gallery/biscuits/cornflakes-dry-fruit-cookie.webp",
     "width": 1025,
     "height": 1537
   },
@@ -1572,7 +1572,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/ads/crispy-coconut-cookies-classic-poster.webp",
+    "imagePath": "/gallery/biscuits/coconut-cookies-egg-1.webp",
     "width": 1025,
     "height": 1537
   },
@@ -1592,7 +1592,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/ads/eggless-coconut-cookies-poster.webp",
+    "imagePath": "/gallery/biscuits/coconut-cookies-egg-2.webp",
     "width": 1025,
     "height": 1537
   },
@@ -1613,7 +1613,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/choco-crunch-poster.webp",
+    "imagePath": "/choco-crunch-biscuits.webp",
     "width": 849,
     "height": 1265
   },
@@ -1630,7 +1630,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/almond-biscotti-banner.webp",
+    "imagePath": "/gallery/biscuits/almond-biscotti.webp",
     "width": 1377,
     "height": 769
   },
@@ -1651,7 +1651,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/atta-cookies-poster.webp",
+    "imagePath": "/gallery/biscuits/crispy-atta-biscuits.webp",
     "width": 849,
     "height": 1265
   },
@@ -1673,7 +1673,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/atta-sugar-free-landscape.webp",
+    "imagePath": "/gallery/biscuits/atta-cookies-sugar-free.webp",
     "width": 1201,
     "height": 897
   },
@@ -1695,7 +1695,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/badam-khatai-square.webp",
+    "imagePath": "/gallery/biscuits/badam-khatai-biscuits.webp",
     "width": 1025,
     "height": 1025
   },
@@ -1719,7 +1719,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/besan-khatai-banner.webp",
+    "imagePath": "/gallery/biscuits/royal-besan-khatai-cookies.webp",
     "width": 1377,
     "height": 769
   },
@@ -1741,7 +1741,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/butter-jam-pista-portrait.webp",
+    "imagePath": "/gallery/biscuits/butter-jam-pista-biscuits.webp",
     "width": 897,
     "height": 1201
   },
@@ -1762,7 +1762,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/butter-kaju-banner.webp",
+    "imagePath": "/gallery/biscuits/butter-kaju-biscotti.webp",
     "width": 1377,
     "height": 769
   },
@@ -1786,7 +1786,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/cashew-khatai-square.webp",
+    "imagePath": "/gallery/biscuits/royal-cashew-khatai-biscuits.webp",
     "width": 1025,
     "height": 1025
   },
@@ -1811,7 +1811,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/choco-chips-poster.webp",
+    "imagePath": "/gallery/biscuits/choco-chips-biscuits.webp",
     "width": 849,
     "height": 1265
   },
@@ -1832,7 +1832,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/chocolate-marble-poster.webp",
+    "imagePath": "/gallery/biscuits/chocolate-marble-cookies.webp",
     "width": 849,
     "height": 1265
   },
@@ -1852,7 +1852,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/chocos-cookies-poster.webp",
+    "imagePath": "/gallery/biscuits/chocos-cookies-biscuits.webp",
     "width": 849,
     "height": 1265
   },
@@ -1875,7 +1875,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/choker-namkeen-poster.webp",
+    "imagePath": "/gallery/biscuits/choker-namkeen-biscuits.webp",
     "width": 849,
     "height": 1265
   },
@@ -1896,7 +1896,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/coconut-drops-square.webp",
+    "imagePath": "/gallery/biscuits/toasted-coconut-drops.webp",
     "width": 1025,
     "height": 1025
   },
@@ -1923,7 +1923,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/dry-fruits-poster.webp",
+    "imagePath": "/gallery/biscuits/loaded-dry-fruits-cookies.webp",
     "width": 897,
     "height": 1201
   },
@@ -1945,7 +1945,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/elaichi-khatai-poster.webp",
+    "imagePath": "/gallery/biscuits/elaichi-khatai-biscuits.webp",
     "width": 849,
     "height": 1265
   },
@@ -1966,7 +1966,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/gol-jeera-portrait.webp",
+    "imagePath": "/gallery/biscuits/gol-jeera-biscuits.webp",
     "width": 897,
     "height": 1201
   },
@@ -1988,7 +1988,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/hyderabadi-fruit-poster.webp",
+    "imagePath": "/gallery/biscuits/hyderabadi-biscuits.webp",
     "width": 849,
     "height": 1265
   },
@@ -2012,7 +2012,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/jaggery-multigrain-landscape.webp",
+    "imagePath": "/gallery/biscuits/jaggery-multigrain-biscuits.webp",
     "width": 1201,
     "height": 897
   },
@@ -2033,7 +2033,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/jam-pista-poster.webp",
+    "imagePath": "/gallery/biscuits/jam-pista-cookies.webp",
     "width": 849,
     "height": 1265
   },
@@ -2054,7 +2054,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/jeera-bite-square.webp",
+    "imagePath": "/gallery/biscuits/jeera-bite-biscuits.webp",
     "width": 1025,
     "height": 1025
   },
@@ -2078,7 +2078,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/kaju-pista-cookies.webp",
+    "imagePath": "/gallery/biscuits/kaju-pista-cookies-sugar-free.webp",
     "width": 1201,
     "height": 897
   },
@@ -2100,7 +2100,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/kaju-pista-poster.webp",
+    "imagePath": "/gallery/biscuits/kaju-pista-biscuits.webp",
     "width": 849,
     "height": 1265
   },
@@ -2121,7 +2121,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/milk-badam-poster.webp",
+    "imagePath": "/gallery/biscuits/milk-badam-biscuits.webp",
     "width": 849,
     "height": 1265
   },
@@ -2142,7 +2142,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/milk-kaju-banner.webp",
+    "imagePath": "/gallery/biscuits/milk-kaju-biscuits.webp",
     "width": 1377,
     "height": 769
   },
@@ -2165,7 +2165,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/milk-pista-square.webp",
+    "imagePath": "/gallery/biscuits/milk-pista-biscuits.webp",
     "width": 1025,
     "height": 1025
   },
@@ -2187,7 +2187,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/multi-grain-landscape.webp",
+    "imagePath": "/gallery/biscuits/multi-grain-biscuits.webp",
     "width": 1201,
     "height": 897
   },
@@ -2210,7 +2210,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/namkeen-jalebi-landscape.webp",
+    "imagePath": "/gallery/biscuits/namkeen-jalebi-swirls.webp",
     "width": 1201,
     "height": 897
   },
@@ -2232,7 +2232,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/namkeen-paneer-landscape.webp",
+    "imagePath": "/gallery/biscuits/namkeen-paneer-biscuits.webp",
     "width": 1201,
     "height": 897
   },
@@ -2253,7 +2253,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/oats-cookies-portrait.webp",
+    "imagePath": "/gallery/biscuits/golden-oats-cookies.webp",
     "width": 897,
     "height": 1201
   },
@@ -2274,7 +2274,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/paper-almond-banner.webp",
+    "imagePath": "/gallery/biscuits/paper-almond-cookies.webp",
     "width": 1377,
     "height": 769
   },
@@ -2296,7 +2296,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/plain-besan-portrait.webp",
+    "imagePath": "/gallery/biscuits/plain-besan-cookies.webp",
     "width": 897,
     "height": 1201
   },
@@ -2318,7 +2318,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/sada-butter-square.webp",
+    "imagePath": "/gallery/biscuits/sada-butter-biscuits.webp",
     "width": 1025,
     "height": 1025
   },
@@ -2339,7 +2339,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/shahi-badam-square.webp",
+    "imagePath": "/gallery/biscuits/shahi-badam-biscuits.webp",
     "width": 1025,
     "height": 1025
   },
@@ -2361,7 +2361,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/special-besan-square.webp",
+    "imagePath": "/gallery/biscuits/special-besan-biscuits.webp",
     "width": 1025,
     "height": 1025
   },
@@ -2382,7 +2382,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/special-kaju-square.webp",
+    "imagePath": "/gallery/biscuits/special-kaju-biscuits.webp",
     "width": 1025,
     "height": 1025
   },
@@ -2403,7 +2403,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/sweet-jalebi-landscape.webp",
+    "imagePath": "/gallery/biscuits/sweet-jalebi-biscuits.webp",
     "width": 1265,
     "height": 849
   },
@@ -2423,7 +2423,7 @@
     "categories": [
       "biscuits"
     ],
-    "imagePath": "/gallery/biscuits/toasted-coconut-square.webp",
+    "imagePath": "/gallery/biscuits/toasted-coconut-biscuits.webp",
     "width": 1025,
     "height": 1025
   },
@@ -2442,7 +2442,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/karela-mathi-savoury-poster.webp",
+    "imagePath": "/gallery/namkeen/beetroot-mathi.webp",
     "width": 1025,
     "height": 1537
   },
@@ -2463,7 +2463,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/kasuri-methi-mathi-snack-poster.webp",
+    "imagePath": "/gallery/namkeen/raj-gigi-mathi.webp",
     "width": 1025,
     "height": 1537
   },
@@ -2483,7 +2483,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/tikoni-mathi-flaky-snack-poster.webp",
+    "imagePath": "/gallery/namkeen/fikki-mathi.webp",
     "width": 1025,
     "height": 1537
   },
@@ -2503,7 +2503,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/achari-mathi-poster.webp",
+    "imagePath": "/gallery/namkeen/achari-mathi.webp",
     "width": 1025,
     "height": 1025
   },
@@ -2526,7 +2526,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/aloo-bhujia-poster.webp",
+    "imagePath": "/gallery/namkeen/aloo-bhujiya.webp",
     "width": 1025,
     "height": 1025
   },
@@ -2546,7 +2546,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/aloo-mathi-poster.webp",
+    "imagePath": "/gallery/namkeen/aloo-mathi.webp",
     "width": 1377,
     "height": 769
   },
@@ -2566,7 +2566,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/badam-lacha-poster.webp",
+    "imagePath": "/gallery/namkeen/badam-lacha.webp",
     "width": 897,
     "height": 1201
   },
@@ -2586,7 +2586,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/besan-masala-papdi-poster.webp",
+    "imagePath": "/gallery/namkeen/besan-masala-papdi.webp",
     "width": 1201,
     "height": 897
   },
@@ -2605,7 +2605,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/besan-papdi-poster.webp",
+    "imagePath": "/gallery/namkeen/besan-papdi.webp",
     "width": 1025,
     "height": 1025
   },
@@ -2624,7 +2624,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/bhaji-box-poster.webp",
+    "imagePath": "/gallery/namkeen/bhaji-box.webp",
     "width": 1377,
     "height": 769
   },
@@ -2641,7 +2641,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/bhakarwadi-poster.webp",
+    "imagePath": "/gallery/namkeen/bhakarwadi.webp",
     "width": 849,
     "height": 1265
   },
@@ -2661,7 +2661,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/bikaneri-bhujiya-poster.webp",
+    "imagePath": "/gallery/namkeen/bikaneri-bhujiya.webp",
     "width": 1377,
     "height": 769
   },
@@ -2686,7 +2686,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/chiwda-cornflakes-poster.webp",
+    "imagePath": "/gallery/namkeen/chiwda-cornflakes.webp",
     "width": 897,
     "height": 1201
   },
@@ -2705,7 +2705,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/classic-boondi-poster.webp",
+    "imagePath": "/gallery/namkeen/classic-boondi.webp",
     "width": 1377,
     "height": 769
   },
@@ -2730,7 +2730,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/cornflakes-mixture-poster.webp",
+    "imagePath": "/gallery/namkeen/cornflakes-mixture.webp",
     "width": 1025,
     "height": 1025
   },
@@ -2757,7 +2757,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/curry-leaf-murmura-poster.webp",
+    "imagePath": "/gallery/namkeen/curry-leaf-murmura.webp",
     "width": 1377,
     "height": 769
   },
@@ -2776,7 +2776,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/dabba-mathi-poster.webp",
+    "imagePath": "/gallery/namkeen/dabba-mathi.webp",
     "width": 849,
     "height": 1265
   },
@@ -2799,7 +2799,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/dal-biji-poster.webp",
+    "imagePath": "/gallery/namkeen/dal-beeji.webp",
     "width": 1377,
     "height": 769
   },
@@ -2816,7 +2816,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/fafda-poster.webp",
+    "imagePath": "/gallery/namkeen/gujarati-fafda.webp",
     "width": 849,
     "height": 1265
   },
@@ -2843,7 +2843,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/falahari-mix-meetha-poster.webp",
+    "imagePath": "/gallery/namkeen/falahari-mix-meetha.webp",
     "width": 897,
     "height": 1201
   },
@@ -2861,7 +2861,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/gathiya-poster.webp",
+    "imagePath": "/gallery/namkeen/gathiya.webp",
     "width": 1201,
     "height": 897
   },
@@ -2881,7 +2881,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/gol-mathi-poster.webp",
+    "imagePath": "/gallery/namkeen/gol-mathi.webp",
     "width": 849,
     "height": 1265
   },
@@ -2900,7 +2900,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/gud-para-poster.webp",
+    "imagePath": "/gallery/namkeen/gud-para.webp",
     "width": 897,
     "height": 1201
   },
@@ -2918,7 +2918,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/gujrati-sev-poster.webp",
+    "imagePath": "/gallery/namkeen/gujarati-sev.webp",
     "width": 1025,
     "height": 1025
   },
@@ -2937,7 +2937,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/hing-mirchi-sev-poster.webp",
+    "imagePath": "/gallery/namkeen/hing-mirchi-sev.webp",
     "width": 897,
     "height": 1201
   },
@@ -2956,7 +2956,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/kadi-patta-boondi-poster.webp",
+    "imagePath": "/gallery/namkeen/kadi-patta-boondi.webp",
     "width": 1377,
     "height": 769
   },
@@ -2978,7 +2978,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/kanpuri-mixture-dryfruit-poster.webp",
+    "imagePath": "/gallery/namkeen/kanpuri-mixture.webp",
     "width": 1377,
     "height": 769
   },
@@ -2998,7 +2998,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/khajuri-mathi-poster.webp",
+    "imagePath": "/gallery/namkeen/khajuri-mathi.webp",
     "width": 897,
     "height": 1201
   },
@@ -3018,7 +3018,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/khatta-meetha-poster.webp",
+    "imagePath": "/gallery/namkeen/khatta-meetha.webp",
     "width": 1025,
     "height": 1025
   },
@@ -3038,7 +3038,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/madrasi-mixture-poster.webp",
+    "imagePath": "/gallery/namkeen/madrasi-mixture.webp",
     "width": 1201,
     "height": 897
   },
@@ -3056,7 +3056,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/masala-chandni-poster.webp",
+    "imagePath": "/gallery/namkeen/masala-chandni.webp",
     "width": 897,
     "height": 1201
   },
@@ -3072,7 +3072,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/masala-karela-poster.webp",
+    "imagePath": "/gallery/namkeen/masala-karela.webp",
     "width": 1025,
     "height": 1025
   },
@@ -3092,7 +3092,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/methi-mathi-poster.webp",
+    "imagePath": "/gallery/namkeen/methi-mathi.webp",
     "width": 1201,
     "height": 897
   },
@@ -3111,7 +3111,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/milk-mathi-poster.webp",
+    "imagePath": "/gallery/namkeen/milk-mathi.webp",
     "width": 1025,
     "height": 1025
   },
@@ -3128,7 +3128,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/mini-kachori-poster.webp",
+    "imagePath": "/gallery/namkeen/mini-kachori.webp",
     "width": 1025,
     "height": 1025
   },
@@ -3145,7 +3145,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/mini-samosa-poster.webp",
+    "imagePath": "/gallery/namkeen/crispy-mini-samosa.webp",
     "width": 849,
     "height": 1265
   },
@@ -3163,7 +3163,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/mirchi-sev-poster.webp",
+    "imagePath": "/gallery/namkeen/mirchi-sev.webp",
     "width": 897,
     "height": 1201
   },
@@ -3183,7 +3183,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/mirchi-tangri-poster.webp",
+    "imagePath": "/gallery/namkeen/mirchi-tangri.webp",
     "width": 897,
     "height": 1201
   },
@@ -3203,7 +3203,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/moong-dal-poster.webp",
+    "imagePath": "/gallery/namkeen/moong-dal-namkeen.webp",
     "width": 1377,
     "height": 769
   },
@@ -3219,7 +3219,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/moongra-poster.webp",
+    "imagePath": "/gallery/namkeen/moongra.webp",
     "width": 1025,
     "height": 1025
   },
@@ -3241,7 +3241,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/mota-sev-poster.webp",
+    "imagePath": "/gallery/namkeen/mota-sev.webp",
     "width": 1201,
     "height": 897
   },
@@ -3261,7 +3261,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/multigrain-flakes-poster.webp",
+    "imagePath": "/gallery/namkeen/multigrain-and-flakes.webp",
     "width": 1025,
     "height": 1025
   },
@@ -3280,7 +3280,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/murmura-mixture-poster.webp",
+    "imagePath": "/gallery/namkeen/murmura-mixture.webp",
     "width": 1201,
     "height": 897
   },
@@ -3300,7 +3300,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/namak-para-poster.webp",
+    "imagePath": "/gallery/namkeen/namak-para.webp",
     "width": 1377,
     "height": 769
   },
@@ -3325,7 +3325,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/namkeen-falahari-mix-poster.webp",
+    "imagePath": "/gallery/namkeen/namkeen-falahari.webp",
     "width": 1377,
     "height": 769
   },
@@ -3346,7 +3346,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/nut-cracker-poster.webp",
+    "imagePath": "/gallery/namkeen/nut-cracker.webp",
     "width": 1201,
     "height": 897
   },
@@ -3364,7 +3364,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/panchratan-mix-poster.webp",
+    "imagePath": "/gallery/namkeen/panchratan-mixture.webp",
     "width": 897,
     "height": 1201
   },
@@ -3380,7 +3380,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/papdi-poster.webp",
+    "imagePath": "/gallery/namkeen/papdi.webp",
     "width": 1377,
     "height": 769
   },
@@ -3402,7 +3402,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/phool-mathi-poster.webp",
+    "imagePath": "/gallery/namkeen/crispy-layered-phool-mathi.webp",
     "width": 849,
     "height": 1265
   },
@@ -3420,7 +3420,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/plain-chandni-poster.webp",
+    "imagePath": "/gallery/namkeen/plain-chandni.webp",
     "width": 1025,
     "height": 1025
   },
@@ -3439,7 +3439,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/plain-cornflex-poster.webp",
+    "imagePath": "/gallery/namkeen/plain-cornflex.webp",
     "width": 1377,
     "height": 769
   },
@@ -3460,7 +3460,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/plain-mixture-poster.webp",
+    "imagePath": "/gallery/namkeen/plain-mixture.webp",
     "width": 1025,
     "height": 1025
   },
@@ -3479,7 +3479,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/satrangi-mathi-poster.webp",
+    "imagePath": "/gallery/namkeen/satrangi-mathi.webp",
     "width": 1201,
     "height": 897
   },
@@ -3497,7 +3497,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/shakarpara-poster.webp",
+    "imagePath": "/gallery/namkeen/shakarpara.webp",
     "width": 1025,
     "height": 1025
   },
@@ -3522,7 +3522,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/special-corn-namkeen-poster.webp",
+    "imagePath": "/gallery/namkeen/special-corn-namkeen.webp",
     "width": 1377,
     "height": 769
   },
@@ -3544,7 +3544,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/spicy-mixture-poster.webp",
+    "imagePath": "/gallery/namkeen/spicy-mixture-hot-and-chatpata-chivda.webp",
     "width": 1201,
     "height": 897
   },
@@ -3566,7 +3566,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/suji-til-mathi-poster.webp",
+    "imagePath": "/gallery/namkeen/suji-til-mathi.webp",
     "width": 1377,
     "height": 769
   },
@@ -3587,7 +3587,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/swadishta-mix-poster.webp",
+    "imagePath": "/gallery/namkeen/swadishtha-mix.webp",
     "width": 1201,
     "height": 897
   },
@@ -3603,7 +3603,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/sweet-karela-poster.webp",
+    "imagePath": "/gallery/namkeen/sweet-karela.webp",
     "width": 897,
     "height": 1201
   },
@@ -3624,7 +3624,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/tikoni-laung-mathi-poster.webp",
+    "imagePath": "/gallery/namkeen/tikoni-laung-mathi.webp",
     "width": 1201,
     "height": 897
   },
@@ -3644,7 +3644,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/tikoni-mathi-poster.webp",
+    "imagePath": "/gallery/namkeen/tikoni-mathi.webp",
     "width": 1025,
     "height": 1025
   },
@@ -3670,7 +3670,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/white-chidwa-mix-poster.webp",
+    "imagePath": "/gallery/namkeen/white-chidwa-mix.webp",
     "width": 1025,
     "height": 1025
   },
@@ -3694,7 +3694,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/yellow-chidwa-mix-poster.webp",
+    "imagePath": "/gallery/namkeen/yellow-chidwa-mix.webp",
     "width": 897,
     "height": 1201
   },
@@ -3714,7 +3714,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/zero-sev-poster.webp",
+    "imagePath": "/gallery/namkeen/zero-sev.webp",
     "width": 897,
     "height": 1201
   },
@@ -3735,7 +3735,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/beetroot-chips-savoury-poster.webp",
+    "imagePath": "/gallery/namkeen/beetroot-chips-savoury.webp",
     "width": 1025,
     "height": 1537
   },
@@ -3757,7 +3757,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/chakli-masala-spiral-snack-poster.webp",
+    "imagePath": "/gallery/namkeen/chakli-masala.webp",
     "width": 1025,
     "height": 1537
   },
@@ -3775,7 +3775,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/chana-chips-masala-snack-poster.webp",
+    "imagePath": "/gallery/namkeen/murukku.webp",
     "width": 1025,
     "height": 1537
   },
@@ -3792,7 +3792,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/chana-jor-garam-snack-poster.webp",
+    "imagePath": "/gallery/namkeen/corn-shell.webp",
     "width": 1025,
     "height": 1537
   },
@@ -3809,7 +3809,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/chinese-samosa-savoury-snack-poster.webp",
+    "imagePath": "/gallery/namkeen/chinese-samosa.webp",
     "width": 1025,
     "height": 1537
   },
@@ -3826,7 +3826,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/corn-jor-masala-namkeen-poster.webp",
+    "imagePath": "/gallery/namkeen/corn-taranjal.webp",
     "width": 1025,
     "height": 1537
   },
@@ -3848,7 +3848,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/corn-wafers-crisp-snack-poster.webp",
+    "imagePath": "/gallery/namkeen/waffer-crisp-snack.webp",
     "width": 1025,
     "height": 1537
   },
@@ -3867,7 +3867,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/crunchy-munchy-savoury-crackers-poster.webp",
+    "imagePath": "/gallery/namkeen/crunchy-munchy-savoury-crackers.webp",
     "width": 1025,
     "height": 1537
   },
@@ -3888,7 +3888,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/diet-snacks-chips-poster.webp",
+    "imagePath": "/gallery/namkeen/diet-snacks-chips.webp",
     "width": 1025,
     "height": 1537
   },
@@ -3905,7 +3905,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/disco-papad-savoury-snack-poster.webp",
+    "imagePath": "/gallery/namkeen/disco-papad.webp",
     "width": 1025,
     "height": 1537
   },
@@ -3927,7 +3927,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/fluffy-puff-pastry-roll-poster.webp",
+    "imagePath": "/gallery/rusks/puffy-heart-puff-pastry.webp",
     "width": 1025,
     "height": 1537
   },
@@ -3945,7 +3945,7 @@
     "categories": [
       "snacks"
     ],
-    "imagePath": "/ads/garlic-cheese-bread-poster.webp",
+    "imagePath": "/gallery/snacks/garlic-cheese-bread.webp",
     "width": 1025,
     "height": 1537
   },
@@ -3967,7 +3967,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/gol-gappa-suji-snack-poster.webp",
+    "imagePath": "/gallery/namkeen/gol-gappa-suji.webp",
     "width": 1025,
     "height": 1537
   },
@@ -3989,7 +3989,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/kaju-chips-savoury-delight-poster.webp",
+    "imagePath": "/gallery/namkeen/ragi-chips-cream-onion.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4009,7 +4009,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/khakhra-plain-savoury-poster.webp",
+    "imagePath": "/gallery/namkeen/lacha-plain.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4027,7 +4027,7 @@
     "categories": [
       "snacks"
     ],
-    "imagePath": "/ads/masala-focaccia-savoury-bread-poster.webp",
+    "imagePath": "/gallery/snacks/masala-bread.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4044,7 +4044,7 @@
     "categories": [
       "snacks"
     ],
-    "imagePath": "/ads/masala-loaf-bread-poster.webp",
+    "imagePath": "/gallery/snacks/masala-loaf.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4061,7 +4061,7 @@
     "categories": [
       "snacks"
     ],
-    "imagePath": "/ads/methi-thepla-flatbread-poster.webp",
+    "imagePath": "/gallery/snacks/thepla.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4081,7 +4081,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/motichoor-besan-laddu-poster.webp",
+    "imagePath": "/gallery/sweets/chulai-laddu.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4099,7 +4099,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/onion-ring-masala-snack-poster.webp",
+    "imagePath": "/gallery/namkeen/onion-ring-masala.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4115,7 +4115,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/oregano-savoury-puff-poster.webp",
+    "imagePath": "/gallery/rusks/oregano-puff.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4135,7 +4135,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/palak-marori-savoury-pastry-poster.webp",
+    "imagePath": "/gallery/namkeen/palak-marodi.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4155,7 +4155,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/palak-marori-poster.webp",
+    "imagePath": "/gallery/namkeen/crispy-layered-palak-marori.webp",
     "width": 849,
     "height": 1265
   },
@@ -4172,7 +4172,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/patila-puri-crisp-snack-poster.webp",
+    "imagePath": "/gallery/namkeen/bhel-puri.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4193,7 +4193,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/potato-puffs-chips-poster.webp",
+    "imagePath": "/gallery/namkeen/potato-chips-spicy.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4208,7 +4208,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/puff-square-savoury-bite-poster.webp",
+    "imagePath": "/gallery/rusks/puff-square.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4225,7 +4225,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/rusks/puff-square-poster.webp",
+    "imagePath": "/gallery/rusks/flaky-layered-puff-square.webp",
     "width": 849,
     "height": 1265
   },
@@ -4244,7 +4244,7 @@
     "categories": [
       "snacks"
     ],
-    "imagePath": "/ads/savoury-herb-loaf-poster.webp",
+    "imagePath": "/gallery/snacks/garlic-loaf.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4267,7 +4267,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/soya-chips-peri-peri-snack-poster.webp",
+    "imagePath": "/gallery/namkeen/soya-chips-pudina.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4287,7 +4287,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/soya-chips-savoury-snack-poster.webp",
+    "imagePath": "/gallery/namkeen/soya-chips.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4305,7 +4305,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/soya-stick-masala-snack-poster.webp",
+    "imagePath": "/gallery/namkeen/soya-stick.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4322,7 +4322,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/stuffed-kulcha-savoury-bread-poster.webp",
+    "imagePath": "/gallery/snacks/kulcha.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4341,7 +4341,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/ads/twisty-puff-straws-poster.webp",
+    "imagePath": "/gallery/rusks/twisty-puff.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4359,7 +4359,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/rusks/twisty-puff-poster.webp",
+    "imagePath": "/gallery/rusks/golden-crispy-twisty-puff.webp",
     "width": 849,
     "height": 1265
   },
@@ -4378,7 +4378,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/rusks/ajwain-fan-poster.webp",
+    "imagePath": "/gallery/rusks/buttery-flaky-ajwain-fan.webp",
     "width": 849,
     "height": 1265
   },
@@ -4396,7 +4396,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/sweets/dry-petha-poster.webp",
+    "imagePath": "/gallery/sweets/agra-dry-petha.webp",
     "width": 849,
     "height": 1265
   },
@@ -4420,7 +4420,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/banana-chips-poster.webp",
+    "imagePath": "/gallery/namkeen/banana-chips.webp",
     "width": 1201,
     "height": 897
   },
@@ -4442,7 +4442,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/beetroot-chips-poster.webp",
+    "imagePath": "/gallery/namkeen/beetroot-chips.webp",
     "width": 849,
     "height": 1265
   },
@@ -4465,7 +4465,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/black-pepper-makhana-poster.webp",
+    "imagePath": "/gallery/namkeen/black-pepper-makhana.webp",
     "width": 849,
     "height": 1265
   },
@@ -4487,7 +4487,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/broccoli-chips-poster.webp",
+    "imagePath": "/gallery/namkeen/crispy-broccoli-chips.webp",
     "width": 1025,
     "height": 1025
   },
@@ -4506,7 +4506,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/diet-jhalmuri-poster.webp",
+    "imagePath": "/gallery/namkeen/diet-jhal-muri.webp",
     "width": 849,
     "height": 1265
   },
@@ -4525,7 +4525,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/diet-millet-mix-poster.webp",
+    "imagePath": "/gallery/namkeen/diet-millet-mixture.webp",
     "width": 849,
     "height": 1265
   },
@@ -4548,7 +4548,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/masala-banana-chips-poster.webp",
+    "imagePath": "/gallery/namkeen/masala-banana-chips.webp",
     "width": 1377,
     "height": 769
   },
@@ -4567,7 +4567,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/masala-kaju-poster.webp",
+    "imagePath": "/gallery/namkeen/royal-masala-kaju.webp",
     "width": 849,
     "height": 1265
   },
@@ -4590,7 +4590,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/mint-pudina-makhana-poster.webp",
+    "imagePath": "/gallery/namkeen/mint-pudina-makhana.webp",
     "width": 849,
     "height": 1265
   },
@@ -4616,7 +4616,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/mix-veg-chips-poster.webp",
+    "imagePath": "/gallery/namkeen/crispy-mix-veg-chips.webp",
     "width": 1201,
     "height": 897
   },
@@ -4639,7 +4639,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/peri-peri-makhana-poster.webp",
+    "imagePath": "/gallery/namkeen/peri-peri-makhana.webp",
     "width": 1025,
     "height": 1025
   },
@@ -4661,7 +4661,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/plain-salted-makhana-poster.webp",
+    "imagePath": "/gallery/namkeen/plain-salted-makhana.webp",
     "width": 897,
     "height": 1201
   },
@@ -4684,7 +4684,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/rajma-chips-poster.webp",
+    "imagePath": "/gallery/namkeen/spiced-rajma-chips.webp",
     "width": 849,
     "height": 1265
   },
@@ -4703,7 +4703,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/salsa-multigrain-sticks-poster.webp",
+    "imagePath": "/gallery/namkeen/salsa-multigrain-sticks.webp",
     "width": 849,
     "height": 1265
   },
@@ -4722,7 +4722,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/soya-katori-masala-poster.webp",
+    "imagePath": "/gallery/namkeen/soya-katori-masala.webp",
     "width": 897,
     "height": 1201
   },
@@ -4740,7 +4740,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/soya-katori-plain-poster.webp",
+    "imagePath": "/gallery/namkeen/soya-katori-plain.webp",
     "width": 1025,
     "height": 1025
   },
@@ -4759,7 +4759,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/namkeen/tandoori-multigrain-sticks-poster.webp",
+    "imagePath": "/gallery/namkeen/tandoori-multigrain-sticks.webp",
     "width": 849,
     "height": 1265
   },
@@ -4779,7 +4779,7 @@
     "categories": [
       "snacks"
     ],
-    "imagePath": "/gallery/snacks/mushroom-patties-poster.webp",
+    "imagePath": "/gallery/snacks/mushroom-patty.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4798,7 +4798,7 @@
     "categories": [
       "snacks"
     ],
-    "imagePath": "/gallery/snacks/veg-finger-wrap-poster.webp",
+    "imagePath": "/gallery/snacks/veg-finger-wrap.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4817,7 +4817,7 @@
     "categories": [
       "snacks"
     ],
-    "imagePath": "/gallery/snacks/club-sandwich-poster.webp",
+    "imagePath": "/gallery/snacks/club-sandwich.webp",
     "width": 1146,
     "height": 1375
   },
@@ -4834,7 +4834,7 @@
     "categories": [
       "snacks"
     ],
-    "imagePath": "/gallery/snacks/veg-burger-poster.webp",
+    "imagePath": "/gallery/snacks/burger.webp",
     "width": 1146,
     "height": 1375
   },
@@ -4853,7 +4853,7 @@
     "categories": [
       "snacks"
     ],
-    "imagePath": "/gallery/snacks/soya-chaap-wrap-poster.webp",
+    "imagePath": "/gallery/snacks/chaap-wrap.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4870,7 +4870,7 @@
     "categories": [
       "snacks"
     ],
-    "imagePath": "/gallery/snacks/khandvi-poster.webp",
+    "imagePath": "/gallery/snacks/khandvi.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4889,7 +4889,7 @@
     "categories": [
       "snacks"
     ],
-    "imagePath": "/gallery/snacks/paneer-kulcha-poster.webp",
+    "imagePath": "/gallery/snacks/paneer-kulcha-brown.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4906,7 +4906,7 @@
     "categories": [
       "snacks"
     ],
-    "imagePath": "/gallery/snacks/paneer-wrap-poster.webp",
+    "imagePath": "/gallery/snacks/paneer-wrap.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4924,7 +4924,7 @@
     "categories": [
       "snacks"
     ],
-    "imagePath": "/gallery/snacks/veg-pizza-sandwich-poster.webp",
+    "imagePath": "/gallery/snacks/pizza-sandwich.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4941,7 +4941,7 @@
     "categories": [
       "snacks"
     ],
-    "imagePath": "/gallery/snacks/dhokla-poster.webp",
+    "imagePath": "/gallery/snacks/dhokla.webp",
     "width": 1146,
     "height": 1375
   },
@@ -4958,7 +4958,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/snacks/bhalla-poster.webp",
+    "imagePath": "/gallery/snacks/bhalla.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4977,7 +4977,7 @@
     "categories": [
       "snacks"
     ],
-    "imagePath": "/gallery/snacks/grilled-sandwich-poster.webp",
+    "imagePath": "/gallery/snacks/grill-sandwich-full.webp",
     "width": 1025,
     "height": 1537
   },
@@ -4996,7 +4996,7 @@
     "categories": [
       "snacks"
     ],
-    "imagePath": "/gallery/snacks/cheese-paneer-sandwich-poster.webp",
+    "imagePath": "/gallery/snacks/cheese-paneer-sandwich.webp",
     "width": 1025,
     "height": 1537
   },
@@ -5016,7 +5016,7 @@
       "namkeens",
       "snacks"
     ],
-    "imagePath": "/gallery/snacks/pyaz-kachori-poster.webp",
+    "imagePath": "/gallery/snacks/pyaaji-kachori.webp",
     "width": 1025,
     "height": 1537
   },
@@ -5037,7 +5037,7 @@
     "categories": [
       "snacks"
     ],
-    "imagePath": "/gallery/snacks/aloo-patties-poster.webp",
+    "imagePath": "/gallery/snacks/aloo-patties.webp",
     "width": 1025,
     "height": 1537
   },
@@ -5057,7 +5057,7 @@
     "categories": [
       "snacks"
     ],
-    "imagePath": "/gallery/snacks/paneer-patties-poster.webp",
+    "imagePath": "/gallery/snacks/paneer-patties.webp",
     "width": 1025,
     "height": 1537
   },
@@ -5075,7 +5075,7 @@
     "categories": [
       "snacks"
     ],
-    "imagePath": "/gallery/snacks/bada-pav-poster.webp",
+    "imagePath": "/gallery/snacks/bada-pav.webp",
     "width": 1025,
     "height": 1537
   },
@@ -5092,7 +5092,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/snacks/matar-samosa-poster.webp",
+    "imagePath": "/gallery/snacks/matar-samosa.webp",
     "width": 1025,
     "height": 1537
   },
@@ -5108,7 +5108,7 @@
     "categories": [
       "namkeens"
     ],
-    "imagePath": "/gallery/snacks/rajkot-samosa-poster.webp",
+    "imagePath": "/gallery/snacks/rajkot-samosa.webp",
     "width": 1025,
     "height": 1537
   }

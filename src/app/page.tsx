@@ -15,13 +15,13 @@ const signatureProducts = [
   {
     name: 'Signature Custom Cake',
     desc: "Bespoke celebration cakes crafted to perfection — birthdays, weddings, and every magical occasion in between.",
-    image: '/gallery/custom-cakes/custom-cake-18.jpg',
+    image: '/gallery/custom-cakes/fairy-dream-cake.webp',
     href: '/menu',
   },
   {
     name: 'Choco Crunch Biscuits',
     desc: "Crunchy, rich, and irresistible handmade cookies loaded with premium cocoa and chocolate chips.",
-    image: '/gallery/biscuits/choco-crunch-poster.jpg',
+    image: '/gallery/biscuits/choco-crunch-biscuits.webp',
     href: '/menu',
     imgClassName: 'scale-[1.2] group-hover:scale-[1.3]',
     objectPosition: 'center 70%',
@@ -29,7 +29,7 @@ const signatureProducts = [
   {
     name: 'Traditional Bhakarwadi',
     desc: "A perfect balance of sweet, spicy, and tangy flavors in a crispy golden pinwheel. A savory favorite.",
-    image: '/gallery/namkeen/bhakarwadi-poster.jpg',
+    image: '/gallery/namkeen/bhakarwadi.webp',
     href: '/menu',
     imgClassName: 'scale-[1.25] group-hover:scale-[1.35]',
     objectPosition: 'center 70%',
@@ -37,7 +37,7 @@ const signatureProducts = [
   {
     name: 'Special Shahi Rusk',
     desc: "Crispy, double-baked golden semolina rusk. The ultimate companion for your morning masala chai.",
-    image: '/gallery/rusks/special-shahi-rusk-poster.jpg',
+    image: '/gallery/rusks/special-shahi-rusk.webp',
     href: '/menu',
     imgClassName: 'scale-[1.25] group-hover:scale-[1.35]',
     objectPosition: 'center 70%',
@@ -208,7 +208,7 @@ export default function HomePage() {
           <div
             className="hero-bg"
             style={{
-              backgroundImage: `url('/whatsapp-hero.jpg')`,
+              backgroundImage: `url('/whatsapp-hero.webp')`,
             }}
           />
         </div>
@@ -235,7 +235,7 @@ export default function HomePage() {
             {/* JANTA BAKERY Logo */}
             <motion.div variants={itemVariants} className="py-4 w-full flex justify-center sm:justify-start">
               <img 
-                src="/logo.png" 
+                src="/logo.webp" 
                 alt="Janta Bakery" 
                 className="w-[85vw] sm:w-[52vw] max-w-[460px] object-contain drop-shadow-lg" 
               />
@@ -349,41 +349,41 @@ export default function HomePage() {
         <div className="poster-marquee-track flex w-max animate-poster-marquee" style={{ whiteSpace: 'nowrap' }}>
           {[
             // Set 1 (Shuffled across all categories)
-            '/gallery/rusks/special-shahi-rusk-poster.jpg', // Special Shahi Rusk
-            '/gallery/custom-cakes/custom-cake-3.jpg',      // Custom Cake 3
-            '/gallery/namkeen/beetroot-chips-poster.jpg',   // Beetroot Chips
-            '/gallery/biscuits/choco-crunch-poster.jpg',    // Choco Crunch Biscuits
-            '/gallery/custom-cakes/custom-cake-13.jpg',     // Rasmalai Cake
-            '/gallery/namkeen/bhakarwadi-poster.jpg',       // Traditional Bhakarwadi
-            '/gallery/custom-cakes/custom-cake-14.jpg',     // Custom Cake 14
-            '/ads/chocolate-muffin-delight-poster.png',     // Muffin
-            '/gallery/rusks/milk-rusk-poster.jpg',          // Milk Rusk
-            '/gallery/custom-cakes/custom-cake-6.jpg',      // Custom Cake 6
-            '/gallery/namkeen/masala-kaju-poster.jpg',      // Masala Kaju
-            '/gallery/custom-cakes/custom-cake-1.jpg',      // Custom Cake 1
-            '/gallery/biscuits/kaju-pista-cookies.jpg',     // Kaju Pista Cookies
-            '/gallery/custom-cakes/custom-cake-10.jpg',     // Custom Cake 10
-            '/gallery/custom-cakes/custom-cake-9.jpg',      // Custom Cake 9
-            '/gallery/namkeen/mini-samosa-poster.jpg',      // Mini Samosa
-            '/gallery/custom-cakes/custom-cake-5.jpg',      // Custom Cake 5
+            '/gallery/rusks/special-shahi-rusk.webp', // Special Shahi Rusk
+            '/gallery/custom-cakes/celebration-cake-2.webp',      // Custom Cake 3
+            '/gallery/namkeen/beetroot-chips.webp',   // Beetroot Chips
+            '/gallery/biscuits/choco-crunch-biscuits.webp',    // Choco Crunch Biscuits
+            '/gallery/custom-cakes/rasmalai-cake.webp',     // Rasmalai Cake
+            '/gallery/namkeen/bhakarwadi.webp',       // Traditional Bhakarwadi
+            '/gallery/custom-cakes/oreo-cake.webp',     // Custom Cake 14
+            '/gallery/cakes/chocolate-muffin-eggless.webp',     // Muffin
+            '/gallery/rusks/classic-crispy-milk-rusk.webp',          // Milk Rusk
+            '/gallery/custom-cakes/doll-cake.webp',      // Custom Cake 6
+            '/gallery/namkeen/royal-masala-kaju.webp',      // Masala Kaju
+            '/gallery/custom-cakes/cartoon-theme-cake.webp',      // Custom Cake 1
+            '/gallery/biscuits/kaju-pista-cookies-sugar-free.webp',     // Kaju Pista Cookies
+            '/gallery/custom-cakes/car-shape-cake.webp',     // Custom Cake 10
+            '/gallery/custom-cakes/doraemon-cake.webp',      // Custom Cake 9
+            '/gallery/namkeen/crispy-mini-samosa.webp',      // Mini Samosa
+            '/gallery/custom-cakes/jungle-theme-cake.webp',      // Custom Cake 5
             // Set 2 (Seamless infinite loop duplicate)
-            '/gallery/rusks/special-shahi-rusk-poster.jpg',
-            '/gallery/custom-cakes/custom-cake-3.jpg',
-            '/gallery/namkeen/beetroot-chips-poster.jpg',
-            '/gallery/biscuits/choco-crunch-poster.jpg',
-            '/gallery/custom-cakes/custom-cake-13.jpg',
-            '/gallery/namkeen/bhakarwadi-poster.jpg',
-            '/gallery/custom-cakes/custom-cake-14.jpg',
-            '/ads/chocolate-muffin-delight-poster.png',
-            '/gallery/rusks/milk-rusk-poster.jpg',
-            '/gallery/custom-cakes/custom-cake-6.jpg',
-            '/gallery/namkeen/masala-kaju-poster.jpg',
-            '/gallery/custom-cakes/custom-cake-1.jpg',
-            '/gallery/biscuits/kaju-pista-cookies.jpg',
-            '/gallery/custom-cakes/custom-cake-10.jpg',
-            '/gallery/custom-cakes/custom-cake-9.jpg',
-            '/gallery/namkeen/mini-samosa-poster.jpg',
-            '/gallery/custom-cakes/custom-cake-5.jpg',
+            '/gallery/rusks/special-shahi-rusk.webp',
+            '/gallery/custom-cakes/celebration-cake-2.webp',
+            '/gallery/namkeen/beetroot-chips.webp',
+            '/gallery/biscuits/choco-crunch-biscuits.webp',
+            '/gallery/custom-cakes/rasmalai-cake.webp',
+            '/gallery/namkeen/bhakarwadi.webp',
+            '/gallery/custom-cakes/oreo-cake.webp',
+            '/gallery/cakes/chocolate-muffin-eggless.webp',
+            '/gallery/rusks/classic-crispy-milk-rusk.webp',
+            '/gallery/custom-cakes/doll-cake.webp',
+            '/gallery/namkeen/royal-masala-kaju.webp',
+            '/gallery/custom-cakes/cartoon-theme-cake.webp',
+            '/gallery/biscuits/kaju-pista-cookies-sugar-free.webp',
+            '/gallery/custom-cakes/car-shape-cake.webp',
+            '/gallery/custom-cakes/doraemon-cake.webp',
+            '/gallery/namkeen/crispy-mini-samosa.webp',
+            '/gallery/custom-cakes/jungle-theme-cake.webp',
           ].map((src, i) => (
             <div key={`poster-${i}`} className="mx-3 h-64 sm:h-80 overflow-hidden rounded-2xl shadow-md shrink-0">
               <img src={src} alt="Janta Bakery Treats" className="h-full w-auto object-cover" loading="lazy" />
