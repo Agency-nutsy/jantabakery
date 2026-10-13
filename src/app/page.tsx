@@ -49,39 +49,156 @@ const signatureProducts = [
    ═══════════════════════════════════════════ */
 
 const reviewsRow1 = [
-  { text: "Janta Bakery is an absolute gem in Bhogal. Their Butterscotch cake is incredibly soft, perfectly sweet, and melts in your mouth. Highly recommended for any birthday celebration!", name: "Rahul M." },
-  { text: "I have been coming to this bakery since I was a kid. The quality of their chocolate truffle pastry has remained consistently excellent for over two decades. A true legend.", name: "Priya K." },
-  { text: "We ordered a customized tier cake for my daughter's first birthday and they delivered beyond our expectations. The design was flawless and the fresh fruit flavor was outstanding.", name: "Neha T." },
-  { text: "If you are in Jangpura, you must try their Kaju Pista cookies and traditional atta biscuits. Perfect companions for evening chai. The legacy of 1967 really shows in their quality.", name: "Arjun S." },
-  { text: "The mushroom patties here are crispy, flaky, and generously filled. I often pack a dozen for my office colleagues and they are always gone within minutes. Best in South Delhi!", name: "Vikram N." },
-  { text: "Unbelievable taste at such pocket-friendly prices. Their Black Forest cake brings back so many childhood memories. The staff is always smiling, polite, and very quick with the service.", name: "Simran B." },
-  { text: "I recently discovered their gift hampers during Diwali and they were a massive hit with my family. The packaging was premium and the assortment of cookies and namkeens was fresh.", name: "Rifaa J." },
-  { text: "A nostalgic spot for locals. The aroma of freshly baked bread and sweet pastries hits you as soon as you enter Samman Bazar. You simply cannot leave without buying their signature patties.", name: "Aakash P." },
-  { text: "The eggless cakes here are softer and tastier than most regular cakes I've tried in premium cafes. The Pineapple cake is so refreshing, light, and perfectly balanced in sweetness.", name: "Farah Z." },
-  { text: "A classic old-school bakery that has maintained its charm and quality. The cream rolls and jam biscuits are exactly what they used to taste like in the 90s. Nostalgia in every bite.", name: "Deepa R." },
-  { text: "We buy all our birthday cakes exclusively from Janta Bakery. They never disappoint. The chocolate truffle is rich, dense, and has the perfect cocoa dusting. A consistent 5-star experience every time.", name: "Manish D." },
-  { text: "I ordered bulk snacks including veg puffs and rolls for a small house party. Everything was delivered hot, fresh, and on time. All my guests kept asking where I ordered from!", name: "Tanya A." },
-  { text: "Their dedication to quality is unmatched. You can taste the pure butter and premium ingredients in their dry fruit biscuits. It's rare to find such honest bakeries in Delhi these days.", name: "Suresh K." },
-  { text: "I travel all the way from Noida just to buy their special fruit cake during Christmas. It is loaded with nuts and candied fruits, baked to absolute perfection.", name: "Anjali S." },
-  { text: "The recent renovation has made the place look stunning, but I'm so glad the taste of their classic patties and eclairs hasn't changed one bit. Highly recommend visiting this heritage shop.", name: "Rohan V." },
+  {
+    text: "Janta Bakery, as the name suggests, is an age-old bakery opened to cater to the Aam Janta. Opened by Saawan Kumar in 1967 in one street of Bhogal market. I still remember as a child we used to go and give our atta and ghee to make made-to-order atta patti biscuits. Their good taste, fresh delivery, wide variety, and overall honesty took them to the sky heights. There is no one else in the market who can beat the warmth in their cakes and hearts.",
+    name: "Anjuu Aroraa (ADA)",
+  },
+  {
+    text: "A place where quality prevails over the price — one could easily get affordable cakes without compromising on quality. Been going to the store since childhood, so I'm literally a big fan of this bakery. Now that they have renovated the interior, it looks beautiful inside as well. If you want to get a cake or any other bakery item at an affordable cost, just step into Janta Bakery, you won't regret it.",
+    name: "Varun",
+  },
+  {
+    text: "A hidden gem for delicious bakes in Jangpura, New Delhi. Known for fresh and tasty treats, they offer a wide variety of items including pastries, patties, cakes, sandwiches, and dhokla. Their Chocolate Truffle Pastry is a standout with its rich, moist texture and deep chocolate flavor. The Mushroom Patty is another favorite with its crispy, flavorful bite. Affordable prices and consistently good quality.",
+    name: "Ash_Ley",
+  },
+  {
+    text: "Got an engagement cake from them — it was delicious, beautiful, and even better than how we imagined it to be! The design was amazingly done, delivery was smooth, and it was packed securely so it couldn't be spoilt. Thanks to Janta Bakery for saving the day!",
+    name: "Yash Bajaj",
+  },
+  {
+    text: "I recently ate the Fruit Almond Cake from Janta Bakery. I absolutely loved it. The level of freshness it has was outstanding. The taste was unlike anything I've ever eaten before. Truly the best cake I've ever had.",
+    name: "Rifaa Javed",
+  },
+  {
+    text: "A very old and established bakery in Bhogal market. The cookies, namkeens, and bakery items are very tasty, fresh, and fairly priced. They also offer custom and ready-made gift hampers for celebrations. Their dhokla, khandvi, paneer kulcha, besan biscuits, and atta biscuits are all 5/5.",
+    name: "Nikita Dua",
+  },
+  {
+    text: "Once you are inside, you can shop with peace and convenience. You get personal attention from the sales personnel who provide all the details of the products displayed. They have a very large variety of items, showcased nicely product-wise. Packing and payment is fast, and the quality of products is excellent.",
+    name: "Ashok Kumar Sharma",
+  },
+  {
+    text: "Iconic bakery in South Delhi with standard quality and good taste. I love their biscuits right from my childhood days when I used to visit Delhi during summer vacations. Bought butter cookies, cake rusk, and wheat biscuits — all are awesome and tasty.",
+    name: "Parminder Kohli",
+  },
+  {
+    text: "Amazing variety of bakery and confectionery items. Simply love the black forest pastry, pizza sandwich, club sandwich, eclair pastry, biscuits, burgers, and namkeens. The list is endless. A very old bakery shop serving its customers since 1967.",
+    name: "Sumeet Uniyal",
+  },
+  {
+    text: "It's a self-service bakery with a huge range and variety of cookies, chips, pastries, snacks, and bakery items — all with great taste and quality. The prices are very reasonable for the quality. You will become their regular customer, I can assure you.",
+    name: "Aamir Ansari",
+  },
+  {
+    text: "The bakery offers a wide range of baked goods including cakes, pastries, and breads. The staff is friendly and helpful, and the bakery has a warm and inviting atmosphere. The baked goods are fresh and delicious, and the prices are reasonable. Highly recommended for an affordable treat.",
+    name: "Om Gupta",
+  },
+  {
+    text: "It's a very old shop that has upgraded and expanded over the years. Wide variety of items: ready-to-eat, snacks, birthday décor, and party items. Very affordable and tasty eatables with eggless and vegetarian options clearly marked.",
+    name: "Deepak",
+  },
+  {
+    text: "We were in Bhogal Market and couldn't resist checking out the welcoming interior. The variety of cakes, rusks, and biscuits is so good and tempting. In the basement, they have a dedicated birthday cakes and decorations area where you can pick your theme candles, toppings, and party items. Highly recommended.",
+    name: "Asif Mohammed",
+  },
+  {
+    text: "The place is a cookie heaven! Fresh bakery items and a huge variety — paper almond cookies, rusk cakes, and what not. Absolutely loved the place.",
+    name: "Shah Insha",
+  },
+  {
+    text: "Quality products at reasonable prices. Their cakes, dhokla, biscuits, and vegetable patties are simply mouth-watering. A true neighborhood favorite.",
+    name: "Pramod Bhushan",
+  },
 ];
 
 const reviewsRow2 = [
-  { text: "I absolutely love their cold coffee and grilled sandwiches. It is my go-to comfort food after a long day at work. Better than most fancy cafes in South Ex!", name: "Kritika M." },
-  { text: "Janta Bakery is the pride of Bhogal. Their commitment to hygiene, quality, and customer service is phenomenal. The chocolate donuts are my kids' absolute favorite weekend treat.", name: "Saurabh J." },
-  { text: "Every item on their menu is a winner, but the Strawberry Pastry holds a special place in my heart. Light, fluffy sponge with fresh cream that isn't overly sweet.", name: "Pooja D." },
-  { text: "Their namkeens and mathris are incredibly crisp and fresh. I always stock up my pantry with their savory snacks. They stay fresh for weeks if stored properly.", name: "Ravi G." },
-  { text: "What really touches my heart is that they distribute unsold fresh food to the needy at night. It's beautiful to see a successful business giving back to the community like this.", name: "Meera L." },
-  { text: "The Red Velvet cake I ordered for our anniversary was a showstopper. The cream cheese frosting was authentic and the sponge was incredibly moist. Definitely coming back for more.", name: "Tarun K." },
-  { text: "You can't beat the prices here. Getting such premium quality baked goods at these rates is unheard of in Delhi. Their butter cookies literally melt in your mouth.", name: "Ayesha R." },
-  { text: "I was looking for a good bakery near Rajdoot Hotel and stumbled upon this gem. The aroma drew me in and the taste of their classic paneer puff made me a loyal customer.", name: "Kunal S." },
-  { text: "Such a warm, welcoming vibe! The owners are always present and ensure every customer is attended to. The almond biscotti they recommended pairs flawlessly with my morning espresso.", name: "Nidhi W." },
-  { text: "This bakery has stood the test of time since 1967 for a reason. No fancy gimmicks, just pure, honest, delicious baking. The plum cake here is the best in the city.", name: "Prateek H." },
-  { text: "I've tried almost every pastry they offer and have never been disappointed. The Choco Lava cake is served warm and the gooey center is pure chocolate heaven.", name: "Sneha B." },
-  { text: "They customized a Spiderman themed cake for my nephew and paid attention to every single detail I requested. It looked fantastic and tasted even better. Amazing craftsmanship!", name: "Aditya N." },
-  { text: "I regularly buy their whole wheat bread and multiseed buns. They are super fresh, soft, and don't have that artificial preservative smell you get from supermarket brands.", name: "Kavita Y." },
-  { text: "The caramel custard here is a hidden gem. Smooth, silky, and with just the right amount of caramelized sugar on top. A must-try if you have a sweet tooth!", name: "Imran A." },
-  { text: "Absolutely the best bakery in Jangpura! The queue on weekends speaks for itself. Their fresh cream pineapple cake is legendary and disappears from the shelves within hours.", name: "Gaurav C." },
+  {
+    text: "I'm absolutely delighted with my experience at Janta Bakery! The food is top-notch, and the service is friendly and attentive. The atmosphere is cozy and inviting, making it the perfect spot to pick up your treats. Highly recommended to anyone looking for a great bakery experience.",
+    name: "Aahana",
+  },
+  {
+    text: "One of the best bakeries in central Delhi. Staff is very friendly and nice. Cakes are very tasty, neat, clean, and look great. Located in Samman Bazar in Bhogal, easily noticeable. Their products are always fresh.",
+    name: "Zarma Siddiqui",
+  },
+  {
+    text: "Loved the bakery, best in Bhogal! Very good taste of cakes and pastries. Also convenient that you can order online across platforms like Zomato and Swiggy. Great options for all bakery items.",
+    name: "Sheikh Wasim",
+  },
+  {
+    text: "We ordered a cake from this store for my niece's birthday, and the cake was so good in taste I was literally licking my fingers. Everyone at the party loved it.",
+    name: "Suraj Pailu",
+  },
+  {
+    text: "This place has most of your daily bakery needs. The taste is amazing and the quality too. Must try their Atta Biscuits, Cake Rusk, Kaju Cookies, and Coconut Cookies.",
+    name: "Praveen Kumar Palai",
+  },
+  {
+    text: "A nice bakery shop in Bhogal where you get a wide variety of snacks, pastries, namkeens, and cookies. It is the go-to shop in this area for party edibles. I often buy chocolate muffins and fresh pastries from here.",
+    name: "Mohammad Wasim",
+  },
+  {
+    text: "They do excellent multigrain biscuits and coconut macaroons! Their plain tea cakes are pretty decent too. The shopkeepers are very nice and welcoming.",
+    name: "Raghav Sharma",
+  },
+  {
+    text: "The bakery is very good and houses many different types of cakes. I have personally tried many cakes from the shop and felt very satisfied with the quality as well as the price. They also take orders for cakes customized to your requirements.",
+    name: "Kushal Mehrotra",
+  },
+  {
+    text: "Janta Bakery is in Bhogal's main market. You will get almost all items related to a bakery — cakes, pastries, muffins, and birthday items. I really liked the fruit cake here, a must-try.",
+    name: "HIMANSHU Dikshit",
+  },
+  {
+    text: "You will find everything related to bakery items and celebration cakes. You can even customize cakes according to your taste, flavor, size, shape, and design, plus birthday celebration party items.",
+    name: "Padaarabinda Saahoo",
+  },
+  {
+    text: "A fantastic bakery with a lovely selection of delicious sandwiches and burgers. The staff are very friendly and helpful, and they really care about the customers. Simply wonderful.",
+    name: "Michael Iselt",
+  },
+  {
+    text: "Despite being located on a busy road, the store is tidy and clean, allowing for relaxed shopping. Stocked with both savory and sweet products, offering a wide selection of packaged biscuits and snacks.",
+    name: "Lucia Tulimiero",
+  },
+  {
+    text: "I live nearby this bakery — the food and quality are the main constants that have made this bakery the best among all others in my locality. I highly recommend their cakes and pastries.",
+    name: "Gunjan",
+  },
+  {
+    text: "Best bakery in South Delhi. All confectioneries taste so good. The cakes taste fresh and delicious. A must-try spot.",
+    name: "Kanika Kumari",
+  },
+  {
+    text: "If Mango Tres Leches is available, do try it 100%! Everything else in the bakery is superb as well.",
+    name: "Shikhar Garg",
+  },
+];
+
+/* ═══════════════════════════════════════════
+   INSTAGRAM REELS DATA
+   ═══════════════════════════════════════════ */
+
+function InstagramIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+    </svg>
+  );
+}
+
+const instagramReels = [
+  {
+    id: 'DdRGfXBt6_n',
+    title: 'Ganesh Chaturthi Festive Specials & Modak',
+  },
+  {
+    id: 'DD_vGRyyiXs',
+    title: 'Merry Christmas & New Year Celebrations',
+  },
+  {
+    id: 'DEwl5ATRqk2',
+    title: 'Lohri Da Pitara Festive Gift Hamper',
+  },
 ];
 
 /* ═══════════════════════════════════════════
@@ -155,7 +272,7 @@ function ReviewCard({ text, name }: { text: string; name: string }) {
           <Star key={i} className="h-3 w-3 sm:h-4 sm:w-4 fill-amber-400 text-amber-400" />
         ))}
       </div>
-      <p className="mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed text-charcoal/80">&ldquo;{text}&rdquo;</p>
+      <p className="mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed text-charcoal/80">{text}</p>
       <div className="flex items-center justify-between">
         <p className="text-xs sm:text-sm font-bold text-charcoal">{name}</p>
         <span className="text-[10px] sm:text-xs text-muted-gray">via Google</span>
@@ -481,6 +598,63 @@ export default function HomePage() {
               &ldquo;Opened to serve the Aam Janta of Delhi in 1967 — and we never stopped.&rdquo;
             </p>
           </motion.blockquote>
+        </div>
+      </section>
+
+      {/* ═══════ SECTION 4.5 — INSTAGRAM REELS ═══════ */}
+      <section className="relative overflow-hidden py-24 bg-gradient-to-b from-white via-soft-white/60 to-white">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center max-w-2xl mx-auto"
+          >
+            <h2 className="font-[family-name:var(--font-display)] text-[28px] leading-tight font-bold text-charcoal sm:text-5xl">
+              From Our Ovens to Your Feed
+            </h2>
+            <p className="mt-4 text-base sm:text-lg leading-relaxed text-muted-gray max-w-xl mx-auto [text-wrap:balance]">
+              Watch our celebration cakes, festive gift hampers, and sweet traditions live from&nbsp;Bhogal.
+            </p>
+
+            <div className="mt-6 flex justify-center">
+              <a
+                href="https://www.instagram.com/jantabakery1967"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-[#F58529] via-[#DD2A7B] to-[#8134AF] px-6 py-2.5 text-sm font-semibold text-white shadow-md transition-all duration-300 hover:opacity-95 hover:shadow-xl hover:scale-105"
+              >
+                <InstagramIcon className="h-4 w-4" />
+                Follow on Instagram
+                <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
+              </a>
+            </div>
+          </motion.div>
+
+          <div className="mt-12 sm:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
+            {instagramReels.map((reel, index) => (
+              <motion.div
+                key={reel.id}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.15, duration: 0.5 }}
+                className="group flex flex-col overflow-hidden rounded-3xl bg-white border border-baby-pink/30 shadow-md transition-all duration-300 hover:shadow-2xl hover:border-deep-pink/40 p-2 sm:p-3"
+              >
+                <div className="w-full h-[475px] sm:h-[495px] overflow-hidden rounded-2xl bg-warm-cream/30">
+                  <iframe
+                    src={`https://www.instagram.com/reel/${reel.id}/embed/`}
+                    className="w-full h-[550px] sm:h-[570px] -mb-[75px] border-0 overflow-hidden"
+                    scrolling="no"
+                    allowFullScreen
+                    loading="lazy"
+                    title={reel.title}
+                  />
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
