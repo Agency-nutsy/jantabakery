@@ -3,6 +3,8 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { shouldShowLoadingScreen } from '@/lib/loadingState';
+import { WHATSAPP_ENQUIRY, MAPS_DIRECTIONS_URL } from '@/lib/siteConfig';
+import { trackClickWhatsapp, trackClickDirections } from '@/lib/analytics';
 
 /* Accurate 4-colour Google Maps logo recreation */
 function GoogleMapsIcon({ className }: { className?: string }) {
@@ -45,12 +47,13 @@ export default function FloatingWidgets() {
       <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3 md:flex">
         {/* Google Maps / Directions Button */}
         <motion.a
-          href="https://maps.app.goo.gl/QmQerXUhGQXYYSaVA"
+          href={MAPS_DIRECTIONS_URL}
           target="_blank"
           rel="noopener noreferrer"
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: delayParams.map, duration: 0.5, ease: 'easeOut' }}
+          onClick={trackClickDirections}
           className="group flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-lg shadow-black/15 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-black/20 flex"
           aria-label="Get directions on Google Maps"
         >
@@ -59,12 +62,13 @@ export default function FloatingWidgets() {
 
         {/* WhatsApp Button */}
         <motion.a
-          href="https://wa.me/919717179565?text=Hello%20Janta%20Bakery!%20I%20would%20like%20to%20enquire%20about..."
+          href={WHATSAPP_ENQUIRY}
           target="_blank"
           rel="noopener noreferrer"
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: delayParams.wa, duration: 0.5, ease: 'easeOut' }}
+          onClick={trackClickWhatsapp}
           className="group flex h-14 w-14 items-center justify-center rounded-full bg-whatsapp-green text-white shadow-lg shadow-whatsapp-green/40 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-whatsapp-green/50 flex"
           aria-label="Chat on WhatsApp"
         >

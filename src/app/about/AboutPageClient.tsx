@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { FOUNDED_YEAR, yearsInBusiness } from '@/lib/siteConfig';
 
 /* ═══════════════════════════════════════════
    VALUES DATA
@@ -22,7 +23,7 @@ const timeline = [
   { year: '2005', text: 'Launched savouries menu: grilled sandwiches, puffs, burgers' },
   { year: '2010', text: 'Became the highest-rated bakery in South Delhi' },
   { year: '2015', text: 'Crossed 5,000+ loyal customers; expanded to multiple branches' },
-  { year: '2024', text: '2800+ Google Reviews, still the undisputed king of Bhogal' },
+  { year: '2026', text: '2800+ Google Reviews, still the undisputed king of Bhogal' },
 ];
 
 export default function AboutPageClient() {
@@ -46,7 +47,7 @@ export default function AboutPageClient() {
               Our Story
             </h1>
             <p className="mt-4 text-xl text-muted-gray">
-              57 years of love, flour, and sweetness
+              {yearsInBusiness()} years of love, flour, and sweetness
             </p>
           </motion.div>
 
@@ -118,7 +119,7 @@ export default function AboutPageClient() {
               Why Janta Bakery?
             </h2>
             <p className="mt-4 text-lg text-muted-gray">
-              The values that have kept Delhi coming back for 57 years
+              The values that have kept Delhi coming back for {yearsInBusiness()} years
             </p>
           </motion.div>
 

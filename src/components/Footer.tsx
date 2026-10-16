@@ -3,6 +3,15 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { MapPin, Phone, Mail, Clock, Heart } from 'lucide-react';
+import {
+  PHONE_HREF,
+  PHONE_DISPLAY,
+  WHATSAPP_ENQUIRY,
+  WHATSAPP_HELLO,
+  INSTAGRAM_URL,
+  MAPS_DIRECTIONS_URL,
+} from '@/lib/siteConfig';
+import { trackClickCall, trackClickWhatsapp, trackClickInstagram } from '@/lib/analytics';
 
 function InstagramIcon({ className }: { className?: string }) {
   return (
@@ -57,18 +66,20 @@ export default function Footer() {
             </p>
             <div className="mt-4 flex gap-3">
               <a
-                href="https://www.instagram.com/jantabakery1967"
+                href={INSTAGRAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={trackClickInstagram}
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white/60 text-charcoal/70 shadow-sm transition-all duration-300 hover:bg-deep-pink hover:text-white hover:shadow-lg hover:scale-110"
                 aria-label="Instagram"
               >
                 <InstagramIcon className="h-4 w-4" />
               </a>
               <a
-                href="https://wa.me/919717179565?text=Hello%20Janta%20Bakery!%20I%20would%20like%20to%20enquire%20about..."
+                href={WHATSAPP_ENQUIRY}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={trackClickWhatsapp}
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white/60 text-charcoal/70 shadow-sm transition-all duration-300 hover:bg-whatsapp-green hover:text-white hover:shadow-lg hover:scale-110"
                 aria-label="WhatsApp"
               >
@@ -121,18 +132,20 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="tel:+919717179565"
+                  href={PHONE_HREF}
+                  onClick={trackClickCall}
                   className="flex items-center gap-2 text-sm text-charcoal/70 transition-colors duration-300 hover:text-deep-pink"
                 >
                   <Phone className="h-4 w-4 shrink-0 text-deep-pink" />
-                  +91 97171 79565
+                  {PHONE_DISPLAY}
                 </a>
               </li>
               <li>
                 <a
-                  href="https://wa.me/919717179565?text=Hello%20Janta%20Bakery!"
+                  href={WHATSAPP_HELLO}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={trackClickWhatsapp}
                   className="flex items-center gap-2 text-sm text-charcoal/70 transition-colors duration-300 hover:text-deep-pink"
                 >
                   <WhatsAppIcon className="h-4 w-4 shrink-0 text-deep-pink" />
@@ -187,12 +200,17 @@ export default function Footer() {
         <div className="mt-12 border-t border-charcoal/10 pt-6">
           <div className="flex flex-col items-center justify-between gap-3 text-center sm:flex-row">
             <p className="text-xs text-charcoal/60">
-              © {new Date().getFullYear()} Janta Bakery. All rights reserved.
+              &copy; {new Date().getFullYear()} Janta Bakery. All rights reserved.
             </p>
             <p className="flex items-center gap-1 text-xs text-charcoal/60">
-              Designed with <Heart className="h-3 w-3 text-deep-pink" /> in Delhi
+              Designed with <Heart className="h-3 w-3 text-deep-pink" aria-hidden="true" /> in Delhi
             </p>
           </div>
+          {/* Analytics disclosure — plain language, no legalese */}
+          <p className="mt-3 text-center text-[10px] text-charcoal/40 leading-relaxed">
+            This site uses Google Analytics to understand visitor patterns and improve your experience.
+            No personal data or order details are ever sent to analytics.
+          </p>
         </div>
       </div>
     </footer>

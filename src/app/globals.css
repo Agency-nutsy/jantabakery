@@ -297,3 +297,49 @@ body {
   opacity: 0;
   pointer-events: none;
 }
+
+/* ═══════════════════════════════════════════
+   FOCUS VISIBLE — visible on both light & dark surfaces
+   ═══════════════════════════════════════════ */
+
+/* Default: navy-blue outline works on most light backgrounds */
+:focus-visible {
+  outline: 2px solid var(--color-water-rapids);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* On dark surfaces (navbar, cart drawer) the baby-pink outline is more visible */
+.dark-surface :focus-visible {
+  outline-color: var(--color-baby-pink);
+}
+
+/* ═══════════════════════════════════════════
+   PREFERS REDUCED MOTION
+   ═══════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+  /* Stop marquee scrolling but keep text readable */
+  .marquee-track,
+  .poster-marquee-track {
+    animation: none !important;
+    /* Stack items so content is still accessible */
+    overflow-x: auto;
+  }
+
+  /* Stop framer-motion and CSS animations globally where safe */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Keep scroll-progress bar accessible but instant */
+  .scroll-progress {
+    transition: none !important;
+  }
+}
+

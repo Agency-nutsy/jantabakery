@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { ArrowRight, Phone, MapPin, Clock, Star, Sparkles } from 'lucide-react';
 import LoadingScreen from '@/components/LoadingScreen';
 import { shouldShowLoadingScreen } from '@/lib/loadingState';
+import { yearsInBusiness, PHONE_HREF, MAPS_DIRECTIONS_URL, MAPS_PLACE_URL } from '@/lib/siteConfig';
 
 /* ═══════════════════════════════════════════
    IMAGE DATA
@@ -206,10 +207,10 @@ const instagramReels = [
    ═══════════════════════════════════════════ */
 
 const stats = [
-  { icon: '🎂', target: 57, suffix: '+', label: 'Years of Excellence' },
+  { icon: '🎂', target: yearsInBusiness(), suffix: '+', label: 'Years of Excellence' },
   { icon: '⭐', target: 2800, suffix: '+', label: 'Google Reviews' },
   { icon: '🏪', target: 0, displayText: 'Multiple', label: 'Branches in Delhi' },
-  { icon: '👨‍👩‍👧‍👦', target: 3, suffix: '', displayText: '3 Generations', label: 'of Loyal Customers' },
+  { icon: '👨\u200d👩\u200d👧\u200d👦', target: 3, suffix: '', displayText: '3 Generations', label: 'of Loyal Customers' },
 ];
 
 /* ═══════════════════════════════════════════
@@ -292,13 +293,15 @@ const itemVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' as const } },
 };
 
+
 /* ═══════════════════════════════════════════
    GOOGLE MAPS CONSTANTS
    ═══════════════════════════════════════════ */
 
-const MAPS_PLACE_URL = 'https://www.google.com/maps/place/?q=place_id:ChIJ2zY65zDkDTkR9K2P64d4G8Q';
-const MAPS_DIRECTIONS_URL = 'https://www.google.com/maps/dir/?api=1&destination=Janta+Bakery+Bhogal+Jangpura+New+Delhi&destination_place_id=ChIJ2zY65zDkDTkR9K2P64d4G8Q';
-const MAPS_EMBED_URL = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.0!2d77.248207!3d28.581741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce313e6c39ed5%3A0x6ee0f13e5e51e885!2sJanta%20Bakery!5e0!3m2!1sen!2sin!4v1234567890';
+// MAPS_DIRECTIONS_URL and MAPS_PLACE_URL come from siteConfig import above
+const MAPS_EMBED_URL = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.5817415649417!2d77.24569757578277!3d28.582319875692235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3070745a433%3A0xaa231331a567490b!2sJanta%20Bakery!5e0!3m2!1sen!2sin!4v1780232707707!5m2!1sen!2sin';
+
+
 
 /* ═══════════════════════════════════════════
    HOMEPAGE COMPONENT
@@ -349,7 +352,7 @@ export default function HomePage() {
               <span className="text-xs font-semibold tracking-wider text-white/90 uppercase">Est. 1967 · Bhogal, Jangpura</span>
             </motion.div>
 
-            {/* JANTA BAKERY Logo */}
+            {/* JANTA BAKERY Logo + H1 */}
             <motion.div variants={itemVariants} className="py-4 w-full flex justify-center sm:justify-start">
               <img 
                 src="/logo.webp" 
@@ -357,6 +360,13 @@ export default function HomePage() {
                 className="w-[85vw] sm:w-[52vw] max-w-[460px] object-contain drop-shadow-lg" 
               />
             </motion.div>
+            {/* SEO H1 — visible to screen readers & search engines, visually subordinate to the logo */}
+            <motion.h1
+              variants={itemVariants}
+              className="sr-only"
+            >
+              Cakes, pastries and bakery treats in Bhogal, Jangpura, New Delhi
+            </motion.h1>
 
 
             {/* Subtitle */}
@@ -374,7 +384,7 @@ export default function HomePage() {
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
               <a
-                href="tel:+919717179565"
+                href={PHONE_HREF}
                 className="group flex w-full sm:w-auto justify-center items-center gap-2 rounded-full border-2 border-white/50 bg-white/30 px-8 py-4 text-base font-semibold text-white shadow-lg transition-all duration-300 hover:bg-white/40 hover:border-white/70 hover:scale-105"
               >
                 <Phone className="h-4 w-4 transition-transform group-hover:rotate-12" />
@@ -459,7 +469,7 @@ export default function HomePage() {
       </section>
 
       {/* ═══════ SECTION 2.5 — SCROLLING POSTER MARQUEE (fast) ═══════ */}
-      <section className="relative py-12 overflow-hidden bg-white">
+      <section className="relative py-12 overflow-hidden bg-white" aria-hidden="true">
         <div className="absolute inset-y-0 left-0 w-6 sm:w-16 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
         <div className="absolute inset-y-0 right-0 w-6 sm:w-16 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
         
@@ -711,7 +721,7 @@ export default function HomePage() {
                   Get Directions
                 </a>
                 <a
-                  href="tel:+919717179565"
+                  href={PHONE_HREF}
                   className="group flex items-center gap-2 rounded-full border-2 border-deep-pink bg-white px-6 py-3 text-sm font-semibold text-deep-pink transition-all duration-300 hover:bg-deep-pink/5 hover:scale-105"
                 >
                   <Phone className="h-4 w-4" />

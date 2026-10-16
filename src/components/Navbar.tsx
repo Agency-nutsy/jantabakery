@@ -1,11 +1,12 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone } from 'lucide-react';
 import { shouldShowLoadingScreen } from '@/lib/loadingState';
+import { PHONE_HREF } from '@/lib/siteConfig';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -15,10 +16,13 @@ const navLinks = [
   { href: '/contact', label: 'Contact' },
 ];
 
+const MOBILE_MENU_ID = 'mobile-nav-menu';
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
   const pathname = usePathname();
+  const hamburgerRef = useRef<HTMLButtonElement>(null);
 
   // Delay navbar entrance only when loading screen is actively showing on refresh
   const [navDelay] = useState(() => {
@@ -35,6 +39,19 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => { setIsOpen(false); }, [pathname]);
+
+  // Close on Escape key
+  useEffect(() => {
+    if (!isOpen) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsOpen(false);
+        hamburgerRef.current?.focus();
+      }
+    };
+    document.addEventListener('keydown', onKeyDown);
+    return () => document.removeEventListener('keydown', onKeyDown);
+  }, [isOpen]);
 
   // How much has the user scrolled — drives the glass opacity/blur
   const scrollProgress = Math.min(scrollY / 200, 1); // 0 → 1 over first 200px
@@ -63,6 +80,7 @@ export default function Navbar() {
             duration: 0.7,
             ease: [0.22, 1, 0.36, 1],
           }}
+          aria-label="Main navigation"
           style={{
             backgroundColor: `rgba(26, 17, 20, ${bgOpacity})`,
             backdropFilter: `blur(${blurAmount}px) saturate(${150 + scrollProgress * 50}%)`,
@@ -77,7 +95,7 @@ export default function Navbar() {
             {/* ── LOGO ── */}
             <Link
               href="/"
-              className="shrink-0"
+              className="shrink-0 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-baby-pink rounded-sm"
               onClick={(e) => {
                 if (pathname === '/') {
                   e.preventDefault();
@@ -106,9 +124,10 @@ export default function Navbar() {
                         window.scrollTo({ top: 0, behavior: 'smooth' });
                       }
                     }}
-                    className={`relative py-1 text-[11px] font-semibold uppercase tracking-[0.2em] transition-colors duration-300 ${
+                    className={`relative py-1 text-[11px] font-semibold uppercase tracking-[0.2em] transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-baby-pink rounded-sm ${
                       isActive ? 'text-white' : 'text-white/70 hover:text-white'
                     }`}
+                    aria-current={isActive ? 'page' : undefined}
                   >
                     {link.label}
                     {isActive && (
@@ -126,8 +145,8 @@ export default function Navbar() {
             {/* ── DESKTOP CTA ── */}
             <div className="hidden shrink-0 items-center md:flex">
               <a
-                href="tel:+919717179565"
-                className="flex items-center gap-1.5 rounded-full border border-baby-pink/35 bg-baby-pink/15 px-5 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-baby-pink/30 hover:border-baby-pink/60 hover:shadow-lg hover:shadow-baby-pink/25"
+                href={PHONE_HREF}
+                className="flex items-center gap-1.5 rounded-full border border-baby-pink/35 bg-baby-pink/15 px-5 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-baby-pink/30 hover:border-baby-pink/60 hover:shadow-lg hover:shadow-baby-pink/25 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-baby-pink"
               >
                 <Phone className="h-3 w-3 text-baby-pink" />
                 Order Now
@@ -136,9 +155,12 @@ export default function Navbar() {
 
             {/* ── MOBILE HAMBURGER ── */}
             <button
+              ref={hamburgerRef}
               onClick={() => setIsOpen(!isOpen)}
-              className="ml-auto flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-white transition-colors hover:bg-white/10 md:hidden"
-              aria-label="Toggle menu"
+              className="ml-auto flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-white transition-colors hover:bg-white/10 md:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-baby-pink"
+              aria-label={isOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={isOpen}
+              aria-controls={MOBILE_MENU_ID}
             >
               <AnimatePresence mode="wait" initial={false}>
                 <motion.div
@@ -148,7 +170,7 @@ export default function Navbar() {
                   exit={{ rotate: 90, opacity: 0 }}
                   transition={{ duration: 0.15 }}
                 >
-                  {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+                  {isOpen ? <X className="h-5 w-5" aria-hidden="true" /> : <Menu className="h-5 w-5" aria-hidden="true" />}
                 </motion.div>
               </AnimatePresence>
             </button>
@@ -161,6 +183,10 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
+            id={MOBILE_MENU_ID}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Navigation menu"
             initial={{ opacity: 0, y: -8, scale: 0.97 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -8, scale: 0.97 }}
@@ -191,7 +217,8 @@ export default function Navbar() {
                         window.scrollTo({ top: 0, behavior: 'smooth' });
                       }
                     }}
-                    className={`flex w-full items-center justify-center rounded-2xl px-4 py-3 text-[12px] font-semibold uppercase tracking-[0.2em] transition-all duration-200 ${
+                    aria-current={pathname === link.href ? 'page' : undefined}
+                    className={`flex w-full items-center justify-center rounded-2xl px-4 py-3 text-[12px] font-semibold uppercase tracking-[0.2em] transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-baby-pink ${
                       pathname === link.href
                         ? 'bg-baby-pink/20 text-white font-bold border border-baby-pink/30'
                         : 'text-white/70 hover:bg-white/10 hover:text-white'
@@ -205,10 +232,10 @@ export default function Navbar() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.28 }}
-                href="tel:+919717179565"
-                className="mt-3 flex w-full items-center justify-center gap-2 rounded-full border border-baby-pink/40 bg-baby-pink/20 py-3 text-[11px] font-bold uppercase tracking-[0.2em] text-white transition-all hover:bg-baby-pink/30 hover:shadow-lg hover:shadow-baby-pink/20"
+                href={PHONE_HREF}
+                className="mt-3 flex w-full items-center justify-center gap-2 rounded-full border border-baby-pink/40 bg-baby-pink/20 py-3 text-[11px] font-bold uppercase tracking-[0.2em] text-white transition-all hover:bg-baby-pink/30 hover:shadow-lg hover:shadow-baby-pink/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-baby-pink"
               >
-                <Phone className="h-4 w-4 text-baby-pink" />
+                <Phone className="h-4 w-4 text-baby-pink" aria-hidden="true" />
                 Order Now
               </motion.a>
             </div>
@@ -218,3 +245,4 @@ export default function Navbar() {
     </>
   );
 }
+

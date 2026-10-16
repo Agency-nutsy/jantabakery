@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     q: 'Do you deliver at home?',
-    a: 'Currently we operate from our store in Bhogal, Jangpura. You can pick up your order or check with us for special delivery arrangements via phone or WhatsApp.',
+    a: 'Yes, we do offer delivery! For details on service area, timing, and any applicable charges, please call or WhatsApp us directly — +91 97171 79565. We\'ll be happy to help.',
   },
   {
     q: 'What are your timings?',
@@ -47,12 +47,15 @@ const faqs = [
 /* ────── FAQ Accordion Item ────── */
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [isOpen, setIsOpen] = useState(false);
+  const panelId = `faq-panel-${q.replace(/\W+/g, '-').toLowerCase().slice(0, 40)}`;
 
   return (
     <div className="overflow-hidden rounded-2xl bg-white shadow-md transition-all duration-300 hover:shadow-lg">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left transition-colors hover:bg-baby-pink/5"
+        aria-expanded={isOpen}
+        aria-controls={panelId}
+        className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left transition-colors hover:bg-baby-pink/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-water-rapids"
       >
         <span className="font-[family-name:var(--font-display)] text-base font-semibold text-charcoal sm:text-lg">
           {q}
@@ -61,11 +64,15 @@ function FAQItem({ q, a }: { q: string; a: string }) {
           className={`h-5 w-5 shrink-0 text-deep-pink transition-transform duration-300 ${
             isOpen ? 'rotate-180' : ''
           }`}
+          aria-hidden="true"
         />
       </button>
       <AnimatePresence>
         {isOpen && (
           <motion.div
+            id={panelId}
+            role="region"
+            aria-label={q}
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
