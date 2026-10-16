@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description:
       "Wedding cakes, birthday cakes, pastries, cookies & custom designs from Delhi's most beloved bakery since 1967.",
     url: `${SITE_URL}/gallery`,
-    images: [{ url: `${SITE_URL}/whatsapp-hero.webp`, width: 1200, height: 630, alt: 'Janta Bakery Gallery' }],
+    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: 'Janta Bakery Gallery' }],
   },
 };
 

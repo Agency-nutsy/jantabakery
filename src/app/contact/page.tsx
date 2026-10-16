@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Contact Janta Bakery — Bhogal, Jangpura, New Delhi',
     description: `Call us at ${PHONE_DISPLAY} or WhatsApp. Located at 43 Central Road, Bhogal, Jangpura, New Delhi. Open Mon–Sun 8 AM–9 PM.`,
     url: `${SITE_URL}/contact`,
-    images: [{ url: `${SITE_URL}/whatsapp-hero.webp`, width: 1200, height: 630, alt: 'Contact Janta Bakery' }],
+    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: 'Contact Janta Bakery' }],
   },
 };
 

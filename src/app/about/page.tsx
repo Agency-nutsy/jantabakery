@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: 'About Janta Bakery — Our Story Since 1967',
     description: `${yearsInBusiness} years of love, flour, and sweetness. Founded by Saawan Kumar in Bhogal, Jangpura, New Delhi.`,
     url: `${SITE_URL}/about`,
-    images: [{ url: `${SITE_URL}/whatsapp-hero.webp`, width: 1200, height: 630, alt: 'Janta Bakery — Since 1967' }],
+    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: 'Janta Bakery — Since 1967' }],
   },
 };
 

@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     images: [
       {
-        url: `${SITE_URL}/whatsapp-hero.webp`,
+        url: `${SITE_URL}/og-image.png`,
         width: 1200,
         height: 630,
         alt: `${BUSINESS_NAME} — Bhogal, New Delhi`,
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${BUSINESS_NAME} — Since ${FOUNDED_YEAR}`,
     description: `Handcrafted cakes, pastries & joy since ${FOUNDED_YEAR}. Bhogal, Jangpura, New Delhi.`,
-    images: [`${SITE_URL}/whatsapp-hero.webp`],
+    images: [`${SITE_URL}/og-image.png`],
   },
 };
 
@@ -96,7 +96,7 @@ const localBusinessJsonLd = {
   name: BUSINESS_NAME,
   url: SITE_URL,
   logo: `${SITE_URL}/logo.webp`,
-  image: [`${SITE_URL}/whatsapp-hero.webp`, `${SITE_URL}/logo.webp`],
+  image: [`${SITE_URL}/og-image.png`, `${SITE_URL}/logo.webp`],
   telephone: `+${PHONE_DIGITS}`,
   address: {
     "@type": "PostalAddress",

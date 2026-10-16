@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
       "Explore our full menu: cakes, pastries, rusks, biscuits, namkeens & snacks. Fresh, affordable and delicious since 1967 in Bhogal, New Delhi.",
     url: `${SITE_URL}/menu`,
-    images: [{ url: `${SITE_URL}/whatsapp-hero.webp`, width: 1200, height: 630, alt: 'Janta Bakery Menu' }],
+    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: 'Janta Bakery Menu' }],
   },
 };
 
