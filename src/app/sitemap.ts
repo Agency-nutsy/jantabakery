@@ -1,4 +1,4 @@
-﻿import type { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next';
 import { SITE_URL } from '@/lib/siteConfig';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -15,6 +15,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.9,
+    },
+    {
+      url: `${SITE_URL}/gifting`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.85,
     },
     {
       url: `${SITE_URL}/gallery`,

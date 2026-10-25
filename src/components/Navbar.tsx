@@ -11,6 +11,7 @@ import { PHONE_HREF } from '@/lib/siteConfig';
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/menu', label: 'Menu' },
+  { href: '/gifting', label: 'Gifting' },
   { href: '/about', label: 'About' },
   { href: '/gallery', label: 'Gallery' },
   { href: '/contact', label: 'Contact' },

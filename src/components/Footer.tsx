@@ -97,6 +97,7 @@ export default function Footer() {
               {[
                 { href: '/', label: 'Home' },
                 { href: '/menu', label: 'Menu' },
+                { href: '/gifting', label: 'Gifting' },
                 { href: '/about', label: 'About' },
                 { href: '/gallery', label: 'Gallery' },
                 { href: '/contact', label: 'Contact' },
