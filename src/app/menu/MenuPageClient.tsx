@@ -403,15 +403,22 @@ export default function MenuPageClient() {
 
   // Use global cart context — persists across all pages
   const { cart, cartCount, addToCart: ctxAdd, incrementItem, decrementItem, removeItem, clearCart } = useCart();
+  const [hasAddedOnThisPage, setHasAddedOnThisPage] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const filterBarRef = useRef<HTMLDivElement>(null);
   const isManualScrollingRef = useRef(false);
 
   // Adapter: addToCart accepts a full MenuItem
   const addToCart = useCallback((item: MenuItem) => {
+    setHasAddedOnThisPage(true);
     const cleanName = item.name.replace(/\s*\([^)]*\d+\s*(?:g|kg|gm|ml|l|pc|pcs)[^)]*\)/gi, '').trim();
     ctxAdd({ id: item.id, name: cleanName });
   }, [ctxAdd]);
+
+  const handleIncrement = useCallback((id: string) => {
+    setHasAddedOnThisPage(true);
+    incrementItem(id);
+  }, [incrementItem]);
 
   // Always start at the very top on initial mount
   useEffect(() => {
@@ -654,7 +661,7 @@ export default function MenuPageClient() {
                       item={item}
                       onAdd={addToCart}
                       cart={cart}
-                      onIncrement={incrementItem}
+                      onIncrement={handleIncrement}
                       onDecrement={decrementItem}
                       onImageClick={setLightboxImage}
                     />
@@ -695,7 +702,7 @@ export default function MenuPageClient() {
                           item={item}
                           onAdd={addToCart}
                           cart={cart}
-                          onIncrement={incrementItem}
+                          onIncrement={handleIncrement}
                           onDecrement={decrementItem}
                           onImageClick={setLightboxImage}
                         />
@@ -744,7 +751,7 @@ export default function MenuPageClient() {
                         item={item}
                         onAdd={addToCart}
                         cart={cart}
-                        onIncrement={incrementItem}
+                        onIncrement={handleIncrement}
                         onDecrement={decrementItem}
                         onImageClick={setLightboxImage}
                       />
@@ -794,7 +801,7 @@ export default function MenuPageClient() {
       {/* ═══════ FLOATING CART BUTTON ═══════ */}
       {/* FLOATING CART BAR */}
       <AnimatePresence>
-        {cartCount > 0 && (
+        {hasAddedOnThisPage && cartCount > 0 && (
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
