@@ -50,6 +50,28 @@ Please share pricing, contents, and availability details. Thank you!`;
   return `https://wa.me/${PHONE_DIGITS}?text=${encodeURIComponent(text)}`;
 }
 
+function getHamperAspectRatioClass(category: GiftingCategory, id: string): string {
+  if (category === 'dry-fruit') return 'aspect-square';
+  if (category === 'basket') return 'aspect-[4/5]';
+  if (
+    id === 'boxed-divya-jyoti' ||
+    id === 'boxed-gulabi-nazrana' ||
+    id === 'boxed-janta-wishes' ||
+    id === 'boxed-shahi-saugaat'
+  ) {
+    return 'aspect-[2/3]';
+  }
+  if (
+    id === 'boxed-khushiyon-ki-saugaat' ||
+    id === 'boxed-neel-kamal' ||
+    id === 'boxed-sadaiv-mangal' ||
+    id === 'boxed-swarnim-utsav'
+  ) {
+    return 'aspect-[3/4]';
+  }
+  return 'aspect-[4/5]';
+}
+
 export default function GiftingPageClient() {
   const [activeCategory, setActiveCategory] = useState<'all' | GiftingCategory>('all');
   const [searchQuery, setSearchQuery] = useState('');
@@ -298,15 +320,23 @@ export default function GiftingPageClient() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
-            className="relative overflow-hidden rounded-2xl bg-white border border-rose/15 shadow-sm p-4 sm:p-6 flex flex-col md:flex-row items-center gap-5"
+            className="relative overflow-hidden rounded-2xl bg-white shadow-sm p-4 sm:p-6 flex flex-col md:flex-row items-center gap-5"
           >
-            <div className="relative w-full md:w-40 h-44 md:h-40 shrink-0 overflow-hidden rounded-xl shadow-xs bg-[#FAF5F2] flex items-center justify-center p-1">
+            <div
+              className={`relative shrink-0 overflow-hidden rounded-xl shadow-xs ${
+                activeCategory === 'dry-fruit'
+                  ? 'w-32 h-32 sm:w-36 sm:h-36 aspect-square'
+                  : activeCategory === 'basket'
+                  ? 'w-28 h-35 sm:w-32 sm:h-40 aspect-[4/5]'
+                  : 'w-28 h-37 sm:w-32 sm:h-42 aspect-[3/4]'
+              }`}
+            >
               <Image
                 src={CATEGORY_COVERS[activeCategory].image}
                 alt={CATEGORY_COVERS[activeCategory].title}
                 fill
-                className="object-contain"
-                sizes="(max-width: 768px) 100vw, 180px"
+                className="object-cover"
+                sizes="160px"
               />
             </div>
             <div className="flex-1 text-center md:text-left">
@@ -384,18 +414,21 @@ export default function GiftingPageClient() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: (index % 8) * 0.04, duration: 0.3 }}
-                    className="group flex flex-col rounded-2xl bg-white border border-rose/15 shadow-xs transition-all duration-300 hover:shadow-lg hover:border-rose/40 hover:-translate-y-0.5 overflow-hidden"
+                    className="group flex flex-col rounded-2xl bg-white shadow-xs transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 overflow-hidden"
                   >
                     {/* Hamper Image Box */}
                     <div
                       onClick={() => openLightbox(index)}
-                      className="relative w-full aspect-[4/5] bg-[#FAF5F2] overflow-hidden cursor-pointer flex items-center justify-center p-1.5"
+                      className={`relative w-full ${getHamperAspectRatioClass(
+                        hamper.category,
+                        hamper.id
+                      )} overflow-hidden cursor-pointer`}
                     >
                       <Image
                         src={hamper.image}
                         alt={hamper.name}
                         fill
-                        className="object-contain transition-transform duration-300 group-hover:scale-105"
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
                         sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                         loading="lazy"
                       />
@@ -541,12 +574,12 @@ export default function GiftingPageClient() {
       <section className="py-12 px-4">
         <div className="mx-auto max-w-5xl">
           <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#4A0E17] via-[#2A080E] to-[#1A0509] p-6 sm:p-10 text-white shadow-xl flex flex-col md:flex-row items-center gap-6 sm:gap-8 border border-amber-300/30">
-            <div className="relative w-full md:w-56 aspect-[2/3] shrink-0 overflow-hidden rounded-xl shadow-lg ring-1 ring-amber-300/40 bg-black/40 flex items-center justify-center p-1">
+            <div className="relative w-full md:w-56 aspect-[2/3] shrink-0 overflow-hidden rounded-xl shadow-lg ring-1 ring-amber-300/40">
               <Image
                 src="/gallery/hampers/dry-fruit/happy-diwali-poster.webp"
                 alt="Happy Diwali from Janta Bakery"
                 fill
-                className="object-contain"
+                className="object-cover"
                 sizes="(max-width: 768px) 100vw, 220px"
               />
             </div>
