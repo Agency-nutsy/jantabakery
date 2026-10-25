@@ -58,7 +58,6 @@ function buildHamperWhatsAppUrl(hamper: HamperItem): string {
   const text = `Hi, I want to order:
 *${orderName}*
 Quantity: 1
-Price: Price on Enquiry
 
 ${productUrl}`;
 

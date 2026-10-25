@@ -63,7 +63,6 @@ export default function HamperDetailClient({ hamper, relatedHampers }: HamperDet
   const whatsappMessage = `Hi, I want to order:
 *${orderName}*
 Quantity: ${qty}
-Price: Price on Enquiry
 
 ${productUrl}`;
 
