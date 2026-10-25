@@ -18,7 +18,6 @@ import {
   ArrowRight,
 } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
 import {
   hampersData,
   GIFTING_CATEGORIES,
@@ -443,13 +442,9 @@ export default function GiftingPageClient() {
                     <div className="p-3 sm:p-3.5 flex flex-col flex-1 justify-between gap-2.5">
                       {/* Title & Share */}
                       <div className="flex items-center justify-between gap-1.5 min-w-0">
-                        <Link
-                          href={`/gifting/${hamper.id}`}
-                          onClick={(e) => e.stopPropagation()}
-                          className="font-[family-name:var(--font-display)] text-lg sm:text-xl font-bold text-charcoal leading-tight truncate hover:text-rose transition-colors"
-                        >
+                        <h3 className="font-[family-name:var(--font-display)] text-lg sm:text-xl font-bold text-charcoal leading-tight truncate">
                           {hamper.name}
-                        </Link>
+                        </h3>
                         <button
                           onClick={(e) => {
                             e.stopPropagation();

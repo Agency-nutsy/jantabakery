@@ -40,6 +40,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     metadataBase: new URL(SITE_URL),
     title,
     description,
+    robots: {
+      index: false,
+      follow: false,
+    },
     alternates: {
       canonical: pageUrl,
     },
