@@ -79,8 +79,8 @@ export default function FloatingCart() {
   // Avoid rendering during SSR/hydration to prevent mismatches
   if (!mounted) return null;
 
-  // The menu and gifting pages have their own dedicated floating cart bar and modal
-  if (pathname === '/menu' || pathname === '/gifting') return null;
+  // The menu page has its own dedicated floating cart bar and modal
+  if (pathname === '/menu') return null;
 
   // Don't render the button at all if cart is empty
   if (cartCount === 0 && !isOpen) return null;

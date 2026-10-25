@@ -28,7 +28,6 @@ import {
 import { useCart } from '@/lib/cartContext';
 import { PHONE_DIGITS, PHONE_HREF, SITE_URL } from '@/lib/siteConfig';
 import { trackClickWhatsapp, trackAddToCart } from '@/lib/analytics';
-import { FloatingCartBar, CartModal } from '@/components/CartModal';
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
@@ -38,26 +37,12 @@ function WhatsAppIcon({ className }: { className?: string }) {
   );
 }
 
-function getHamperOrderName(hamper: HamperItem): string {
-  // Dry fruit hampers already have "Dry Fruit Hamper X" as their full name
-  if (hamper.category === 'dry-fruit') {
-    return hamper.name;
-  }
-  // Generic hampers without a distinctive artwork name (e.g. Festive Hamper 01)
-  if (hamper.name.startsWith('Festive Hamper')) {
-    return `${hamper.name} (Basket Hamper)`;
-  }
-  // Distinct named hampers (e.g. Rani Rang, Vaibhav Vistara, etc.) — NO category in bracket
-  return hamper.name;
-}
-
 function buildHamperWhatsAppUrl(hamper: HamperItem): string {
   const origin = typeof window !== 'undefined' ? window.location.origin : SITE_URL;
   const imageUrl = `${origin}${hamper.image}`;
-  const orderName = getHamperOrderName(hamper);
   const text = `Hello Janta Bakery! I would like to enquire about this Diwali Gift Hamper:
 
-🎁 Hamper: ${orderName}
+🎁 Hamper: ${hamper.name} (${hamper.categoryLabel})
 📸 Photo: ${imageUrl}
 
 Please share pricing, contents, and availability details. Thank you!`;
@@ -93,8 +78,6 @@ export default function GiftingPageClient() {
   const [debouncedQuery, setDebouncedQuery] = useState('');
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const [copiedId, setCopiedId] = useState<string | null>(null);
-  const [hasAddedOnThisPage, setHasAddedOnThisPage] = useState(false);
-  const [isCartOpen, setIsCartOpen] = useState(false);
 
   const { cart, addToCart, incrementItem, decrementItem } = useCart();
   const filterBarRef = useRef<HTMLDivElement>(null);
@@ -483,15 +466,15 @@ export default function GiftingPageClient() {
                         </button>
                       </div>
 
-                      {/* Action Buttons: 50% Order / 50% Add to Cart */}
-                      <div className="flex items-center gap-1.5 pt-1">
-                        {/* WhatsApp Trigger (50%) */}
+                      {/* Action Buttons */}
+                      <div className="flex items-center gap-1.5 pt-0.5">
+                        {/* WhatsApp Trigger */}
                         <a
                           href={buildHamperWhatsAppUrl(hamper)}
                           target="_blank"
                           rel="noopener noreferrer"
                           onClick={() => trackClickWhatsapp()}
-                          className="flex flex-1 h-[34px] items-center justify-center gap-1 rounded-xl px-2 text-[11px] sm:text-xs font-bold text-white shadow-xs transition-all duration-200 hover:brightness-105 active:scale-95 truncate"
+                          className="flex flex-1 items-center justify-center gap-1 rounded-xl py-2 px-2 text-[11px] sm:text-xs font-bold text-white shadow-xs transition-all duration-200 hover:brightness-105 active:scale-95 truncate"
                           style={{
                             background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
                           }}
@@ -500,29 +483,23 @@ export default function GiftingPageClient() {
                           <span className="truncate">Order</span>
                         </a>
 
-                        {/* Add to Cart Trigger (50%) */}
+                        {/* Add to Cart Trigger */}
                         {inCartQty > 0 ? (
-                          <div className="flex flex-1 h-[34px] items-center justify-between rounded-xl border border-rose/30 bg-rose/5 px-1.5 shadow-2xs">
+                          <div className="flex h-8 items-center justify-between rounded-xl border border-rose/30 bg-white px-1.5 shadow-2xs shrink-0">
                             <button
-                              onClick={() => {
-                                decrementItem(cartKey);
-                                setHasAddedOnThisPage(true);
-                              }}
-                              className="flex h-6 w-6 items-center justify-center rounded-lg text-rose hover:bg-rose/15 active:scale-90 transition-all"
+                              onClick={() => decrementItem(cartKey)}
+                              className="flex h-5 w-5 items-center justify-center rounded-md text-rose hover:bg-rose/10"
                               aria-label="Decrease quantity"
                             >
-                              <Minus className="h-3 w-3" />
+                              <Minus className="h-2.5 w-2.5" />
                             </button>
-                            <span className="text-[11px] sm:text-xs font-bold text-rose px-0.5 truncate">{inCartQty} in cart</span>
+                            <span className="w-5 text-center text-xs font-bold text-rose">{inCartQty}</span>
                             <button
-                              onClick={() => {
-                                incrementItem(cartKey);
-                                setHasAddedOnThisPage(true);
-                              }}
-                              className="flex h-6 w-6 items-center justify-center rounded-lg text-rose hover:bg-rose/15 active:scale-90 transition-all"
+                              onClick={() => incrementItem(cartKey)}
+                              className="flex h-5 w-5 items-center justify-center rounded-md text-rose hover:bg-rose/10"
                               aria-label="Increase quantity"
                             >
-                              <Plus className="h-3 w-3" />
+                              <Plus className="h-2.5 w-2.5" />
                             </button>
                           </div>
                         ) : (
@@ -530,17 +507,15 @@ export default function GiftingPageClient() {
                             onClick={() => {
                               addToCart({
                                 id: cartKey,
-                                name: getHamperOrderName(hamper),
+                                name: `${hamper.name} (${hamper.categoryLabel})`,
                               });
-                              setHasAddedOnThisPage(true);
                               trackAddToCart(hamper.name);
                             }}
-                            className="flex flex-1 h-[34px] items-center justify-center gap-1 rounded-xl border border-rose/30 bg-rose/10 text-rose text-[11px] sm:text-xs font-bold shadow-2xs hover:bg-rose hover:text-white transition-all active:scale-95 px-1.5"
+                            className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl border border-rose/30 bg-rose/10 text-rose shadow-2xs hover:bg-rose hover:text-white transition-all active:scale-95"
                             title="Add to order cart"
                             aria-label={`Add ${hamper.name} to cart`}
                           >
-                            <ShoppingCart className="h-3 w-3 shrink-0" />
-                            <span className="truncate">Add to Cart</span>
+                            <ShoppingCart className="h-3.5 w-3.5" />
                           </button>
                         )}
                       </div>
@@ -711,9 +686,8 @@ export default function GiftingPageClient() {
                     onClick={() => {
                       addToCart({
                         id: filteredHampers[lightboxIndex].id,
-                        name: getHamperOrderName(filteredHampers[lightboxIndex]),
+                        name: `${filteredHampers[lightboxIndex].name} (${filteredHampers[lightboxIndex].categoryLabel})`,
                       });
-                      setHasAddedOnThisPage(true);
                       trackAddToCart(filteredHampers[lightboxIndex].name);
                     }}
                     className="flex items-center gap-1.5 rounded-full px-3 py-2 text-xs font-bold text-white bg-white/10 hover:bg-rose hover:text-white transition-all border border-white/15"
@@ -741,17 +715,6 @@ export default function GiftingPageClient() {
           </motion.div>
         )}
       </AnimatePresence>
-
-      {/* ═ ═ ═ ═ ═ ═ ═  FLOATING CART BAR & MODAL ═ ═ ═ ═ ═ ═ ═  */}
-      <FloatingCartBar
-        isVisible={hasAddedOnThisPage}
-        onOpenCart={() => setIsCartOpen(true)}
-      />
-
-      <CartModal
-        isOpen={isCartOpen}
-        onClose={() => setIsCartOpen(false)}
-      />
     </div>
   );
 }
