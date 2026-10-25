@@ -139,15 +139,6 @@ export default function GiftingPageClient() {
     return result;
   }, [activeCategory, debouncedQuery]);
 
-  // Tab counts
-  const categoryCounts = useMemo(() => {
-    return {
-      all: hampersData.length,
-      basket: hampersData.filter((h) => h.category === 'basket').length,
-      boxed: hampersData.filter((h) => h.category === 'boxed').length,
-      'dry-fruit': hampersData.filter((h) => h.category === 'dry-fruit').length,
-    };
-  }, []);
 
   // Tab click handler with scroll to top
   const handleCategoryClick = useCallback((cat: 'all' | GiftingCategory) => {
@@ -268,7 +259,6 @@ export default function GiftingPageClient() {
             {/* Category tabs */}
             <div className="flex items-center gap-1.5 overflow-x-auto w-full md:w-auto py-1 md:py-0.5 pb-2 md:pb-0.5 category-scroll">
               {GIFTING_CATEGORIES.map((tab) => {
-                const count = categoryCounts[tab.id];
                 const isActive = activeCategory === tab.id;
 
                 return (
@@ -283,13 +273,6 @@ export default function GiftingPageClient() {
                   >
                     <span>{tab.icon}</span>
                     <span>{tab.label}</span>
-                    <span
-                      className={`text-[10px] px-1.5 py-0.2 rounded-full font-bold ${
-                        isActive ? 'bg-white/20 text-white' : 'bg-white/10 text-white/60'
-                      }`}
-                    >
-                      {count}
-                    </span>
                   </button>
                 );
               })}
