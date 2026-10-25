@@ -56,8 +56,8 @@ function buildHamperWhatsAppUrl(hamper: HamperItem): string {
   const orderName = getHamperOrderName(hamper);
   const text = `Hello Janta Bakery! I would like to enquire about this Diwali Gift Hamper:
 
-🎁 Hamper: ${orderName}
-📸 Photo: ${imageUrl}
+Hamper: ${orderName}
+Photo: ${imageUrl}
 
 Please share pricing, contents, and availability details. Thank you!`;
 
