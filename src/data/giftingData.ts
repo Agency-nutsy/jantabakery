@@ -3,10 +3,15 @@ export type GiftingCategory = 'basket' | 'boxed' | 'dry-fruit';
 export interface HamperItem {
   id: string;
   name: string;
+  slug?: string;
   category: GiftingCategory;
   categoryLabel: string;
   categoryIcon: string;
   image: string;
+  ogImage?: string;
+  price?: number | string;
+  description?: string;
+  contents?: string[];
 }
 
 export const GIFTING_CATEGORIES: { id: 'all' | GiftingCategory; label: string; icon: string }[] = [
@@ -327,3 +332,52 @@ export const hampersData: HamperItem[] = [
     image: '/gallery/hampers/dry-fruit/dry-fruit-hamper-11.webp',
   },
 ];
+
+/* ═══════════════════════════════════════════
+   HELPER UTILITIES
+   ═══════════════════════════════════════════ */
+
+export function getHamperOrderName(hamper: HamperItem): string {
+  if (
+    hamper.name.toLowerCase().startsWith('festive hamper') ||
+    hamper.name.toLowerCase().startsWith('boxed hamper') ||
+    hamper.name.toLowerCase().startsWith('dry fruit hamper')
+  ) {
+    const singularCategory = hamper.categoryLabel.endsWith('s')
+      ? hamper.categoryLabel.slice(0, -1)
+      : hamper.categoryLabel;
+    return `${hamper.name} (${singularCategory})`;
+  }
+  return hamper.name;
+}
+
+export function getHamperBySlug(slug: string): HamperItem | undefined {
+  if (!slug) return undefined;
+  const normalized = decodeURIComponent(slug).toLowerCase().trim();
+  return hampersData.find(
+    (h) =>
+      h.id.toLowerCase() === normalized ||
+      (h.slug && h.slug.toLowerCase() === normalized) ||
+      h.id.replace(/^(basket-|boxed-|dry-fruit-)/, '').toLowerCase() === normalized
+  );
+}
+
+export function getAllHamperSlugs(): string[] {
+  return hampersData.map((h) => h.id);
+}
+
+export function getHamperOgImage(hamper: HamperItem): string {
+  return `/gallery/hampers/og/${hamper.id}.jpg`;
+}
+
+export function getHamperDescription(hamper: HamperItem): string {
+  if (hamper.description) return hamper.description;
+  if (hamper.category === 'basket') {
+    return "Handcrafted artisan festive basket dressed in delicate net and floral accents, filled with Janta Bakery's signature cookies, dry cakes, savouries, and celebratory confections. Prepared fresh in Bhogal, New Delhi.";
+  }
+  if (hamper.category === 'boxed') {
+    return 'Royal rigid keepsake box featuring traditional festive Indian motifs and gold finish, curated with artisan bakery biscuits, premium assorted dry fruits, and bespoke confections. Perfect for corporate and family gifting.';
+  }
+  return 'Heritage handcrafted festive keepsake box with regal artwork, featuring handpicked supreme quality dry fruits (cashews, almonds, pistachios) and celebratory dry confections.';
+}
+

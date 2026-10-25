@@ -1,9 +1,11 @@
 import type { MetadataRoute } from 'next';
 import { SITE_URL } from '@/lib/siteConfig';
+import { hampersData } from '@/data/giftingData';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  return [
+
+  const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: SITE_URL,
       lastModified: now,
@@ -20,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${SITE_URL}/gifting`,
       lastModified: now,
       changeFrequency: 'weekly',
-      priority: 0.85,
+      priority: 0.9,
     },
     {
       url: `${SITE_URL}/gallery`,
@@ -41,4 +43,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
   ];
+
+  const hamperRoutes: MetadataRoute.Sitemap = hampersData.map((h) => ({
+    url: `${SITE_URL}/gifting/${h.id}`,
+    lastModified: now,
+    changeFrequency: 'weekly',
+    priority: 0.8,
+  }));
+
+  return [...staticRoutes, ...hamperRoutes];
 }

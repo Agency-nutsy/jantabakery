@@ -18,6 +18,7 @@ import {
   ArrowRight,
 } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import {
   hampersData,
   GIFTING_CATEGORIES,
@@ -52,14 +53,14 @@ function getHamperOrderName(hamper: HamperItem): string {
 
 function buildHamperWhatsAppUrl(hamper: HamperItem): string {
   const origin = typeof window !== 'undefined' ? window.location.origin : SITE_URL;
-  const imageUrl = `${origin}${hamper.image}`;
+  const productUrl = `${origin}/gifting/${hamper.id}`;
   const orderName = getHamperOrderName(hamper);
-  const text = `Hello Janta Bakery! I would like to enquire about this Diwali Gift Hamper:
+  const text = `Hi, I want to order:
+*${orderName}*
+Quantity: 1
+Price: Price on Enquiry
 
-Hamper: ${orderName}
-Photo: ${imageUrl}
-
-Please share pricing, contents, and availability details. Thank you!`;
+${productUrl}`;
 
   return `https://wa.me/${PHONE_DIGITS}?text=${encodeURIComponent(text)}`;
 }
@@ -193,7 +194,7 @@ export default function GiftingPageClient() {
   // Share handler
   const handleShare = async (hamper: HamperItem) => {
     const origin = typeof window !== 'undefined' ? window.location.origin : SITE_URL;
-    const shareUrl = `${origin}/gifting#${hamper.id}`;
+    const shareUrl = `${origin}/gifting/${hamper.id}`;
     const shareText = `Check out this ${hamper.name} (${hamper.categoryLabel}) from Janta Bakery!`;
 
     if (typeof navigator !== 'undefined' && navigator.share) {
@@ -460,9 +461,13 @@ export default function GiftingPageClient() {
                     <div className="p-3 sm:p-3.5 flex flex-col flex-1 justify-between gap-2.5">
                       {/* Title & Share */}
                       <div className="flex items-center justify-between gap-1.5 min-w-0">
-                        <h3 className="font-[family-name:var(--font-display)] text-lg sm:text-xl font-bold text-charcoal leading-tight truncate group-hover:text-rose transition-colors">
+                        <Link
+                          href={`/gifting/${hamper.id}`}
+                          onClick={(e) => e.stopPropagation()}
+                          className="font-[family-name:var(--font-display)] text-lg sm:text-xl font-bold text-charcoal leading-tight truncate hover:text-rose transition-colors"
+                        >
                           {hamper.name}
-                        </h3>
+                        </Link>
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
