@@ -300,13 +300,13 @@ export default function GiftingPageClient() {
             transition={{ duration: 0.3 }}
             className="relative overflow-hidden rounded-2xl bg-white border border-rose/15 shadow-sm p-4 sm:p-6 flex flex-col md:flex-row items-center gap-5"
           >
-            <div className="relative w-full md:w-36 h-44 md:h-36 shrink-0 overflow-hidden rounded-xl shadow-xs bg-warm-cream">
+            <div className="relative w-full md:w-40 h-44 md:h-40 shrink-0 overflow-hidden rounded-xl shadow-xs bg-[#FAF5F2] flex items-center justify-center p-1">
               <Image
                 src={CATEGORY_COVERS[activeCategory].image}
                 alt={CATEGORY_COVERS[activeCategory].title}
                 fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 160px"
+                className="object-contain"
+                sizes="(max-width: 768px) 100vw, 180px"
               />
             </div>
             <div className="flex-1 text-center md:text-left">
@@ -389,13 +389,13 @@ export default function GiftingPageClient() {
                     {/* Hamper Image Box */}
                     <div
                       onClick={() => openLightbox(index)}
-                      className="relative w-full aspect-[4/4.5] bg-gradient-to-b from-warm-cream/40 to-white overflow-hidden cursor-pointer"
+                      className="relative w-full aspect-[4/5] bg-[#FAF5F2] overflow-hidden cursor-pointer flex items-center justify-center p-1.5"
                     >
                       <Image
                         src={hamper.image}
                         alt={hamper.name}
                         fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        className="object-contain transition-transform duration-300 group-hover:scale-105"
                         sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                         loading="lazy"
                       />
@@ -541,12 +541,12 @@ export default function GiftingPageClient() {
       <section className="py-12 px-4">
         <div className="mx-auto max-w-5xl">
           <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#4A0E17] via-[#2A080E] to-[#1A0509] p-6 sm:p-10 text-white shadow-xl flex flex-col md:flex-row items-center gap-6 sm:gap-8 border border-amber-300/30">
-            <div className="relative w-full md:w-56 aspect-[3/4] shrink-0 overflow-hidden rounded-xl shadow-lg ring-1 ring-amber-300/40">
+            <div className="relative w-full md:w-56 aspect-[2/3] shrink-0 overflow-hidden rounded-xl shadow-lg ring-1 ring-amber-300/40 bg-black/40 flex items-center justify-center p-1">
               <Image
                 src="/gallery/hampers/dry-fruit/happy-diwali-poster.webp"
                 alt="Happy Diwali from Janta Bakery"
                 fill
-                className="object-cover"
+                className="object-contain"
                 sizes="(max-width: 768px) 100vw, 220px"
               />
             </div>
@@ -626,13 +626,13 @@ export default function GiftingPageClient() {
               className="relative w-full max-w-2xl max-h-[90vh] flex flex-col bg-[#1A1114] rounded-3xl overflow-hidden border border-rose/30 shadow-2xl"
             >
               {/* Photo Box */}
-              <div className="relative w-full aspect-[4/4.5] bg-black/50">
+              <div className="relative w-full h-[55vh] sm:h-[68vh] bg-black/60 flex items-center justify-center p-2">
                 <Image
                   src={filteredHampers[lightboxIndex].image}
                   alt={filteredHampers[lightboxIndex].name}
                   fill
-                  className="object-contain"
-                  sizes="(max-width: 1024px) 100vw, 600px"
+                  className="object-contain p-1"
+                  sizes="(max-width: 1024px) 100vw, 800px"
                   priority
                 />
               </div>
