@@ -9,6 +9,7 @@ import ScrollProgress from "@/components/ScrollProgress";
 import ScrollToTop from "@/components/ScrollToTop";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { CartProvider } from "@/lib/cartContext";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import {
   SITE_URL,
   BUSINESS_NAME,
@@ -154,6 +155,7 @@ export default function RootLayout({
           <FloatingWidgets />
         </CartProvider>
         <GoogleAnalytics />
+        <SpeedInsights />
       </body>
     </html>
   );
