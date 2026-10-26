@@ -8,6 +8,8 @@ import FloatingCart from "@/components/FloatingCart";
 import ScrollProgress from "@/components/ScrollProgress";
 import ScrollToTop from "@/components/ScrollToTop";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { CartProvider } from "@/lib/cartContext";
 import {
   SITE_URL,
@@ -65,6 +67,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: SITE_URL,
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '48x48', type: 'image/x-icon' },
+      { url: '/icon.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
   openGraph: {
     title: `${BUSINESS_NAME} — Since ${FOUNDED_YEAR} | Delhi's Most Beloved Bakery`,
     description: `Handcrafted cakes, pastries & joy since ${FOUNDED_YEAR}. Visit us at Bhogal, Jangpura, New Delhi.`,
@@ -87,6 +98,15 @@ export const metadata: Metadata = {
     description: `Handcrafted cakes, pastries & joy since ${FOUNDED_YEAR}. Bhogal, Jangpura, New Delhi.`,
     images: [`${SITE_URL}/og-image.png`],
   },
+};
+
+/** WebSite JSON-LD — tells Google the official site name for search results. */
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: BUSINESS_NAME,
+  alternateName: [`${BUSINESS_NAME} 1967`, `${BUSINESS_NAME} Bhogal`],
+  url: SITE_URL,
 };
 
 /** LocalBusiness JSON-LD — uses only confirmed business facts. */
@@ -135,6 +155,13 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://maps.googleapis.com" />
         <link rel="preload" href="/whatsapp-hero.webp" as="image" />
         <link rel="preload" href="/logo.webp" as="image" />
+        {/* WebSite JSON-LD (Search Result Site Name) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteJsonLd).replace(/</g, '\\u003c'),
+          }}
+        />
         {/* LocalBusiness JSON-LD */}
         <script
           type="application/ld+json"
@@ -154,6 +181,8 @@ export default function RootLayout({
           <FloatingWidgets />
         </CartProvider>
         <GoogleAnalytics />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
