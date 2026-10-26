@@ -23,7 +23,6 @@ import {
   hampersData,
   featuredHampersData,
   GIFTING_CATEGORIES,
-  CATEGORY_COVERS,
   type HamperItem,
   type GiftingCategory,
 } from '@/data/giftingData';
@@ -442,58 +441,6 @@ export default function GiftingPageClient() {
           </div>
         </div>
       </motion.div>
-
-      {/* ═══════ CATEGORY SPOTLIGHT COVER BANNER ═══════ */}
-      {activeCategory !== 'all' && !debouncedQuery && (
-        <section className="mx-auto max-w-7xl px-4 mb-6">
-          <motion.div
-            key={activeCategory}
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3 }}
-            className="relative overflow-hidden rounded-2xl bg-white shadow-sm p-4 sm:p-6 flex flex-col md:flex-row items-center gap-5"
-          >
-            <div
-              className={`relative shrink-0 overflow-hidden rounded-xl shadow-xs ${
-                activeCategory === 'dry-fruit'
-                  ? 'w-32 h-32 sm:w-36 sm:h-36 aspect-square'
-                  : activeCategory === 'basket' || activeCategory === 'featured'
-                  ? 'w-28 h-35 sm:w-32 sm:h-40 aspect-[4/5]'
-                  : 'w-28 h-37 sm:w-32 sm:h-42 aspect-[3/4]'
-              }`}
-            >
-              <Image
-                src={CATEGORY_COVERS[activeCategory].image}
-                alt={CATEGORY_COVERS[activeCategory].title}
-                fill
-                className="object-cover"
-                sizes="160px"
-              />
-            </div>
-            <div className="flex-1 text-center md:text-left">
-              <h2 className="font-[family-name:var(--font-display)] text-xl sm:text-2xl font-bold text-charcoal">
-                {CATEGORY_COVERS[activeCategory].title}
-              </h2>
-              <p className="mt-1 text-xs sm:text-sm text-charcoal/70 leading-relaxed max-w-2xl">
-                {CATEGORY_COVERS[activeCategory].subtitle}
-              </p>
-              <div className="mt-3 flex flex-wrap items-center justify-center md:justify-start gap-3">
-                <a
-                  href={`https://wa.me/${PHONE_DIGITS}?text=${encodeURIComponent(
-                    `Hello Janta Bakery! I would like to enquire about bulk / corporate orders for ${CATEGORY_COVERS[activeCategory].title}.`
-                  )}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full bg-whatsapp-green px-3.5 py-1.5 text-xs font-bold text-white shadow-xs hover:brightness-105 transition-all"
-                >
-                  <WhatsAppIcon className="h-3.5 w-3.5" />
-                  Bulk / Corporate Enquiry
-                </a>
-              </div>
-            </div>
-          </motion.div>
-        </section>
-      )}
 
       {/* ═══════ HAMPERS GRID (COMPACT & 25% SMALLER) ═══════ */}
       <section className="flex-1 py-2 px-3 sm:px-4">
