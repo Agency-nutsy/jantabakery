@@ -8,6 +8,7 @@ import FloatingCart from "@/components/FloatingCart";
 import ScrollProgress from "@/components/ScrollProgress";
 import ScrollToTop from "@/components/ScrollToTop";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { Analytics } from "@vercel/analytics/next";
 import { CartProvider } from "@/lib/cartContext";
 import {
   SITE_URL,
@@ -154,6 +155,7 @@ export default function RootLayout({
           <FloatingWidgets />
         </CartProvider>
         <GoogleAnalytics />
+        <Analytics />
       </body>
     </html>
   );
