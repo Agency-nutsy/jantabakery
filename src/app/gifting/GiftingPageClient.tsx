@@ -587,56 +587,6 @@ export default function GiftingPageClient() {
                     })}
                   </div>
 
-                  {/* Showcase Visual Banner Strip */}
-                  <div className="mt-8 relative overflow-hidden rounded-2xl bg-gradient-to-r from-warm-cream via-[#FFF1F4] to-warm-cream p-4 sm:p-6 border border-rose/20 shadow-xs flex flex-col md:flex-row items-center gap-5">
-                    <div className="relative w-full md:w-52 h-44 sm:h-52 shrink-0 rounded-xl overflow-hidden shadow-sm bg-white">
-                      <Image
-                        src="/gallery/hampers/featured/diwali-gifting-showcase.webp"
-                        alt="Janta Bakery Diwali Gifting Showcase"
-                        fill
-                        className="object-cover object-top"
-                        sizes="(max-width: 768px) 100vw, 220px"
-                      />
-                    </div>
-                    <div className="flex-1 text-center md:text-left">
-                      <span className="inline-flex items-center gap-1.5 rounded-full bg-rose/15 px-3 py-0.5 text-[11px] font-bold text-rose uppercase tracking-wider mb-2">
-                        <Sparkles className="h-3 w-3" />
-                        Bespoke &amp; Corporate Hampers
-                      </span>
-                      <h3 className="font-[family-name:var(--font-display)] text-xl sm:text-2xl font-bold text-charcoal">
-                        Thoughtful Gifting for Brighter Moments
-                      </h3>
-                      <p className="mt-1 text-xs sm:text-sm text-charcoal/70 leading-relaxed max-w-xl">
-                        Customized packaging, corporate logo ribbons, and bulk delivery across Delhi NCR. Experience the entire collection in person at our flagship Bhogal store or order online via WhatsApp.
-                      </p>
-                      <div className="mt-3.5 flex flex-wrap items-center justify-center md:justify-start gap-2.5">
-                        <a
-                          href={`https://wa.me/${PHONE_DIGITS}?text=${encodeURIComponent(
-                            'Hi Janta Bakery! I would like to enquire about bespoke / corporate hampers from your Diwali showcase.'
-                          )}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          onClick={() => trackClickWhatsapp()}
-                          className="inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-xs font-bold text-white shadow-xs hover:brightness-105 transition-all"
-                          style={{
-                            background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
-                          }}
-                        >
-                          <WhatsAppIcon className="h-3.5 w-3.5" />
-                          Chat on WhatsApp
-                        </a>
-                        <a
-                          href="https://maps.app.goo.gl/QmQerXUhGQXYYSaVA"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 rounded-full border border-charcoal/20 bg-white px-4 py-2 text-xs font-bold text-charcoal hover:bg-warm-cream/50 transition-all"
-                        >
-                          Visit Bhogal Store
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
                   {/* Transition Header to the Rest of the Collection (Basket, Boxed, Dry Fruit) */}
                   <div className="mt-12 mb-6 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-rose/15 pt-8">
                     <div>
