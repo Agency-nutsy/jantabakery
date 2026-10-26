@@ -16,10 +16,12 @@ import {
   Phone,
   Building2,
   ArrowRight,
+  Sparkles,
 } from 'lucide-react';
 import Image from 'next/image';
 import {
   hampersData,
+  featuredHampersData,
   GIFTING_CATEGORIES,
   CATEGORY_COVERS,
   type HamperItem,
@@ -38,8 +40,8 @@ function WhatsAppIcon({ className }: { className?: string }) {
 }
 
 function getHamperOrderName(hamper: HamperItem): string {
-  // Dry fruit hampers already have "Dry Fruit Hamper X" as their full name
-  if (hamper.category === 'dry-fruit') {
+  // Dry fruit and featured hampers already have their full name (e.g. Featured Hamper 1, Dry Fruit Hamper 1)
+  if (hamper.category === 'dry-fruit' || hamper.category === 'featured') {
     return hamper.name;
   }
   // Generic hampers without a distinctive artwork name (e.g. Festive Hamper 01)
@@ -65,6 +67,7 @@ ${productUrl}`;
 
 function getHamperAspectRatioClass(category: GiftingCategory, id: string): string {
   if (category === 'dry-fruit') return 'aspect-square';
+  if (category === 'featured') return 'aspect-[4/5]';
   if (category === 'basket') return 'aspect-[4/5]';
   if (
     id === 'boxed-divya-jyoti' ||
@@ -208,6 +211,138 @@ export default function GiftingPageClient() {
     }
   };
 
+  const renderHamperCard = (hamper: HamperItem, index: number, isFeaturedView = false) => {
+    const cartKey = hamper.id;
+    const inCartItem = cart.find((c) => c.id === cartKey);
+    const inCartQty = inCartItem?.qty || 0;
+    const isFeatured = isFeaturedView || hamper.category === 'featured';
+
+    return (
+      <motion.div
+        key={hamper.id}
+        id={hamper.id}
+        initial={{ opacity: 0, y: 15 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: (index % 8) * 0.04, duration: 0.3 }}
+        className={`group flex flex-col rounded-2xl bg-white transition-all duration-300 hover:-translate-y-0.5 overflow-hidden ${
+          isFeatured
+            ? 'shadow-sm ring-1 ring-amber-500/25 hover:shadow-xl hover:ring-amber-500/50'
+            : 'shadow-xs hover:shadow-lg'
+        }`}
+      >
+        {/* Hamper Image Box */}
+        <div
+          onClick={() => openLightbox(index)}
+          className={`relative w-full ${getHamperAspectRatioClass(
+            hamper.category,
+            hamper.id
+          )} overflow-hidden cursor-pointer bg-warm-cream/30`}
+        >
+          <Image
+            src={hamper.image}
+            alt={hamper.name}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            loading={isFeatured && index < 4 ? undefined : 'lazy'}
+            priority={isFeatured && index < 4}
+          />
+
+          {/* Hover Overlay with Zoom Icon */}
+          <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
+            <span className="flex items-center gap-1 rounded-full bg-white/95 px-3 py-1.5 text-[11px] font-bold text-charcoal shadow-md backdrop-blur-xs">
+              <ZoomIn className="h-3.5 w-3.5 text-rose" />
+              View
+            </span>
+          </div>
+        </div>
+
+        {/* Hamper Content */}
+        <div className="p-3 sm:p-3.5 flex flex-col flex-1 justify-between gap-2.5">
+          {/* Title & Share */}
+          <div className="flex items-start justify-between gap-1.5 min-w-0">
+            <div className="min-w-0 flex-1">
+              <h3 className="font-[family-name:var(--font-display)] text-base sm:text-lg font-bold text-charcoal leading-snug line-clamp-2">
+                {hamper.name}
+              </h3>
+            </div>
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                handleShare(hamper);
+              }}
+              title="Share Hamper"
+              className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-warm-cream/80 text-charcoal/60 hover:text-rose hover:bg-rose/15 transition-colors"
+              aria-label={`Share ${hamper.name}`}
+            >
+              {copiedId === hamper.id ? (
+                <Check className="h-3.5 w-3.5 text-emerald-600" />
+              ) : (
+                <Share2 className="h-3.5 w-3.5" />
+              )}
+            </button>
+          </div>
+
+          {/* Action Buttons: 50% Order / 50% Add to Cart */}
+          <div className="flex items-center gap-1.5 pt-1">
+            {/* WhatsApp Trigger (50%) */}
+            <a
+              href={buildHamperWhatsAppUrl(hamper)}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackClickWhatsapp()}
+              className="flex flex-1 h-[34px] items-center justify-center gap-1 rounded-xl px-2 text-[11px] sm:text-xs font-bold text-white shadow-xs transition-all duration-200 hover:brightness-105 active:scale-95 truncate"
+              style={{
+                background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
+              }}
+            >
+              <WhatsAppIcon className="h-3 w-3 shrink-0" />
+              <span className="truncate">Order</span>
+            </a>
+
+            {/* Add to Cart Trigger (50%) */}
+            {inCartQty > 0 ? (
+              <div className="flex flex-1 h-[34px] items-center justify-between rounded-xl border border-rose/30 bg-rose/5 px-1.5 shadow-2xs">
+                <button
+                  onClick={() => decrementItem(cartKey)}
+                  className="flex h-6 w-6 items-center justify-center rounded-lg text-rose hover:bg-rose/15 active:scale-90 transition-all"
+                  aria-label="Decrease quantity"
+                >
+                  <Minus className="h-3 w-3" />
+                </button>
+                <span className="text-[11px] sm:text-xs font-bold text-rose px-0.5 truncate">{inCartQty} in cart</span>
+                <button
+                  onClick={() => incrementItem(cartKey)}
+                  className="flex h-6 w-6 items-center justify-center rounded-lg text-rose hover:bg-rose/15 active:scale-90 transition-all"
+                  aria-label="Increase quantity"
+                >
+                  <Plus className="h-3 w-3" />
+                </button>
+              </div>
+            ) : (
+              <button
+                onClick={() => {
+                  addToCart({
+                    id: cartKey,
+                    name: getHamperOrderName(hamper),
+                  });
+                  trackAddToCart(hamper.name);
+                }}
+                className="flex flex-1 h-[34px] items-center justify-center gap-1 rounded-xl border border-rose/30 bg-rose/10 text-rose text-[11px] sm:text-xs font-bold shadow-2xs hover:bg-rose hover:text-white transition-all active:scale-95 px-1.5"
+                title="Add to order cart"
+                aria-label={`Add ${hamper.name} to cart`}
+              >
+                <ShoppingCart className="h-3 w-3 shrink-0" />
+                <span className="truncate">Add to Cart</span>
+              </button>
+            )}
+          </div>
+        </div>
+      </motion.div>
+    );
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-[#FFF5F7] via-white to-soft-white">
       {/* ═══════ HERO SECTION (CLEAN & MINIMAL) ═══════ */}
@@ -322,7 +457,7 @@ export default function GiftingPageClient() {
               className={`relative shrink-0 overflow-hidden rounded-xl shadow-xs ${
                 activeCategory === 'dry-fruit'
                   ? 'w-32 h-32 sm:w-36 sm:h-36 aspect-square'
-                  : activeCategory === 'basket'
+                  : activeCategory === 'basket' || activeCategory === 'featured'
                   ? 'w-28 h-35 sm:w-32 sm:h-40 aspect-[4/5]'
                   : 'w-28 h-37 sm:w-32 sm:h-42 aspect-[3/4]'
               }`}
@@ -396,131 +531,144 @@ export default function GiftingPageClient() {
               </button>
             </div>
           ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5">
-              {filteredHampers.map((hamper, index) => {
-                const cartKey = hamper.id;
-                const inCartItem = cart.find((c) => c.id === cartKey);
-                const inCartQty = inCartItem?.qty || 0;
-
-                return (
-                  <motion.div
-                    key={hamper.id}
-                    id={hamper.id}
-                    initial={{ opacity: 0, y: 15 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: (index % 8) * 0.04, duration: 0.3 }}
-                    className="group flex flex-col rounded-2xl bg-white shadow-xs transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 overflow-hidden"
-                  >
-                    {/* Hamper Image Box */}
-                    <div
-                      onClick={() => openLightbox(index)}
-                      className={`relative w-full ${getHamperAspectRatioClass(
-                        hamper.category,
-                        hamper.id
-                      )} overflow-hidden cursor-pointer`}
-                    >
-                      <Image
-                        src={hamper.image}
-                        alt={hamper.name}
-                        fill
-                        className="object-cover transition-transform duration-300 group-hover:scale-105"
-                        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                        loading="lazy"
-                      />
-
-                      {/* Hover Overlay with Zoom Icon */}
-                      <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
-                        <span className="flex items-center gap-1 rounded-full bg-white/95 px-3 py-1.5 text-[11px] font-bold text-charcoal shadow-md backdrop-blur-xs">
-                          <ZoomIn className="h-3.5 w-3.5 text-rose" />
-                          View
+            <>
+              {/* ═══════ FEATURED DIWALI HAMPERS SHOWCASE SECTION (TOP OF "ALL" CATEGORY) ═══════ */}
+              {activeCategory === 'all' && !debouncedQuery && (
+                <div className="mb-14">
+                  {/* Festive Showcase Sleek Banner (50%+ Thinner) */}
+                  <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#2D1219] via-[#4A1525] to-[#2D1219] py-3.5 px-4 sm:px-6 shadow-md border border-amber-500/30 mb-5 text-white">
+                    <div className="relative z-10 flex flex-col sm:flex-row items-center justify-between gap-3">
+                      <div className="flex items-center gap-3 text-center sm:text-left">
+                        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-amber-500/20 text-lg border border-amber-400/30">
+                          🪔
                         </span>
-                      </div>
-                    </div>
-
-                    {/* Hamper Content */}
-                    <div className="p-3 sm:p-3.5 flex flex-col flex-1 justify-between gap-2.5">
-                      {/* Title & Share */}
-                      <div className="flex items-center justify-between gap-1.5 min-w-0">
-                        <h3 className="font-[family-name:var(--font-display)] text-lg sm:text-xl font-bold text-charcoal leading-tight truncate">
-                          {hamper.name}
-                        </h3>
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleShare(hamper);
-                          }}
-                          title="Share Hamper"
-                          className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-warm-cream/80 text-charcoal/60 hover:text-rose hover:bg-rose/15 transition-colors"
-                          aria-label={`Share ${hamper.name}`}
-                        >
-                          {copiedId === hamper.id ? (
-                            <Check className="h-3.5 w-3.5 text-emerald-600" />
-                          ) : (
-                            <Share2 className="h-3.5 w-3.5" />
-                          )}
-                        </button>
+                        <div>
+                          <h2 className="font-[family-name:var(--font-display)] text-lg sm:text-xl font-bold tracking-tight text-white">
+                            Featured Diwali Hampers
+                          </h2>
+                          <p className="text-[11px] sm:text-xs text-white/70">
+                            Handcrafted centerpieces &amp; royal keepsakes curated for festive gifting
+                          </p>
+                        </div>
                       </div>
 
-                      {/* Action Buttons: 50% Order / 50% Add to Cart */}
-                      <div className="flex items-center gap-1.5 pt-1">
-                        {/* WhatsApp Trigger (50%) */}
+                      <div className="shrink-0 flex items-center gap-2">
                         <a
-                          href={buildHamperWhatsAppUrl(hamper)}
+                          href={`https://wa.me/${PHONE_DIGITS}?text=${encodeURIComponent(
+                            'Hello Janta Bakery! I would like to enquire about your Featured Diwali Gift Hampers.'
+                          )}`}
                           target="_blank"
                           rel="noopener noreferrer"
                           onClick={() => trackClickWhatsapp()}
-                          className="flex flex-1 h-[34px] items-center justify-center gap-1 rounded-xl px-2 text-[11px] sm:text-xs font-bold text-white shadow-xs transition-all duration-200 hover:brightness-105 active:scale-95 truncate"
+                          className="inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-bold text-white shadow-sm hover:brightness-105 active:scale-95 transition-all"
                           style={{
                             background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
                           }}
                         >
-                          <WhatsAppIcon className="h-3 w-3 shrink-0" />
-                          <span className="truncate">Order</span>
+                          <WhatsAppIcon className="h-3.5 w-3.5" />
+                          WhatsApp Order
                         </a>
-
-                        {/* Add to Cart Trigger (50%) */}
-                        {inCartQty > 0 ? (
-                          <div className="flex flex-1 h-[34px] items-center justify-between rounded-xl border border-rose/30 bg-rose/5 px-1.5 shadow-2xs">
-                            <button
-                              onClick={() => decrementItem(cartKey)}
-                              className="flex h-6 w-6 items-center justify-center rounded-lg text-rose hover:bg-rose/15 active:scale-90 transition-all"
-                              aria-label="Decrease quantity"
-                            >
-                              <Minus className="h-3 w-3" />
-                            </button>
-                            <span className="text-[11px] sm:text-xs font-bold text-rose px-0.5 truncate">{inCartQty} in cart</span>
-                            <button
-                              onClick={() => incrementItem(cartKey)}
-                              className="flex h-6 w-6 items-center justify-center rounded-lg text-rose hover:bg-rose/15 active:scale-90 transition-all"
-                              aria-label="Increase quantity"
-                            >
-                              <Plus className="h-3 w-3" />
-                            </button>
-                          </div>
-                        ) : (
-                          <button
-                            onClick={() => {
-                              addToCart({
-                                id: cartKey,
-                                name: getHamperOrderName(hamper),
-                              });
-                              trackAddToCart(hamper.name);
-                            }}
-                            className="flex flex-1 h-[34px] items-center justify-center gap-1 rounded-xl border border-rose/30 bg-rose/10 text-rose text-[11px] sm:text-xs font-bold shadow-2xs hover:bg-rose hover:text-white transition-all active:scale-95 px-1.5"
-                            title="Add to order cart"
-                            aria-label={`Add ${hamper.name} to cart`}
-                          >
-                            <ShoppingCart className="h-3 w-3 shrink-0" />
-                            <span className="truncate">Add to Cart</span>
-                          </button>
-                        )}
+                        <a
+                          href={PHONE_HREF}
+                          className="inline-flex items-center gap-1.5 rounded-full border border-white/25 bg-white/10 px-3 py-1.5 text-xs font-semibold text-white/90 hover:bg-white/20 transition-all"
+                        >
+                          <Phone className="h-3 w-3 text-amber-300" />
+                          Bulk Call
+                        </a>
                       </div>
                     </div>
-                  </motion.div>
-                );
-              })}
-            </div>
+                  </div>
+
+                  {/* Featured Hampers Grid (7 Showpiece Hampers) */}
+                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5">
+                    {featuredHampersData.map((hamper, idx) => {
+                      const globalIdx = filteredHampers.findIndex((h) => h.id === hamper.id);
+                      return renderHamperCard(hamper, globalIdx >= 0 ? globalIdx : idx, true);
+                    })}
+                  </div>
+
+                  {/* Showcase Visual Banner Strip */}
+                  <div className="mt-8 relative overflow-hidden rounded-2xl bg-gradient-to-r from-warm-cream via-[#FFF1F4] to-warm-cream p-4 sm:p-6 border border-rose/20 shadow-xs flex flex-col md:flex-row items-center gap-5">
+                    <div className="relative w-full md:w-52 h-44 sm:h-52 shrink-0 rounded-xl overflow-hidden shadow-sm bg-white">
+                      <Image
+                        src="/gallery/hampers/featured/diwali-gifting-showcase.webp"
+                        alt="Janta Bakery Diwali Gifting Showcase"
+                        fill
+                        className="object-cover object-top"
+                        sizes="(max-width: 768px) 100vw, 220px"
+                      />
+                    </div>
+                    <div className="flex-1 text-center md:text-left">
+                      <span className="inline-flex items-center gap-1.5 rounded-full bg-rose/15 px-3 py-0.5 text-[11px] font-bold text-rose uppercase tracking-wider mb-2">
+                        <Sparkles className="h-3 w-3" />
+                        Bespoke &amp; Corporate Hampers
+                      </span>
+                      <h3 className="font-[family-name:var(--font-display)] text-xl sm:text-2xl font-bold text-charcoal">
+                        Thoughtful Gifting for Brighter Moments
+                      </h3>
+                      <p className="mt-1 text-xs sm:text-sm text-charcoal/70 leading-relaxed max-w-xl">
+                        Customized packaging, corporate logo ribbons, and bulk delivery across Delhi NCR. Experience the entire collection in person at our flagship Bhogal store or order online via WhatsApp.
+                      </p>
+                      <div className="mt-3.5 flex flex-wrap items-center justify-center md:justify-start gap-2.5">
+                        <a
+                          href={`https://wa.me/${PHONE_DIGITS}?text=${encodeURIComponent(
+                            'Hi Janta Bakery! I would like to enquire about bespoke / corporate hampers from your Diwali showcase.'
+                          )}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={() => trackClickWhatsapp()}
+                          className="inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-xs font-bold text-white shadow-xs hover:brightness-105 transition-all"
+                          style={{
+                            background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
+                          }}
+                        >
+                          <WhatsAppIcon className="h-3.5 w-3.5" />
+                          Chat on WhatsApp
+                        </a>
+                        <a
+                          href="https://maps.app.goo.gl/QmQerXUhGQXYYSaVA"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 rounded-full border border-charcoal/20 bg-white px-4 py-2 text-xs font-bold text-charcoal hover:bg-warm-cream/50 transition-all"
+                        >
+                          Visit Bhogal Store
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Transition Header to the Rest of the Collection (Basket, Boxed, Dry Fruit) */}
+                  <div className="mt-12 mb-6 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-rose/15 pt-8">
+                    <div>
+                      <h3 className="font-[family-name:var(--font-display)] text-2xl sm:text-3xl font-bold text-charcoal">
+                        Complete Hamper Collection
+                      </h3>
+                      <p className="text-xs sm:text-sm text-charcoal/60">
+                        Explore our full collection of artisanal baskets, designer boxes &amp; royal dry fruit chests.
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-2 text-xs font-semibold text-rose bg-rose/10 px-3.5 py-1.5 rounded-full">
+                      <span>{filteredHampers.length - featuredHampersData.length} More Hampers Below</span>
+                      <ArrowRight className="h-3.5 w-3.5" />
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* General Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5">
+                {(activeCategory === 'all' && !debouncedQuery
+                  ? filteredHampers.slice(featuredHampersData.length)
+                  : filteredHampers
+                ).map((hamper, idx) => {
+                  const globalIdx =
+                    activeCategory === 'all' && !debouncedQuery
+                      ? idx + featuredHampersData.length
+                      : idx;
+                  return renderHamperCard(hamper, globalIdx, false);
+                })}
+              </div>
+            </>
           )}
         </div>
       </section>

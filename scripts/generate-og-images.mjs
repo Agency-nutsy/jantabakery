@@ -2,26 +2,25 @@ import sharp from 'sharp';
 import fs from 'fs';
 import path from 'path';
 
-// Load hampers from giftingData.ts
+import ts from 'typescript';
+
+// Load hampers from giftingData.ts using typescript transpile
 const giftingDataContent = fs.readFileSync('src/data/giftingData.ts', 'utf8');
+const jsCode = ts.transpileModule(giftingDataContent, {
+  compilerOptions: { module: ts.ModuleKind.CommonJS }
+}).outputText;
 
-// Simple parser for hampersData
-const hamperBlock = giftingDataContent.slice(giftingDataContent.indexOf('export const hampersData'));
-const regex = /id:\s*'([^']+)',\s*name:\s*'([^']+)',\s*category:\s*'([^']+)',\s*categoryLabel:\s*'([^']+)',\s*categoryIcon:\s*'([^']+)',\s*image:\s*'([^']+)'/g;
+const moduleObj = { exports: {} };
+const evalFn = new Function('module', 'exports', 'require', jsCode);
+evalFn(moduleObj, moduleObj.exports, (mod) => {
+  if (mod.startsWith('@/')) {
+    // mock empty or basic config if imported
+    return {};
+  }
+  return {};
+});
 
-const hampers = [];
-let match;
-while ((match = regex.exec(hamperBlock)) !== null) {
-  hampers.push({
-    id: match[1],
-    name: match[2],
-    category: match[3],
-    categoryLabel: match[4],
-    categoryIcon: match[5],
-    image: match[6],
-  });
-}
-
+const hampers = moduleObj.exports.hampersData || [];
 console.log(`Parsed ${hampers.length} hampers.`);
 
 const outDir = path.join(process.cwd(), 'public', 'gallery', 'hampers', 'og');

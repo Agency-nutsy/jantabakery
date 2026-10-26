@@ -15,10 +15,10 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/gifting`,
     images: [
       {
-        url: `${SITE_URL}/gallery/hampers/basket/basket_hamper_01.webp`,
-        width: 1200,
-        height: 1500,
-        alt: `${BUSINESS_NAME} — Diwali Hamper Collection`,
+        url: `${SITE_URL}/gallery/hampers/featured/diwali-gifting-showcase.webp`,
+        width: 1122,
+        height: 1402,
+        alt: `${BUSINESS_NAME} — Diwali Festive Hamper Showcase`,
       },
     ],
   },
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: `Festive Gift Hampers | ${BUSINESS_NAME}`,
     description: 'Artisan Diwali Baskets, Designer Boxed Hampers & Dry Fruit Gift Chests.',
-    images: [`${SITE_URL}/gallery/hampers/basket/basket_hamper_01.webp`],
+    images: [`${SITE_URL}/gallery/hampers/featured/diwali-gifting-showcase.webp`],
   },
 };
 
