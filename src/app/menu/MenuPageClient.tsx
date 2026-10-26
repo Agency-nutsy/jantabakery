@@ -7,6 +7,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { menuItems, CATEGORY_LABELS, CATEGORY_ICONS, type MenuCategory, type MenuItem } from './menuData';
 import { useCart } from '@/lib/cartContext';
+import { buildCartWhatsAppUrl } from '@/lib/cartWhatsApp';
+import { trackSendOrderWhatsapp } from '@/lib/analytics';
+import { PHONE_DIGITS } from '@/lib/siteConfig';
 
 /* ═══════════════════════════════════════════
    TYPES
@@ -45,20 +48,12 @@ const TAB_ICONS: Record<'all' | MenuCategory, string> = {
   snacks:   '🥪',
 };
 
-const WA_NUMBER = '919717179565';
+const WA_NUMBER = PHONE_DIGITS;
 
 /* ═══════════════════════════════════════════
    WHATSAPP MESSAGE BUILDER
    ═══════════════════════════════════════════ */
 
-function buildWhatsAppUrl(cart: CartItem[]): string {
-  const lines = cart.map((item) => {
-    const cleanName = item.name.replace(/\s*\([^)]*\d+\s*(?:g|kg|gm|ml|l|pc|pcs)[^)]*\)/gi, '').trim();
-    return `${item.qty}x ${cleanName}`;
-  }).join('\n');
-  const text = `Hello Janta Bakery! I would like to place an order:\n\n${lines}\n\nPlease confirm availability and pricing. Thank you!`;
-  return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
-}
 
 /* ═══════════════════════════════════════════
    CATEGORY Ã¢â€ â€™ GALLERY TAB MAPPING
@@ -372,9 +367,14 @@ function CartModal({
                     </button>
                   </div>
                   <a
-                    href={buildWhatsAppUrl(cart)}
+                    href={buildCartWhatsAppUrl(cart)}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => {
+                      trackSendOrderWhatsapp();
+                      onClearCart();
+                      onClose();
+                    }}
                     id="whatsapp-order-button"
                     className="flex w-full items-center justify-center gap-3 rounded-full bg-whatsapp-green py-4 text-base font-bold text-white shadow-xl shadow-whatsapp-green/30 transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98]"
                   >

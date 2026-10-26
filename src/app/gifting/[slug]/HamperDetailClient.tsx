@@ -93,7 +93,7 @@ ${productUrl}`;
   };
 
   const handleAddToCart = () => {
-    const cartKey = `gifting-${hamper.id}`;
+    const cartKey = inCartItem ? inCartItem.id : hamper.id;
     if (inCartQty === 0) {
       addToCart({
         id: cartKey,

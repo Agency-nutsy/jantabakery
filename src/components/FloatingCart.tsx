@@ -5,35 +5,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ShoppingCart, X, Plus, Minus, Trash2 } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { useCart } from '@/lib/cartContext';
-import { PHONE_DIGITS, SITE_URL } from '@/lib/siteConfig';
 import { trackSendOrderWhatsapp } from '@/lib/analytics';
-import type { CartItem } from '@/lib/cartContext';
-
-const WA_NUMBER = PHONE_DIGITS;
-
-function buildWhatsAppUrl(cart: CartItem[]): string {
-  const origin = typeof window !== 'undefined' ? window.location.origin : SITE_URL;
-  const baseUrl = origin.includes('localhost') ? SITE_URL : origin;
-
-  const lines = cart
-    .map((item) => {
-      const cleanName = item.name.replace(/\s*\([^)]*\d+\s*(?:g|kg|gm|ml|l|pc|pcs)[^)]*\)/gi, '').trim();
-      const isHamper =
-        item.id.startsWith('featured-') ||
-        item.id.startsWith('basket-') ||
-        item.id.startsWith('boxed-') ||
-        item.id.startsWith('dry-fruit-');
-
-      if (isHamper) {
-        return `${item.qty}x *${cleanName}*\n${baseUrl}/gifting/${item.id}`;
-      }
-      return `${item.qty}x ${cleanName}`;
-    })
-    .join('\n\n');
-
-  const text = `Hello Janta Bakery! I would like to place an order:\n\n${lines}\n\nPlease confirm availability and pricing. Thank you!`;
-  return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
-}
+import { buildCartWhatsAppUrl } from '@/lib/cartWhatsApp';
 
 export default function FloatingCart() {
   const { cart, cartCount, incrementItem, decrementItem, removeItem, clearCart } = useCart();
@@ -237,7 +210,7 @@ export default function FloatingCart() {
               {cart.length > 0 && (
                 <div className="border-t border-baby-pink/20 px-4 py-4 space-y-2.5">
                   <a
-                    href={buildWhatsAppUrl(cart)}
+                    href={buildCartWhatsAppUrl(cart)}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => {
