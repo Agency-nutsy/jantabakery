@@ -225,10 +225,10 @@ export default function GiftingPageClient() {
       <motion.div
         key={hamper.id}
         id={hamper.id}
-        initial={{ opacity: 0, y: 15 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={isPriority ? false : { opacity: 0, y: 15 }}
+        whileInView={isPriority ? undefined : { opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ delay: (index % 8) * 0.04, duration: 0.3 }}
+        transition={isPriority ? undefined : { delay: (index % 8) * 0.04, duration: 0.3 }}
         className={`group flex flex-col rounded-2xl bg-white transition-all duration-300 hover:-translate-y-0.5 overflow-hidden ${
           isFeatured
             ? 'shadow-sm ring-1 ring-amber-500/25 hover:shadow-xl hover:ring-amber-500/50'
@@ -251,6 +251,7 @@ export default function GiftingPageClient() {
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
             loading={isPriority ? undefined : 'lazy'}
             priority={isPriority}
+            fetchPriority={isPriority ? 'high' : undefined}
           />
 
           {/* Hover Overlay with Zoom Icon */}
