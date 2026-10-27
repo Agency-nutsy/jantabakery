@@ -52,3 +52,6 @@ next-env.d.ts
 /_archive_scripts/
 scratch/
 /pdfsss/
+
+*.patch
+JANTA_BAKERY_CONVERSATIONS_A_TO_Z.txt

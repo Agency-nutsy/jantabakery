@@ -210,7 +210,12 @@ export default function GiftingPageClient() {
     }
   };
 
-  const renderHamperCard = (hamper: HamperItem, index: number, isFeaturedView = false) => {
+  const renderHamperCard = (
+    hamper: HamperItem,
+    index: number,
+    isFeaturedView = false,
+    isPriority = false
+  ) => {
     const cartKey = hamper.id;
     const inCartItem = cart.find((c) => c.id === cartKey);
     const inCartQty = inCartItem?.qty || 0;
@@ -244,8 +249,8 @@ export default function GiftingPageClient() {
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-105"
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            loading={isFeatured && index < 4 ? undefined : 'lazy'}
-            priority={isFeatured && index < 4}
+            loading={isPriority ? undefined : 'lazy'}
+            priority={isPriority}
           />
 
           {/* Hover Overlay with Zoom Icon */}
@@ -535,7 +540,12 @@ export default function GiftingPageClient() {
                   <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5">
                     {featuredHampersData.map((hamper, idx) => {
                       const globalIdx = filteredHampers.findIndex((h) => h.id === hamper.id);
-                      return renderHamperCard(hamper, globalIdx >= 0 ? globalIdx : idx, true);
+                      return renderHamperCard(
+                        hamper,
+                        globalIdx >= 0 ? globalIdx : idx,
+                        true,
+                        idx < 4
+                      );
                     })}
                   </div>
 
@@ -567,7 +577,8 @@ export default function GiftingPageClient() {
                     activeCategory === 'all' && !debouncedQuery
                       ? idx + featuredHampersData.length
                       : idx;
-                  return renderHamperCard(hamper, globalIdx, false);
+                  const isPriority = activeCategory !== 'all' ? idx < 4 : false;
+                  return renderHamperCard(hamper, globalIdx, false, isPriority);
                 })}
               </div>
             </>
