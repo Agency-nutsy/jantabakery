@@ -45,9 +45,12 @@ If the variable is not set, the site works identically with no analytics code lo
 | `click_call` | User taps the phone number link |
 | `click_whatsapp` | User taps any WhatsApp button |
 | `click_directions` | User taps the Google Maps / Directions button |
-| `add_to_cart` | User adds an item to the order cart |
+| `view_item` | User opens an individual hamper page, with hamper ID, name and category |
+| `add_to_cart` | User adds a hamper, with ID, name, category and quantity |
+| `order_whatsapp_click` | User taps Order on WhatsApp for a specific hamper |
+| `view_cart` | User opens the floating cart, including item IDs, names and quantities |
 | `remove_from_cart` | User removes an item from the cart |
-| `send_order_whatsapp` | User submits their cart as a WhatsApp order |
+| `send_order_whatsapp` | User sends the cart to WhatsApp, with item IDs, names and quantities (intent, not a confirmed sale) |
 | `menu_search` | User types in the menu search box |
 | `menu_category_select` | User clicks a menu category tab |
 | `click_instagram` | User taps the Instagram link |

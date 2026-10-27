@@ -371,7 +371,7 @@ function CartModal({
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => {
-                      trackSendOrderWhatsapp();
+                      trackSendOrderWhatsapp(cart);
                       onClearCart();
                       onClose();
                     }}

@@ -28,7 +28,7 @@ import {
 } from '@/data/giftingData';
 import { useCart } from '@/lib/cartContext';
 import { PHONE_DIGITS, PHONE_HREF, SITE_URL } from '@/lib/siteConfig';
-import { trackClickWhatsapp, trackAddToCart } from '@/lib/analytics';
+import { trackClickWhatsapp, trackAddToCart, trackOrderWhatsappClick } from '@/lib/analytics';
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
@@ -290,7 +290,12 @@ export default function GiftingPageClient() {
               href={buildHamperWhatsAppUrl(hamper)}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => trackClickWhatsapp()}
+              onClick={() => {
+                trackClickWhatsapp();
+                trackOrderWhatsappClick({ itemId: hamper.id, itemName: hamper.name,
+                  itemCategory: hamper.categoryLabel,
+                  price: typeof hamper.price === 'number' ? hamper.price : undefined });
+              }}
               className="flex flex-1 h-[34px] items-center justify-center gap-1 rounded-xl px-2 text-[11px] sm:text-xs font-bold text-white shadow-xs transition-all duration-200 hover:brightness-105 active:scale-95 truncate"
               style={{
                 background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
@@ -326,7 +331,7 @@ export default function GiftingPageClient() {
                     id: cartKey,
                     name: getHamperOrderName(hamper),
                   });
-                  trackAddToCart(hamper.name);
+                  trackAddToCart({ itemId: hamper.id, itemName: hamper.name, itemCategory: hamper.categoryLabel, price: typeof hamper.price === 'number' ? hamper.price : undefined });
                 }}
                 className="flex flex-1 h-[34px] items-center justify-center gap-1 rounded-xl border border-rose/30 bg-rose/10 text-rose text-[11px] sm:text-xs font-bold shadow-2xs hover:bg-rose hover:text-white transition-all active:scale-95 px-1.5"
                 title="Add to order cart"
@@ -730,7 +735,7 @@ export default function GiftingPageClient() {
                         id: filteredHampers[lightboxIndex].id,
                         name: getHamperOrderName(filteredHampers[lightboxIndex]),
                       });
-                      trackAddToCart(filteredHampers[lightboxIndex].name);
+                      trackAddToCart({ itemId: filteredHampers[lightboxIndex].id, itemName: filteredHampers[lightboxIndex].name, itemCategory: filteredHampers[lightboxIndex].categoryLabel, price: typeof filteredHampers[lightboxIndex].price === 'number' ? filteredHampers[lightboxIndex].price : undefined });
                     }}
                     className="flex items-center gap-1.5 rounded-full px-3 py-2 text-xs font-bold text-white bg-white/10 hover:bg-rose hover:text-white transition-all border border-white/15"
                   >
@@ -742,7 +747,13 @@ export default function GiftingPageClient() {
                     href={buildHamperWhatsAppUrl(filteredHampers[lightboxIndex])}
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => trackClickWhatsapp()}
+                    onClick={() => {
+                      trackClickWhatsapp();
+                      trackOrderWhatsappClick({ itemId: filteredHampers[lightboxIndex].id,
+                        itemName: filteredHampers[lightboxIndex].name,
+                        itemCategory: filteredHampers[lightboxIndex].categoryLabel,
+                        price: typeof filteredHampers[lightboxIndex].price === 'number' ? filteredHampers[lightboxIndex].price : undefined });
+                    }}
                     className="flex items-center gap-1.5 rounded-full py-2 px-3.5 text-xs font-bold text-white shadow-md transition-all duration-200 hover:brightness-105 active:scale-95"
                     style={{
                       background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',

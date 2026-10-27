@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ShoppingCart, X, Plus, Minus, Trash2 } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { useCart } from '@/lib/cartContext';
-import { trackSendOrderWhatsapp } from '@/lib/analytics';
+import { trackSendOrderWhatsapp, trackViewCart } from '@/lib/analytics';
 import { buildCartWhatsAppUrl } from '@/lib/cartWhatsApp';
 
 export default function FloatingCart() {
@@ -86,7 +86,7 @@ export default function FloatingCart() {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0, opacity: 0 }}
             transition={{ type: 'spring', stiffness: 400, damping: 25 }}
-            onClick={() => setIsOpen(true)}
+            onClick={() => { trackViewCart(cart); setIsOpen(true); }}
             className="fixed bottom-[160px] right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full shadow-lg shadow-deep-pink/40 transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-deep-pink/50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             style={{
               background: 'linear-gradient(135deg, #eb5e55 0%, #c8717a 100%)',
@@ -214,7 +214,7 @@ export default function FloatingCart() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => {
-                      trackSendOrderWhatsapp();
+                      trackSendOrderWhatsapp(cart);
                       clearCart();
                       setIsOpen(false);
                       openBtnRef.current?.focus();

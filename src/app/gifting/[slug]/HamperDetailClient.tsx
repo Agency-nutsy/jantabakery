@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -28,6 +28,7 @@ import {
 } from '@/data/giftingData';
 import { useCart } from '@/lib/cartContext';
 import { PHONE_DIGITS, PHONE_HREF, SITE_URL } from '@/lib/siteConfig';
+import { trackAddToCart, trackClickWhatsapp, trackOrderWhatsappClick, trackViewItem } from '@/lib/analytics';
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
@@ -52,6 +53,10 @@ export default function HamperDetailClient({ hamper, relatedHampers }: HamperDet
 
   const orderName = useMemo(() => getHamperOrderName(hamper), [hamper]);
   const description = useMemo(() => getHamperDescription(hamper), [hamper]);
+
+  useEffect(() => {
+    trackViewItem({ itemId: hamper.id, itemName: orderName, itemCategory: hamper.categoryLabel, price: typeof hamper.price === 'number' ? hamper.price : undefined });
+  }, [hamper.id, hamper.categoryLabel, hamper.price, orderName]);
 
   const inCartItem = cart.find((item) => item.id === hamper.id || item.id === `gifting-${hamper.id}`);
   const inCartQty = inCartItem?.qty || 0;
@@ -108,6 +113,7 @@ ${productUrl}`;
         incrementItem(cartKey);
       }
     }
+    trackAddToCart({ itemId: hamper.id, itemName: orderName, itemCategory: hamper.categoryLabel, price: typeof hamper.price === 'number' ? hamper.price : undefined, quantity: qty });
     setJustAdded(true);
     setTimeout(() => setJustAdded(false), 2000);
   };
@@ -340,6 +346,12 @@ ${productUrl}`;
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => {
+                  trackClickWhatsapp();
+                  trackOrderWhatsappClick({ itemId: hamper.id, itemName: orderName,
+                    itemCategory: hamper.categoryLabel,
+                    price: typeof hamper.price === 'number' ? hamper.price : undefined, quantity: qty });
+                }}
                 className="flex-1 flex items-center justify-center gap-2.5 rounded-2xl px-6 py-4 text-sm font-bold text-white shadow-md transition-all duration-300 hover:brightness-105 active:scale-98"
                 style={{
                   background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
