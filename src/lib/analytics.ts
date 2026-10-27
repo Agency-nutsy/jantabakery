@@ -35,13 +35,21 @@ function ecommerceParams(items: AnalyticsItem[]) {
   const value = priced.reduce((sum, item) => sum + (item.price ?? 0) * (item.quantity ?? 1), 0);
   return { currency: 'INR', ...(priced.length ? { value } : {}), items: items.map(toGaItem) };
 }
+function hamperEventParams(item: AnalyticsItem, quantity = item.quantity ?? 1) {
+  return {
+    ...ecommerceParams([{ ...item, quantity }]),
+    hamper_id: item.itemId,
+    hamper_name: item.itemName,
+    ...(item.itemCategory ? { hamper_category: item.itemCategory } : {}),
+  };
+}
 export const trackClickCall = () => fireEvent('click_call');
 export const trackClickWhatsapp = () => fireEvent('click_whatsapp');
 export const trackClickDirections = () => fireEvent('click_directions');
 export const trackViewItem = (item: AnalyticsItem) =>
-  fireEvent('view_item', ecommerceParams([{ ...item, quantity: 1 }]));
+  fireEvent('view_item', hamperEventParams(item, 1));
 export const trackAddToCart = (item: AnalyticsItem) =>
-  fireEvent('add_to_cart', ecommerceParams([item]));
+  fireEvent('add_to_cart', hamperEventParams(item));
 export const trackRemoveFromCart = (item: AnalyticsItem) =>
   fireEvent('remove_from_cart', ecommerceParams([item]));
 export const trackViewCart = (items: CartAnalyticsItem[]) =>
@@ -50,7 +58,7 @@ export const trackViewCart = (items: CartAnalyticsItem[]) =>
   }))));
 /** Records an order-intent click, not a completed sale. */
 export const trackOrderWhatsappClick = (item: AnalyticsItem) =>
-  fireEvent('order_whatsapp_click', ecommerceParams([item]));
+  fireEvent('order_whatsapp_click', hamperEventParams(item));
 /** Records sending the current cart to WhatsApp, not a completed sale. */
 export const trackSendOrderWhatsapp = (items: CartAnalyticsItem[]) =>
   fireEvent('send_order_whatsapp', ecommerceParams(items.map((item) => ({
